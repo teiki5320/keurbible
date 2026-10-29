@@ -11,7 +11,7 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 ## Rémunération par phases
 
 - [fait] **Lancement** : site en ligne sur keurbible.com depuis le 29 octobre 2026, affiliation Amazon Partenaires (tag `keurbible-21`).
-- **AdSense** : même compte que Keurbook ; site ajouté, bandeau de consentement et 2 blocs d'annonces créés le 29 octobre 2026 ; examen pas encore demandé.
+- **AdSense** : même compte que Keurbook ; site ajouté, bandeau de consentement et 2 blocs d'annonces créés le 29 octobre 2026 ; examen demandé le même jour (« En préparation »).
 - [en cours] **Liens Amazon directs** : 56 ASIN vérifiés le 29 octobre 2026, tous dans les Top 10 (56 objets sur 90) ; les autres objets ouvrent une recherche Amazon.
 - **Partenariats** : artisans et boutiques d'art chrétien africain, une fois l'audience mesurée (l'art afro artisanal est presque absent d'Amazon : 2 objets sur 10 du Top 10 afro en lien direct).
 
@@ -44,6 +44,6 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 ## Les 3 priorités
 
-- Suivre l'indexation des 85 pages dans Search Console et Bing Webmaster Tools ; demander l'examen AdSense.
+- Suivre l'indexation des 85 pages dans Search Console et Bing Webmaster Tools ; suivre l'examen AdSense dans la console.
 - Préparer Noël : crèches, calendriers de l'Avent et cadeaux de Noël sont en tête des Top 10 ; ouvrir un compte Pinterest Keur Bible et publier les épingles avant l'Avent (29 novembre 2026).
 - Compléter les liens directs des Top 10 (34 objets sur 90 en recherche, surtout l'art afro, les crèches africaines et les Vierges noires) et contrôler les 56 liens chaque semaine (`npm run verifier-produits -- --ecrire --lot 30`).
