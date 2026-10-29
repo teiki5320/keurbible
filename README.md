@@ -2,11 +2,11 @@
 
 Boutique-guide en français d'**objets chrétiens pour la maison et à offrir** : Bibles, croix et crucifix, chapelets et objets de prière, art chrétien (dont l'**art chrétien afro** : Jésus noir, Vierge noire, crèches africaines, croix éthiopiennes), statues, crèches et Noël, livres et coloriages, avec des idées de cadeaux par occasion, 10 pages **Top 10**, 12 **Psaumes** (carrousel de l'accueil), des articles **Conseils** (lundi, mercredi, vendredi) et les **actus** de la culture chrétienne en Afrique. Pour les chrétiens francophones de toutes les Églises, en priorité la diaspora africaine en France. Le site ne vend rien : les boutons « Voir sur Amazon » mènent à Amazon.fr (programme Partenaires).
 
-- **Site** : https://keurbible.com (domaine sur Cloudflare). **Pas encore en ligne** au 29 octobre 2026 : il manque les secrets Cloudflare dans GitHub et le domaine à relier au projet Pages (voir « État de la mise en route »).
+- **Site** : https://keurbible.com, en ligne depuis le 29 octobre 2026 (`www.keurbible.com` redirige vers elle en 301 ; adresse canonique sans www). Publié sur Cloudflare Pages (projet `keurbible`).
 - **Dépôt** : https://github.com/teiki5320/keurbible (public, branche `main` uniquement).
 - **Base technique** : reprise de [Keurbook](https://github.com/teiki5320/keurbook) (code et structure seulement, aucun contenu).
 
-**Stack** : Next.js 16 (App Router, export statique) · React 19 · TypeScript · Tailwind CSS 4 · Marked (articles Markdown). Hébergement prévu : Cloudflare Pages (projet `keurbible`).
+**Stack** : Next.js 16 (App Router, export statique) · React 19 · TypeScript · Tailwind CSS 4 · Marked (articles Markdown). Hébergement : Cloudflare Pages (projet `keurbible`, en ligne depuis le 29 octobre 2026).
 
 Le site est **100 % statique** : pas de serveur, pas de base de données. Tous les contenus sont dans le code ; le build produit le dossier `out/`.
 
@@ -93,5 +93,6 @@ Même fonctionnement que Keurbook : le workflow `.github/workflows/deploy.yml` v
 ### État de la mise en route (29 octobre 2026)
 
 - Fait : code, contenus de lancement (7 rubriques, 31 sous-rubriques, 178 objets, 10 occasions, 10 Top 10, 12 Psaumes, 8 articles Conseils dont 5 publiés et 3 programmés), tests, workflows, tag Amazon `keurbible-21`, 56 liens Amazon directs vérifiés, veille actus branchée (dépôt `teiki5320/veille`, 15 flux).
-- À faire par Jean : ajouter les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` au dépôt keurbible ; après la première publication, relier `keurbible.com` (et `www`) au projet Pages `keurbible` dans Cloudflare ; déclarer keurbible.com sur Amazon Partenaires et dans AdSense ; adresse de contact `keurbible@toakeur.com` confirmée par Jean le 29 octobre 2026.
+- Fait le 29 octobre 2026 : secrets `CLOUDFLARE_API_TOKEN` (jeton « Keur Bible - publication GitHub », Cloudflare Pages en modification) et `CLOUDFLARE_ACCOUNT_ID` dans le dépôt, projet Pages `keurbible` créé par la première publication, domaines `keurbible.com` et `www.keurbible.com` reliés, règle de redirection Cloudflare de www vers l'adresse sans www (301, chaîne de requête conservée). Adresse de contact `keurbible@toakeur.com` confirmée par Jean.
+- Reste à faire : déclarer keurbible.com sur Amazon Partenaires et dans AdSense, Search Console, Cloudflare Web Analytics.
 - Ensuite : Search Console, illustrations et épingles Pinterest, ASIN des autres objets.

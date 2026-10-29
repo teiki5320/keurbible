@@ -7,13 +7,13 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Plateforme** : site web éditorial, en français, sur ordinateur et mobile
 - **Stack** : Next.js 16 en export statique, React 19, Tailwind CSS 4
 - **Backend** : aucun — site statique, sans base ni compte
-- **Distribution** : Cloudflare Pages, publié par GitHub Actions (pas encore en ligne)
+- **Distribution** : Cloudflare Pages, publié par GitHub Actions (en ligne depuis le 29 octobre 2026)
 - **Site** : keurbible.com (85 adresses dans le sitemap au lancement)
 - **IA et outils** : veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow
 
 ## Parcours
 
-- 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible, secrets à ajouter [à faire] → 🌍 keurbible.com — domaine à relier au projet [à faire]
+- 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible [ok] → 🌍 keurbible.com — en ligne, réponse 200, www redirigé [ok]
 - 📝 **Contenu** : ✍️ Articles Conseils — 5 publiés, 3 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — après chaque publication et chaque lundi [pas encore] → 🔍 Google — Search Console à créer [à faire]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, premier passage à 19 h le 29/10 [en cours] → 🌍 keurbible.com — accueil (4), /actus (20) [pas encore]
 - 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 56 ASIN vérifiés sur 178 objets (56 sur 90 dans les Top 10) [en cours]
@@ -34,11 +34,11 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
   - `indexnow.yml` : signale le sitemap publié à IndexNow après chaque publication réussie, chaque lundi et à la demande ;
   - `maintenance.yml` : met le site en pause ou le rouvre, puis republie.
 - **Console** : https://github.com/teiki5320/keurbible
-- **Secrets** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`, à régler dans les secrets Actions du dépôt (pas encore faits au 29 octobre 2026), jamais dans le code.
+- **Secrets** : `CLOUDFLARE_API_TOKEN` (jeton Cloudflare « Keur Bible - publication GitHub », autorisation Cloudflare Pages en modification) et `CLOUDFLARE_ACCOUNT_ID`, réglés dans les secrets Actions du dépôt le 29 octobre 2026, jamais dans le code.
 
 ## Hébergement web (Cloudflare Pages)
 
-- **Fournisseur** : Cloudflare Pages, projet `keurbible`, publié par `wrangler` depuis `deploy.yml` (pas encore publié).
+- **Fournisseur** : Cloudflare Pages, projet `keurbible` (créé par la première publication le 29 octobre 2026), publié par `wrangler` depuis `deploy.yml`.
 - **En-têtes** : `public/_headers` (politique de sécurité limitée au site, à Google AdSense, à Cloudflare Web Analytics et à `teiki5320.github.io` pour la veille, HSTS, cache) ; adresses `*.pages.dev` en `noindex`, fichiers `.txt` internes de Next.js en `noindex` (sauf `ads.txt`, `robots.txt` et la clé IndexNow).
 - **Redirections** : `public/_redirects`.
 - **Console** : tableau de bord Cloudflare, rubrique Workers & Pages → `keurbible`.
@@ -46,7 +46,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 ## Nom de domaine
 
 - **Domaine** : `keurbible.com`, adresse canonique sans www.
-- **Registraire et DNS** : Cloudflare (serveurs de noms Cloudflare). Le domaine n'est pas encore relié au projet Pages (aucune adresse au 29 octobre 2026).
+- **Registraire et DNS** : Cloudflare (serveurs de noms Cloudflare). `keurbible.com` et `www.keurbible.com` sont des domaines personnalisés du projet Pages depuis le 29 octobre 2026 (enregistrements CNAME vers `keurbible.pages.dev`, ajoutés par Cloudflare) ; une règle de redirection (Règles → Règles de redirection, « Rediriger de WWW vers la racine ») renvoie www vers l'adresse sans www en 301, chaîne de requête conservée.
 - **Adresse de contact** : `keurbible@toakeur.com` (`NEXT_PUBLIC_CONTACT_EMAIL`), confirmée par Jean le 29 octobre 2026.
 - **Console** : tableau de bord Cloudflare, rubrique Domaines → `keurbible.com`.
 

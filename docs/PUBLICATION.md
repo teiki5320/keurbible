@@ -1,32 +1,32 @@
 # PUBLICATION — état de la mise en ligne
 
-> Mis à jour le 29 octobre 2026, d'après le dépôt et la console GitHub.
+> Mis à jour le 29 octobre 2026, d'après le site en ligne, la console Cloudflare et les exécutions GitHub Actions.
 >
 > Aucun secret ici — uniquement des références.
 
 ## En bref
 
-- **Production** : pas encore en ligne
-- **Domaine & SSL** : keurbible.com sur Cloudflare, pas encore relié au site
-- **Visibilité** : aucune page indexée (site pas encore publié)
+- **Production** : en ligne sur keurbible.com depuis le 29 octobre 2026
+- **Domaine & SSL** : keurbible.com sur Cloudflare, relié au projet Pages, www redirigé (301), certificat Cloudflare
+- **Visibilité** : site tout juste publié, Search Console à créer ; IndexNow après chaque publication et chaque lundi
 - **Contact** : keurbible@toakeur.com
 
 ## Boutiques
 
 | | 🌐 Site |
 |---|---|
-| État | [à faire] Pas encore publié |
-| Hébergement | [à faire] Cloudflare Pages, projet keurbible (créé à la première publication) |
-| Domaine | [à faire] keurbible.com, à relier au projet Pages |
-| SSL | [pas encore] Certificat Cloudflare, HSTS prévu dans public/_headers |
+| État | [ok] En ligne, réponse 200 |
+| Hébergement | [ok] Cloudflare Pages, projet keurbible |
+| Domaine | [ok] keurbible.com, www redirigé (301) |
+| SSL | [ok] Certificat Cloudflare, HSTS actif |
 | Indexation | [pas encore] Search Console à créer |
 | Mesure d'audience | [pas encore] Cloudflare Web Analytics à activer |
 
 ## Ce qui reste, dans l'ordre
 
 1. ✅ **Code et contenus** : site construit et contrôlé le 29 octobre 2026 (85 adresses), sur le Mac et par GitHub Actions (tout au vert jusqu'à l'étape des secrets Cloudflare) ; 56 liens Amazon directs vérifiés.
-2. **Secrets Cloudflare** : ajouter `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` au dépôt keurbible (Settings → Secrets and variables → Actions), puis relancer « Publier le site ».
-3. **Domaine** : dans Cloudflare, Workers & Pages → `keurbible` → Domaines personnalisés : ajouter `keurbible.com` et `www.keurbible.com` (redirection de www vers l'adresse sans www).
+2. ✅ **Secrets Cloudflare** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` ajoutés au dépôt le 29 octobre 2026 ; première publication réussie le même jour.
+3. ✅ **Domaine** : `keurbible.com` et `www.keurbible.com` reliés au projet le 29 octobre 2026, règle de redirection de www vers l'adresse sans www (301).
 4. **Search Console** : propriété de domaine `keurbible.com`, envoi du sitemap.
 5. **Amazon Partenaires et AdSense** : déclarer keurbible.com sur les deux comptes, créer les blocs d'annonces.
 6. ✅ **Veille actus** : Keur Bible ajouté à la tâche de veille le 29 octobre 2026 (`sites/keurbible.json`, 15 flux).
@@ -36,24 +36,24 @@
 
 | | |
 |---|---|
-| Adresse | **Pas encore en ligne** (https://keurbible.com) |
+| Adresse | **En ligne** sur https://keurbible.com (vérifié le 29 octobre 2026 : réponse 200, `version.txt` à jour) |
 | Hébergeur | Cloudflare Pages (projet `keurbible`), workflow `deploy.yml` |
-| Dernière publication | aucune |
-| Mise en ligne | à venir |
+| Dernière publication | 29 octobre 2026, publication manuelle (« Publier le site ») |
+| Mise en ligne | 29 octobre 2026 |
 | Dépôt | https://github.com/teiki5320/keurbible |
-| Taille | 85 adresses dans le sitemap construit en local (29 octobre 2026) |
+| Taille | 85 adresses dans le sitemap (29 octobre 2026) |
 | Contact affiché | `keurbible@toakeur.com` |
 | Maintenance | désactivée (`content/maintenance.json`) |
 
 ## Domaine & SSL
 
 - **Domaine** : `keurbible.com` (adresse canonique, sans www).
-- **Registraire et DNS** : Cloudflare (serveurs de noms Cloudflare) ; aucune adresse ne pointe encore vers le site.
-- **SSL** : sera fourni et renouvelé par Cloudflare ; HSTS prévu dans `public/_headers`.
+- **Registraire et DNS** : Cloudflare (serveurs de noms Cloudflare) ; CNAME de `keurbible.com` et `www` vers `keurbible.pages.dev`.
+- **SSL** : fourni et renouvelé par Cloudflare ; HSTS activé dans `public/_headers`.
 
 ## Visibilité
 
-- **Sitemap** : `https://keurbible.com/sitemap.xml` une fois en ligne ; `robots.txt` autorise tout et cite le sitemap.
+- **Sitemap** : `https://keurbible.com/sitemap.xml` (85 adresses) ; `robots.txt` autorise tout et cite le sitemap.
 - **Google Search Console** : à créer.
 - **IndexNow** : prêt (`indexnow.yml`, clé publiée avec le site).
 - **Publicité** : script AdSense et `ads.txt` publiés avec le site ; site à déclarer, aucune annonce.
