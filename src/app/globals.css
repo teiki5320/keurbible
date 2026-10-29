@@ -1,27 +1,29 @@
 @import "tailwindcss";
 
 /*
- * Design provisoire « Parchemin » : fond clair chaud, titres en Cormorant Garamond, texte en Source Sans 3,
- * accent brun et ambre du logo. Le design définitif sera fait à part.
+ * Design « Lumière » (maquette 1 validée par Jean le 29/10/2026) : nuit presque noire, or et ambre du logo,
+ * titres en Cinzel, texte en Mulish. « white » désigne la surface des cartes (brun très sombre), pas le blanc :
+ * ainsi les classes bg-white / text-white existantes suivent le thème sombre (texte sombre sur les boutons ambre).
  */
 @theme {
-  --color-paper: #fbf7f1;
-  --color-ink: #1f1a17;
-  --color-muted: #5e544b;
-  --color-line: #e8dfd3;
-  --color-line-strong: #cdbeac;
-  --color-faint: #73675c;
-  --color-accent: #7a3510;
-  --color-accent-soft: #f7ece2;
-  --color-gold: #a2560f;
-  --color-gold-soft: #fbf1e4;
-  --color-white: #ffffff;
-  --font-sans: var(--font-source-sans), system-ui, sans-serif;
-  --font-serif: var(--font-cormorant), Georgia, serif;
+  --color-paper: #050302;
+  --color-ink: #f6ead8;
+  --color-muted: #c9b49a;
+  --color-line: #2a1e14;
+  --color-line-strong: #4a3626;
+  --color-faint: #a8957e;
+  --color-accent: #f0a43a;
+  --color-accent-soft: #140e09;
+  --color-gold: #f0a43a;
+  --color-gold-soft: #0f0a06;
+  --color-white: #0b0806;
+  --font-sans: var(--font-mulish), system-ui, sans-serif;
+  --font-serif: var(--font-cinzel), Georgia, serif;
 }
 
 html {
-  color-scheme: light;
+  color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,7 +38,7 @@ body {
 }
 
 .font-serif {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @utility container-page {
@@ -46,7 +48,7 @@ body {
   @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
 }
 @utility btn-primary {
-  @apply btn bg-accent text-white hover:bg-ink;
+  @apply btn bg-accent text-white hover:-translate-y-0.5 hover:bg-[#ffd28a];
 }
 @utility btn-secondary {
   @apply btn border border-line-strong bg-white font-medium text-ink hover:border-ink;
@@ -139,3 +141,102 @@ body {
   border: 0;
   overflow: hidden;
 }
+
+/* ------------------------------------------------------------------------------------------------
+ * Design « Lumière » : animations (coupées par la règle prefers-reduced-motion plus haut).
+ * ---------------------------------------------------------------------------------------------- */
+
+@keyframes kb-up { from { opacity: 0; transform: translateY(46px); filter: blur(8px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes kb-in { from { opacity: 0; transform: translateY(16px); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes kb-spin { to { transform: rotate(360deg); } }
+
+/* Apparition au défilement (Chrome, Safari récents) ; ailleurs, à l'arrivée sur la page. */
+.kb-reveal { animation: kb-up 1s cubic-bezier(.2, .7, .2, 1) both; }
+.kb-stag > * { animation: kb-up .9s cubic-bezier(.2, .7, .2, 1) both; }
+.kb-stag > :nth-child(2) { animation-delay: .08s; } .kb-stag > :nth-child(3) { animation-delay: .16s; }
+.kb-stag > :nth-child(4) { animation-delay: .24s; } .kb-stag > :nth-child(5) { animation-delay: .32s; }
+.kb-stag > :nth-child(6) { animation-delay: .4s; } .kb-stag > :nth-child(7) { animation-delay: .48s; }
+.kb-stag > :nth-child(8) { animation-delay: .56s; } .kb-stag > :nth-child(9) { animation-delay: .64s; }
+.kb-stag > :nth-child(10) { animation-delay: .72s; }
+@supports (animation-timeline: view()) {
+  .kb-reveal { animation-timing-function: linear; animation-timeline: view(); animation-range: entry 0% cover 32%; }
+  .kb-stag > * { animation-timing-function: linear; animation-timeline: view(); animation-range: entry 0% cover 26%; }
+}
+
+/* Reflet doré qui passe sur un titre. */
+.kb-shine {
+  background: linear-gradient(100deg, #f6ead8 20%, #ffd28a 38%, #fff8e8 50%, #f0a43a 62%, #f6ead8 80%);
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: kb-shine 7s linear infinite;
+}
+@keyframes kb-shine { from { background-position: 120% 0; } to { background-position: -160% 0; } }
+
+/* Cartes : se soulèvent, s'éclairent par le bas, reflet au survol. */
+.kb-card { position: relative; overflow: hidden; isolation: isolate; transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s ease, border-color .4s ease; }
+.kb-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(60% 80% at 50% 120%, rgba(240, 164, 58, .35), rgba(240, 164, 58, 0) 70%); opacity: 0; transition: opacity .5s ease; }
+.kb-card::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 35%, rgba(255, 220, 160, .16) 50%, transparent 65%); background-size: 300% 100%; background-position: 150% 0; transition: background-position 1s ease; }
+.kb-card:hover { transform: translateY(-8px); border-color: var(--color-accent); box-shadow: 0 24px 50px -22px rgba(240, 164, 58, .55); }
+.kb-card:hover::before { opacity: 1; }
+.kb-card:hover::after { background-position: -50% 0; }
+
+/* Psaume du jour : rayon de lumière qui tourne derrière le texte, barre du temps restant. */
+.kb-psaume { position: relative; overflow: hidden; isolation: isolate; }
+.kb-psaume::before {
+  content: ""; position: absolute; z-index: -1; width: 900px; height: 900px; left: 50%; top: 50%; margin: -450px 0 0 -450px; border-radius: 50%;
+  background: conic-gradient(from 0deg, rgba(240, 164, 58, 0) 0deg, rgba(240, 164, 58, .14) 30deg, rgba(240, 164, 58, 0) 60deg, rgba(240, 164, 58, 0) 180deg, rgba(120, 185, 255, .08) 210deg, rgba(240, 164, 58, 0) 240deg);
+  filter: blur(30px); animation: kb-spin 26s linear infinite;
+}
+.kb-fondu { animation: kb-in .8s cubic-bezier(.2, .7, .2, 1) both; }
+@keyframes kb-bar { from { width: 0; } to { width: 100%; } }
+.kb-bar { animation: kb-bar 7s linear both; }
+
+/* Bandeau Art chrétien afro : lueur qui se promène, braises qui montent, bouton qui pulse. */
+.kb-afro { position: relative; overflow: hidden; isolation: isolate; }
+.kb-afro::before { content: ""; position: absolute; z-index: -1; width: 70%; height: 180%; left: -20%; top: -40%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 110, 30, .4), rgba(255, 110, 30, 0) 65%); filter: blur(20px); animation: kb-wander 11s ease-in-out infinite alternate; }
+@keyframes kb-wander { from { transform: translate(0, 0) scale(1); } to { transform: translate(110%, 10%) scale(1.25); } }
+.kb-ember { position: absolute; bottom: -8px; width: 4px; height: 4px; border-radius: 999px; background: #ffb060; box-shadow: 0 0 10px 2px rgba(255, 140, 40, .9); opacity: 0; animation: kb-ember 7s linear infinite; pointer-events: none; }
+@keyframes kb-ember { 0% { opacity: 0; transform: translate(0, 0); } 12% { opacity: 1; } 85% { opacity: .6; } 100% { opacity: 0; transform: translate(40px, -320px); } }
+.kb-pulse { animation: kb-pulse 2.4s ease-in-out infinite; }
+@keyframes kb-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(240, 164, 58, .55); } 50% { box-shadow: 0 0 0 14px rgba(240, 164, 58, 0); } }
+
+/* Bande des occasions qui défile sans fin (arrêtée au survol). */
+.kb-marquee { overflow: hidden; -webkit-mask: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+.kb-track { display: flex; gap: 48px; width: max-content; animation: kb-marq 38s linear infinite; }
+.kb-marquee:hover .kb-track { animation-play-state: paused; }
+@keyframes kb-marq { to { transform: translateX(-50%); } }
+.kb-contour { color: transparent; -webkit-text-stroke: 1px rgba(240, 164, 58, .55); }
+.kb-chip:hover { border-color: var(--color-accent); box-shadow: 0 0 22px rgba(240, 164, 58, .45); background: rgba(240, 164, 58, .08); }
+
+/* Pied de page : trait de lumière qui glisse. */
+.kb-foot { position: relative; }
+.kb-foot::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: linear-gradient(90deg, transparent, #f0a43a, transparent) no-repeat; background-size: 40% 100%; animation: kb-line 6s ease-in-out infinite; }
+@keyframes kb-line { from { background-position: -40% 0; } to { background-position: 140% 0; } }
+
+/* Orbe de lumière de l'accueil (composant HeroLumiere). */
+.orb-stage { position: relative; width: min(420px, 86vw); aspect-ratio: 1 / 1.12; perspective: 900px; }
+.orb-float { position: absolute; left: 50%; top: 44%; width: 74%; aspect-ratio: 1; transform: translate(-50%, -50%); animation: orb-float 6s ease-in-out infinite; }
+@keyframes orb-float { 0%, 100% { margin-top: 0; } 50% { margin-top: -18px; } }
+.orb-tilt { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .6s cubic-bezier(.2, .8, .2, 1); }
+.orb-aura { position: absolute; inset: -38%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 140, 40, .55) 0%, rgba(255, 90, 20, .25) 30%, rgba(60, 120, 255, .18) 50%, rgba(0, 0, 0, 0) 68%); filter: blur(18px); animation: orb-breathe 4.5s ease-in-out infinite; }
+@keyframes orb-breathe { 0%, 100% { opacity: .75; transform: scale(.95); } 50% { opacity: 1; transform: scale(1.06); } }
+.orb-rays { position: absolute; inset: -30%; border-radius: 50%; background: repeating-conic-gradient(from 0deg, rgba(255, 200, 120, .22) 0deg 1.2deg, rgba(0, 0, 0, 0) 1.2deg 14deg); -webkit-mask: radial-gradient(circle, #000 30%, transparent 70%); mask: radial-gradient(circle, #000 30%, transparent 70%); animation: kb-spin 40s linear infinite; mix-blend-mode: screen; }
+.orb-core { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; background: radial-gradient(circle at 50% 50%, #0a1024 0%, #070b18 70%); box-shadow: inset 0 0 40px rgba(120, 180, 255, .45), inset 0 -20px 60px rgba(255, 120, 30, .35), 0 0 60px rgba(255, 130, 40, .35); }
+.orb-swirl { position: absolute; inset: -25%; border-radius: 50%; background: conic-gradient(from 0deg, rgba(0, 0, 0, 0) 0deg, #ff7a1a 40deg, #ffd27a 70deg, rgba(0, 0, 0, 0) 110deg, #4aa8ff 170deg, #bfe6ff 200deg, rgba(0, 0, 0, 0) 240deg, #ff5a14 300deg, rgba(0, 0, 0, 0) 360deg); filter: blur(16px); mix-blend-mode: screen; animation: kb-spin 9s linear infinite; }
+.orb-swirl2 { inset: -10%; opacity: .8; filter: blur(10px); animation: kb-spin 14s linear infinite reverse; background: conic-gradient(from 90deg, rgba(0, 0, 0, 0) 0deg, #6ec3ff 50deg, rgba(0, 0, 0, 0) 120deg, #ffb347 200deg, #fff1d0 220deg, rgba(0, 0, 0, 0) 280deg); }
+.orb-swirl3 { inset: 12%; opacity: .9; filter: blur(6px); animation: kb-spin 6s linear infinite; background: conic-gradient(from 200deg, rgba(0, 0, 0, 0), #ff8a3a 60deg, rgba(0, 0, 0, 0) 140deg, #9fd4ff 230deg, rgba(0, 0, 0, 0) 300deg); }
+.orb-glass { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 32% 26%, rgba(255, 255, 255, .85) 0%, rgba(255, 255, 255, .25) 7%, rgba(255, 255, 255, 0) 18%), radial-gradient(circle at 70% 80%, rgba(255, 180, 90, .35) 0%, rgba(255, 180, 90, 0) 30%), radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 58%, rgba(160, 210, 255, .35) 69%, rgba(255, 255, 255, .08) 71%, rgba(0, 0, 0, 0) 72%); }
+.orb-rim { position: absolute; inset: -2px; border-radius: 50%; padding: 2px; background: conic-gradient(from 0deg, rgba(255, 255, 255, 0), rgba(255, 210, 140, .9), rgba(120, 190, 255, .8), rgba(255, 255, 255, 0) 60%, rgba(255, 140, 40, .9), rgba(255, 255, 255, 0)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: kb-spin 7s linear infinite; }
+.orb-cross { position: absolute; left: 50%; top: 50%; width: 22%; height: 34%; transform: translate(-50%, -54%); animation: orb-cross 3.2s ease-in-out infinite; }
+.orb-cross::before, .orb-cross::after { content: ""; position: absolute; background: #fff8e6; border-radius: 6px; box-shadow: 0 0 12px #fff, 0 0 28px #ffd27a, 0 0 60px #ff8a2a; }
+.orb-cross::before { left: 42%; top: 0; width: 16%; height: 100%; }
+.orb-cross::after { left: 0; top: 26%; width: 100%; height: 13%; }
+@keyframes orb-cross { 0%, 100% { opacity: .85; filter: brightness(1); } 50% { opacity: 1; filter: brightness(1.35); } }
+.orb-orbit { position: absolute; inset: -14%; border-radius: 50%; animation: kb-spin 11s linear infinite; }
+.orb-orbit2 { inset: -22%; animation-duration: 17s; animation-direction: reverse; }
+.orb-spark { position: absolute; top: 0; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: #ffe2b0; box-shadow: 0 0 10px 3px rgba(255, 170, 80, .9); }
+.orb-spark-b { top: auto; bottom: 8%; left: 12%; width: 4px; height: 4px; background: #cfe8ff; box-shadow: 0 0 10px 3px rgba(110, 180, 255, .9); }
+.orb-reflet { position: absolute; left: 50%; bottom: 2%; width: 62%; height: 9%; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(ellipse, rgba(255, 150, 60, .55), rgba(255, 150, 60, 0) 70%); filter: blur(6px); animation: orb-shadow 6s ease-in-out infinite; }
+@keyframes orb-shadow { 0%, 100% { opacity: .9; transform: translateX(-50%) scale(1); } 50% { opacity: .55; transform: translateX(-50%) scale(.82); } }

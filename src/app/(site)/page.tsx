@@ -4,7 +4,8 @@ import { BlocActus } from "@/components/actus/BlocActus";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { CarteLien, GrilleLiens } from "@/components/layout/CarteLien";
 import { Section } from "@/components/layout/Section";
-import { CarrouselPsaumes } from "@/components/psaumes/CarrouselPsaumes";
+import { HeroLumiere } from "@/components/accueil/HeroLumiere";
+import { PsaumeDuJour } from "@/components/psaumes/PsaumeDuJour";
 import { OCCASIONS, PSAUMES, RUBRIQUES, TOP10S, objetsAfro, psaumeRefVersets, sousRubriqueOf } from "@/lib/catalogue";
 import { siteConfig } from "@/lib/config";
 import { getConseils } from "@/lib/data/conseils";
@@ -52,10 +53,10 @@ export default function HomePage() {
         }}
       />
 
-      {/* 1. Accroche */}
-      <section className="container-page pt-10 pb-4 sm:pt-16">
-        <p className="eyebrow">Pour toutes les Églises</p>
-        <h1 className="mt-3 max-w-4xl font-serif text-[48px] leading-[0.98] text-balance sm:text-7xl">Des objets chrétiens pour la maison et à offrir</h1>
+      {/* 1. Accroche, avec l'orbe de lumière et le nuage de points */}
+      <HeroLumiere>
+        <p className="eyebrow kb-reveal">Pour toutes les Églises</p>
+        <h1 className="mt-4 max-w-4xl font-serif text-[40px] leading-[1.05] text-balance sm:text-[64px]">Des objets chrétiens pour la maison et à offrir</h1>
         <p className="mt-5 max-w-2xl text-[18px] leading-relaxed text-muted">
           Bibles, croix, chapelets, art chrétien afro, crèches et cadeaux de baptême : notre sélection, expliquée simplement, pour les
           catholiques, les protestants, les évangéliques et les orthodoxes.
@@ -68,11 +69,11 @@ export default function HomePage() {
             L&apos;art chrétien afro
           </Link>
         </div>
-      </section>
+      </HeroLumiere>
 
       {/* 2. Carrousel des Psaumes */}
       <Section title="Un Psaume pour aujourd'hui" href="/psaumes" linkLabel="Tous les Psaumes" id="psaumes">
-        <CarrouselPsaumes psaumes={PSAUMES.map((p) => ({ slug: p.slug, reference: psaumeRefVersets(p), texte: p.texte, pour: p.pour }))} />
+        <PsaumeDuJour psaumes={PSAUMES.map((p) => ({ slug: p.slug, reference: psaumeRefVersets(p), texte: p.texte, pour: p.pour }))} />
       </Section>
 
       {/* 3. Rubriques */}
@@ -89,27 +90,30 @@ export default function HomePage() {
         </GrilleLiens>
       </Section>
 
-      {/* 4. Art chrétien afro */}
-      <section aria-labelledby="afro" className="mt-16 bg-accent py-14 text-white">
-        <div className="container-page">
-          <p className="text-[11px] font-semibold tracking-[0.14em] text-[#f5c26b] uppercase">Notre rubrique phare</p>
-          <h2 id="afro" className="mt-2 font-serif text-[38px] leading-none sm:text-5xl">
+      {/* 4. Art chrétien afro : lueur qui se promène, braises qui montent */}
+      <section aria-labelledby="afro" className="container-page mt-20 kb-reveal">
+        <div className="kb-afro rounded-2xl border border-line-strong bg-white px-6 py-14 sm:px-12">
+          {[8, 22, 38, 55, 71, 86].map((x, i) => (
+            <span key={x} aria-hidden className="kb-ember" style={{ left: `${x}%`, animationDelay: `${(i * 1.3) % 4}s`, animationDuration: `${6 + (i % 3)}s` }} />
+          ))}
+          <p className="eyebrow">Notre rubrique phare</p>
+          <h2 id="afro" className="kb-shine mt-3 font-serif text-[38px] leading-none sm:text-5xl">
             L&apos;art chrétien afro
           </h2>
-          <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-white/85">
+          <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-muted">
             Jésus noir, Vierge noire, scènes bibliques et crèches africaines, croix éthiopiennes : {afro.length} objets choisis pour une
             foi qui se reconnaît dans les visages et les couleurs de l&apos;Afrique.
           </p>
-          <ul className="mt-6 flex flex-wrap gap-2">
+          <ul className="kb-stag mt-6 flex flex-wrap gap-2">
             {pagesAfro.map((s) => (
               <li key={s.slug}>
-                <Link href={`/${s.rubrique}/${s.slug}`} prefetch={false} className="inline-flex rounded-full border border-white/40 px-4 py-2 text-[14px] hover:border-white hover:bg-white/10">
+                <Link href={`/${s.rubrique}/${s.slug}`} prefetch={false} className="kb-chip inline-flex rounded-full border border-line-strong px-4 py-2 text-[14px] transition">
                   {s.nom}
                 </Link>
               </li>
             ))}
           </ul>
-          <Link href="/afro" className="mt-7 inline-flex rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-accent hover:bg-gold-soft">
+          <Link href="/afro" className="btn-primary kb-pulse mt-7 px-6 py-3.5">
             Voir toute la sélection afro →
           </Link>
         </div>
@@ -117,10 +121,19 @@ export default function HomePage() {
 
       {/* 5. Cadeaux par occasion */}
       <Section title="Un cadeau pour chaque occasion" href="/cadeaux" linkLabel="Toutes les occasions" id="cadeaux">
-        <ul className="flex flex-wrap gap-2">
+        <div className="kb-marquee" aria-hidden>
+          <div className="kb-track">
+            {[...OCCASIONS, ...OCCASIONS].map((o, i) => (
+              <span key={i} className="kb-contour font-serif text-[40px] leading-tight whitespace-nowrap sm:text-[60px]">
+                {o.nom} ·
+              </span>
+            ))}
+          </div>
+        </div>
+        <ul className="kb-stag mt-6 flex flex-wrap gap-2">
           {OCCASIONS.map((o) => (
             <li key={o.slug}>
-              <Link href={`/cadeaux/${o.slug}`} prefetch={false} className="tag px-4 py-2 text-[15px]">
+              <Link href={`/cadeaux/${o.slug}`} prefetch={false} className="tag kb-chip px-4 py-2 text-[15px] transition">
                 {o.nom}
               </Link>
             </li>

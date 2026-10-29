@@ -7,7 +7,7 @@ import { NAV, NAV_RUBRIQUES } from "./nav";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-line bg-white">
+    <footer className="kb-foot mt-24 border-t border-line bg-white">
       <div className="container-page grid gap-10 py-12 text-[15px] sm:grid-cols-2 lg:grid-cols-4">
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}

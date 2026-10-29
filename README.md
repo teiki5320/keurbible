@@ -10,7 +10,7 @@ Boutique-guide en français d'**objets chrétiens pour la maison et à offrir** 
 
 Le site est **100 % statique** : pas de serveur, pas de base de données. Tous les contenus sont dans le code ; le build produit le dossier `out/`.
 
-> Le **design est provisoire** (fond clair, Cormorant Garamond et Source Sans 3, brun et ambre du logo) : le design définitif sera fait à part. Contenu de chaque page : [`docs/CONTENU.md`](docs/CONTENU.md).
+> **Design « Lumière »** (en place depuis le 29 octobre 2026, à la place du design provisoire clair) : fond nuit presque noir, or et ambre du logo, titres en Cinzel, texte en Mulish. Accueil : orbe de lumière entouré d'un nuage de points qui passe tout seul de la sphère à la carte de l'Afrique puis à la croix (`src/components/accueil/HeroLumiere.tsx`), Psaume du jour qui change toutes les 7 secondes (`src/components/psaumes/PsaumeDuJour.tsx`), apparitions au défilement et effets de survol (classes `kb-…` de `src/app/globals.css`). Contenu de chaque page : [`docs/CONTENU.md`](docs/CONTENU.md).
 
 ## Logo
 

@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Cinzel, Mulish } from "next/font/google";
 import { ADSENSE_CLIENT, BING_VERIFICATION, siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
-const sourceSans = Source_Sans_3({ variable: "--font-source-sans", subsets: ["latin"], display: "swap" });
-const cormorant = Cormorant_Garamond({ variable: "--font-cormorant", subsets: ["latin"], weight: ["600"], style: ["normal", "italic"], display: "swap" });
+const mulish = Mulish({ variable: "--font-mulish", subsets: ["latin"], display: "swap" });
+const cinzel = Cinzel({ variable: "--font-cinzel", subsets: ["latin"], weight: ["500", "700"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -35,15 +35,15 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
-  colorScheme: "light",
+  themeColor: "#050302",
+  colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${sourceSans.variable} ${cormorant.variable} antialiased`} suppressHydrationWarning>
+    <html lang="fr" className={`${mulish.variable} ${cinzel.variable} antialiased`} suppressHydrationWarning>
       {ADSENSE_CLIENT && (
         <head>
           {/* Code AdSense : charge les annonces et le bandeau de consentement de Google (réglé dans AdSense). */}
