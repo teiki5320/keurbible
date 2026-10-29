@@ -1,0 +1,117 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
+import { LegalPage } from "@/components/layout/LegalPage";
+import { AMAZON_DISCLOSURE } from "@/lib/amazon";
+import { legalConfig, siteConfig } from "@/lib/config";
+import { EmailLink } from "@/components/layout/EmailLink";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Mentions légales",
+  description: "Éditeur et hébergeur du site Keur Bible, données personnelles, publicité, liens Amazon, textes bibliques et limites de responsabilité.",
+  path: "/mentions-legales",
+});
+
+export default function LegalNoticePage() {
+  const l = legalConfig;
+  return (
+    <LegalPage title="Mentions légales" updated="29 octobre 2026">
+      <p>
+        Informations sur l&apos;éditeur et l&apos;hébergeur du site, l&apos;usage de vos données et les limites des
+        informations publiées (loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&apos;économie numérique).
+      </p>
+
+      <h2>Éditeur du site</h2>
+      <ul>
+        <li>
+          Éditeur : {l.companyName}, société par actions simplifiée (SAS) au capital de 200 €, exerçant sous le nom
+          commercial {l.tradeName}, qui publie le site {siteConfig.name}.
+        </li>
+        <li>Siège social : {l.address}.</li>
+        <li>Immatriculation : {l.rcs} (SIRET {l.siret}).</li>
+        <li>N° de TVA intracommunautaire : {l.vat}.</li>
+        <li>Directeur de la publication : {l.director}.</li>
+        {l.phone && <li>Téléphone : {l.phone}.</li>}
+        <li>
+          Contact : <EmailLink email={siteConfig.contactEmail} />.
+        </li>
+      </ul>
+
+      <h2>Hébergeur</h2>
+      <p>{l.host}.</p>
+
+      <h2>Données personnelles et cookies</h2>
+      <ul>
+        <li>
+          Aucun compte n&apos;est nécessaire. Le site ne dépose lui-même aucun cookie ; seuls les cookies de la publicité
+          Google sont déposés, et uniquement si vous les acceptez dans le bandeau de consentement (lien « Gérer mes cookies »
+          en bas de chaque page pour changer d&apos;avis).
+        </li>
+        <li>
+          Votre liste d&apos;envies est mémorisée dans le stockage local de votre navigateur, uniquement sur votre appareil, pour la
+          retrouver à votre prochaine visite. Elle n&apos;est transmise à personne. Vous pouvez l&apos;effacer en vidant les
+          données du site dans votre navigateur.
+        </li>
+        <li>
+          Le bouton de partage de la liste d&apos;envies place les objets choisis dans l&apos;adresse de la page : ils ne sont transmis
+          qu&apos;aux personnes à qui vous envoyez ce lien.
+        </li>
+        <li>
+          Les polices, les images et le code du site sont servis par le site lui-même, sans mesure d&apos;audience. Seuls les
+          annonces et le bandeau de consentement viennent de Google.
+        </li>
+        <li>L&apos;hébergeur peut enregistrer des journaux techniques (adresse IP, date, page demandée) pour la sécurité du service.</li>
+        <li>
+          Conformément au RGPD, vous pouvez exercer vos droits d&apos;accès, de rectification et d&apos;effacement auprès de
+          l&apos;éditeur, à l&apos;adresse de contact ci-dessus. Le détail figure dans la{" "}
+          <Link href="/confidentialite">politique de confidentialité</Link>.
+        </li>
+      </ul>
+
+      <h2>Publicité</h2>
+      <p>
+        Pour financer le site, certaines pages affichent des annonces fournies par Google AdSense. Elles sont toujours
+        signalées par la mention « Publicité » et séparées des contenus et des liens Amazon. L&apos;éditeur ne choisit pas les
+        annonces une à une : leur présence ne vaut pas recommandation, et leur contenu relève de l&apos;annonceur. Les
+        catégories d&apos;annonces inadaptées à un site chrétien tout public sont bloquées. Le détail des données utilisées
+        figure dans la <Link href="/confidentialite#publicite">politique de confidentialité</Link>.
+      </p>
+
+      <h2>Liens sponsorisés (Amazon)</h2>
+      <p>
+        Les boutons « Voir sur Amazon » des rubriques, des Top 10, des pages Cadeaux, des conseils et de la liste d&apos;envies sont des
+        liens d&apos;affiliation du programme Partenaires d&apos;Amazon.fr. {AMAZON_DISCLOSURE} Le prix payé est le même pour
+        l&apos;acheteur. Le site ne vend rien : la vente, la livraison et le service client relèvent d&apos;Amazon ou
+        du vendeur tiers. Aucun prix n&apos;est garanti : seul le prix affiché sur Amazon au moment de l&apos;achat fait foi.
+        Le choix des objets repose sur leur intérêt et leur sens, pas sur le montant des commissions. Sans référence vérifiée,
+        le bouton ouvre une recherche Amazon : c&apos;est à vous de choisir le modèle. Un clic sur ces liens vous
+        fait quitter le site : Amazon applique alors sa propre politique de confidentialité et de cookies.
+      </p>
+
+      <h2>Propriété intellectuelle et textes bibliques</h2>
+      <ul>
+        <li>
+          Les textes du site (présentations, sélections, articles) sont rédigés par l&apos;éditeur, ainsi que le logo de{" "}
+          {siteConfig.name} : ils sont la propriété de l&apos;éditeur, sauf mention contraire. Toute reproduction sans
+          autorisation est interdite.
+        </li>
+        <li>
+          Les versets bibliques sont cités dans la traduction <strong>Louis Segond 1910</strong>, qui est dans le domaine
+          public. Les traductions récentes de la Bible sont présentées, jamais citées.
+        </li>
+        <li>
+          Les illustrations éventuelles sont créées pour {siteConfig.name} : elles ne représentent pas les objets vendus, qui
+          sont décrits sur Amazon.
+        </li>
+        <li>Pour toute demande de retrait ou de correction, écrivez à l&apos;adresse de contact.</li>
+      </ul>
+
+      <h2>Limites de responsabilité</h2>
+      <p>
+        Les informations sur les objets, les fêtes et les traditions sont vérifiées avec soin, mais peuvent comporter des
+        erreurs ou évoluer : seules font foi les informations affichées sur Amazon au moment de l&apos;achat. N&apos;hésitez
+        pas à nous signaler une erreur à l&apos;adresse de contact.
+      </p>
+    </LegalPage>
+  );
+}

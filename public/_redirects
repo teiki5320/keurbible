@@ -1,0 +1,5 @@
+# Redirections servies par Cloudflare Pages.
+/cgv /conditions 301
+/top10 /top-10 301
+/liste /ma-liste 301
+/favicon.ico /icon.png 301

@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+/*
+ * Design provisoire « Parchemin » : fond clair chaud, titres en Cormorant Garamond, texte en Source Sans 3,
+ * accent bleu marial, filets dorés. Le design définitif sera fait à part.
+ */
+@theme {
+  --color-paper: #fbf7f1;
+  --color-ink: #1f1a17;
+  --color-muted: #5e544b;
+  --color-line: #e8dfd3;
+  --color-line-strong: #cdbeac;
+  --color-faint: #73675c;
+  --color-accent: #1e4a7a;
+  --color-accent-soft: #e9eff6;
+  --color-gold: #a87a26;
+  --color-gold-soft: #f6eddb;
+  --color-white: #ffffff;
+  --font-sans: var(--font-source-sans), system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.font-serif {
+  font-weight: 600;
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+@utility btn-primary {
+  @apply btn bg-accent text-white hover:bg-ink;
+}
+@utility btn-secondary {
+  @apply btn border border-line-strong bg-white font-medium text-ink hover:border-ink;
+}
+@utility tag {
+  @apply inline-flex items-center rounded-full border border-line-strong bg-white px-3.5 py-1.5 text-[13px] text-ink/85 hover:border-ink hover:text-ink;
+}
+@utility section-title {
+  @apply font-serif text-[32px] leading-none sm:text-4xl;
+}
+@utility eyebrow {
+  @apply text-[11px] font-semibold tracking-[0.14em] text-gold uppercase;
+}
+
+@utility prose-text {
+  @apply max-w-3xl text-[17px] leading-[1.7] text-ink/85;
+  & h2 {
+    @apply mt-10 mb-3 scroll-mt-28 font-serif text-[32px] leading-tight text-ink;
+  }
+  & h3 {
+    @apply mt-8 mb-2 font-serif text-2xl leading-tight text-ink;
+  }
+  & p,
+  & ul,
+  & ol {
+    @apply mb-4;
+  }
+  & ul {
+    @apply list-disc pl-6;
+  }
+  & ol {
+    @apply list-decimal pl-6;
+  }
+  & a {
+    @apply text-accent underline underline-offset-2 hover:text-ink;
+  }
+  & strong {
+    @apply font-semibold text-ink;
+  }
+  & blockquote {
+    @apply my-6 border-l-2 border-gold pl-5 font-serif text-2xl text-ink italic;
+  }
+}
+
+/* Visiteurs qui ont demandé moins d'animations : transitions et animations coupées. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Filtre « Pour quelle tradition ? » (composant FiltreTradition) : toutes les cartes sont dans la page,
+ * le filtre ne fait que masquer celles qui ne conviennent pas (les objets « toutes traditions » restent visibles).
+ */
+[data-filtre="catholique"] .objet:not(.trad-catholique),
+[data-filtre="protestante"] .objet:not(.trad-protestante),
+[data-filtre="evangelique"] .objet:not(.trad-evangelique),
+[data-filtre="orthodoxe"] .objet:not(.trad-orthodoxe) {
+  display: none;
+}
+
+/* Emplacements d'annonces AdSense (composant AdSlot) : cadre neutre, mention « Publicité » toujours visible,
+   affiché seulement quand Google a placé une annonce.
+   Pas d'overflow: hidden : sur téléphone, Google élargit l'annonce à toute la largeur de l'écran (sans débordement).
+   Volontairement sobre et différent des boutons Amazon (pas de fond orange, pas de bouton). */
+.ad-slot {
+  margin-block: 3rem;
+  border-block: 1px solid var(--color-line);
+  padding-block: 0.75rem;
+}
+.ad-slot-label {
+  margin-bottom: 0.5rem;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+/* Replié tant que Google n'a pas placé d'annonce (site en cours d'examen, refus, pas d'annonce) : jamais de case vide.
+   Pas de display: none, sinon Google ne peut pas mesurer la largeur disponible et ne place rien. */
+.ad-slot:not(:has(ins.adsbygoogle[data-ad-status="filled"])) {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}

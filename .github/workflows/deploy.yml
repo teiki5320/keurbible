@@ -1,0 +1,120 @@
+# Vérifie, construit et publie le site statique sur Cloudflare Pages (projet « keurbible »).
+# Se lance à chaque push sur main, chaque lundi, mercredi et vendredi (articles « Conseils » programmés),
+# 2 fois par jour après la veille actus (pages /actus/<adresse> des nouveaux articles),
+# à la main (onglet Actions) et après le bouton « Maintenance ».
+name: Publier le site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+  # Chaque lundi, mercredi et vendredi à 0 h 15 (heure de Paris en hiver, 1 h 15 en été) : publie les articles programmés.
+  schedule:
+    - cron: "15 23 * * 0,2,4"
+    # Chaque jour à 11 h 50 et 18 h 50 UTC (12 h 50 et 19 h 50 à Paris l'hiver), après la veille de 12 h et 19 h :
+    # construit les pages des nouveaux articles d'actus.
+    - cron: "50 11,18 * * *"
+
+permissions:
+  contents: read
+  # Pour réactiver la tâche programmée (voir la dernière étape).
+  actions: write
+
+# Une seule publication à la fois ; on ne coupe pas une publication en cours.
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code (dernière version de main)
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+          persist-credentials: false
+          # Historique git complet : les dates du plan du site (scripts/lastmod.mjs, lancé avant la construction)
+          # reprennent le jour du commit qui a changé chaque page.
+          fetch-depth: 0
+
+      - name: Installer Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Vérifier le code (lint + types)
+        run: |
+          npm run lint
+          npm run typecheck
+
+      - name: Lancer les tests
+        run: npm test
+
+      - name: Construire le site statique (dossier out/)
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://keurbible.com
+          NEXT_TELEMETRY_DISABLED: 1
+
+      # Contrôle du site construit avant toute mise en ligne (un seul h1, description, canonique, JSON-LD lisible,
+      # titres de 60 caractères au plus, images srcset, code AdSense…) : tests/sortie/sortie.test.ts.
+      - name: Contrôler le site construit
+        run: npm run test:sortie
+
+      # Repère propre à cette publication : la dernière étape vérifie que keurbible.com le sert bien.
+      - name: Marquer la version publiée
+        run: echo "${GITHUB_SHA} ${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" > out/version.txt
+
+      # Les secrets ne sont donnés qu'aux étapes qui en ont besoin (pas à l'installation ni au build).
+      # Sans eux, la publication échoue (en rouge, avec un e-mail de GitHub) au lieu de passer pour réussie.
+      - name: Vérifier la présence des secrets Cloudflare
+        env:
+          HAS_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+          HAS_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        run: |
+          if [ "$HAS_TOKEN" != "true" ] || [ "$HAS_ACCOUNT" != "true" ]; then
+            echo "::error::Secrets CLOUDFLARE_API_TOKEN ou CLOUDFLARE_ACCOUNT_ID absents : rien n'est publié."
+            exit 1
+          fi
+
+      - name: Publier sur Cloudflare Pages
+        env:
+          # Réglés par le propriétaire dans Settings → Secrets and variables → Actions.
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # wrangler est figé dans package-lock.json (installé par npm ci).
+          # Le projet « keurbible » est créé à la première publication s'il n'existe pas encore.
+          npx wrangler pages project list | grep -qw keurbible || npx wrangler pages project create keurbible --production-branch=main
+          npx wrangler pages deploy out --project-name=keurbible --branch=main --commit-dirty=true
+
+      # Le site en ligne doit servir la version qui vient d'être publiée (jusqu'à 3 minutes d'attente).
+      # Paramètre ?v=… différent à chaque essai : jamais de copie gardée en cache par Cloudflare.
+      - name: Vérifier que keurbible.com sert la nouvelle version
+        run: |
+          attendu="$(cat out/version.txt)"
+          servi=""
+          for i in $(seq 1 18); do
+            servi="$(curl -fsS -H 'Cache-Control: no-cache' "https://keurbible.com/version.txt?v=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${i}" || true)"
+            if [ "$servi" = "$attendu" ]; then
+              echo "keurbible.com sert bien la version $attendu"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::keurbible.com ne sert pas la nouvelle version (attendu « $attendu », reçu « $servi »)."
+          exit 1
+
+      # GitHub coupe les tâches programmées d'un dépôt public après 60 jours sans activité :
+      # chaque publication programmée réactive la tâche, pour que les articles continuent de paraître.
+      - name: Garder la publication programmée active
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/deploy.yml/enable"

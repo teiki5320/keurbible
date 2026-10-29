@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "site": "keurbible",
+  "id": "f42687aabdab0f4cca9884e39a461826e6be4789",
+  "slug": "exemple-festival-gospel-abidjan",
+  "titre": "Abidjan : un festival de gospel réunit des chorales de toute l'Afrique de l'Ouest",
+  "chapo": "Exemple de test. Pendant trois jours, des chorales venues de plusieurs pays chantent ensemble à Abidjan.",
+  "blocs": [
+    {
+      "intertitre": null,
+      "paragraphes": [
+        "Exemple de test : ce texte sert seulement aux essais du site et n'est jamais publié. Des chorales d'Églises de plusieurs pays se retrouvent pendant trois jours pour un festival de gospel.",
+        "Les concerts ont lieu en plein air et sont ouverts à tous."
+      ]
+    },
+    {
+      "intertitre": "Des chants en plusieurs langues",
+      "paragraphes": [
+        "Les chorales chantent en français, en anglais et dans des langues d'Afrique de l'Ouest. Ce mélange est au cœur du programme.",
+        "Les organisateurs veulent faire découvrir la diversité de la musique chrétienne du continent."
+      ]
+    },
+    {
+      "intertitre": "Une prochaine édition annoncée",
+      "paragraphes": [
+        "Une nouvelle édition est annoncée pour l'année prochaine. Ce paragraphe d'exemple complète le texte pour atteindre une longueur proche de celle d'un vrai article de la veille, afin de vérifier la mise en page sur téléphone, sur tablette et sur ordinateur, avec des lignes assez longues pour juger du confort de lecture."
+      ]
+    }
+  ],
+  "mots": 160,
+  "lecture_min": 1,
+  "theme": "musique",
+  "pays": [
+    "CI"
+  ],
+  "tags": [
+    "occasion:noel"
+  ],
+  "source_nom": "Exemple",
+  "source_url": "https://www.example.com/festival-gospel",
+  "autres_sources": [
+    "https://www.example.org/festival"
+  ],
+  "publie_le": "2026-10-27T10:19:53.000Z",
+  "redige_le": "2026-10-28T00:30:00.000Z",
+  "image": {
+    "url": "https://teiki5320.github.io/veille/images/keurbible/f42687aabdab0f4cca9884e39a461826e6be4789.webp",
+    "source": "wikimedia",
+    "credit": "Exemple",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Exemple.jpg",
+    "alt": "Une chorale en concert",
+    "mots_cles": [
+      "chorale"
+    ],
+    "largeur": 1600,
+    "hauteur": 900
+  }
+}
