@@ -8,7 +8,7 @@
 
 - **Production** : en ligne sur keurbible.com depuis le 29 octobre 2026
 - **Domaine & SSL** : keurbible.com sur Cloudflare, relié au projet Pages, www redirigé (301), certificat Cloudflare
-- **Visibilité** : Search Console créée et sitemap envoyé le 29 octobre 2026 (pas encore lu par Google) ; IndexNow après chaque publication et chaque lundi
+- **Visibilité** : Search Console créée et sitemap lu par Google le 29 octobre 2026 (85 pages découvertes) ; IndexNow après chaque publication et chaque lundi
 - **Contact** : keurbible@toakeur.com
 
 ## Boutiques
@@ -19,7 +19,7 @@
 | Hébergement | [ok] Cloudflare Pages, projet keurbible |
 | Domaine | [ok] keurbible.com, www redirigé (301) |
 | SSL | [ok] Certificat Cloudflare, HSTS actif |
-| Indexation | [en cours] Sitemap envoyé le 29/10, pas encore lu par Google |
+| Indexation | [en cours] Sitemap lu le 29/10 (85 pages découvertes), indexation demandée pour 3 pages |
 | Mesure d'audience | [pas encore] Cloudflare Web Analytics à activer |
 
 ## Ce qui reste, dans l'ordre
@@ -27,7 +27,7 @@
 1. ✅ **Code et contenus** : site construit et contrôlé le 29 octobre 2026 (85 adresses), sur le Mac et par GitHub Actions (tout au vert jusqu'à l'étape des secrets Cloudflare) ; 56 liens Amazon directs vérifiés.
 2. ✅ **Secrets Cloudflare** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` ajoutés au dépôt le 29 octobre 2026 ; première publication réussie le même jour.
 3. ✅ **Domaine** : `keurbible.com` et `www.keurbible.com` reliés au projet le 29 octobre 2026, règle de redirection de www vers l'adresse sans www (301).
-4. **Search Console** : propriété de domaine `keurbible.com` créée et sitemap envoyé le 29 octobre 2026 ; Google affiche « Impossible de récupérer le sitemap » le jour même alors que le fichier répond (200, `application/xml`, 85 adresses) : le renvoyer après quelques heures si besoin.
+4. **Search Console** : propriété de domaine `keurbible.com` créée et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (« Opération effectuée », 85 pages découvertes) ; indexation demandée pour l'accueil, /afro et /top-10/creches-de-noel.
 5. **Amazon Partenaires et AdSense** : déclarer keurbible.com sur les deux comptes, créer les blocs d'annonces.
 6. ✅ **Veille actus** : Keur Bible ajouté à la tâche de veille le 29 octobre 2026 (`sites/keurbible.json`, 15 flux).
 7. **Design définitif** et illustrations.
@@ -54,6 +54,6 @@
 ## Visibilité
 
 - **Sitemap** : `https://keurbible.com/sitemap.xml` (85 adresses) ; `robots.txt` autorise tout et cite le sitemap.
-- **Google Search Console** : propriété de domaine `keurbible.com` créée le 29 octobre 2026, sitemap envoyé le même jour, pas encore lu (« Impossible de récupérer le sitemap », le fichier répond pourtant normalement).
+- **Google Search Console** : propriété de domaine `keurbible.com` créée le 29 octobre 2026, sitemap lu le même jour (85 pages découvertes), indexation demandée pour l'accueil, /afro et /top-10/creches-de-noel.
 - **IndexNow** : prêt (`indexnow.yml`, clé publiée avec le site).
 - **Publicité** : script AdSense et `ads.txt` publiés avec le site ; site à déclarer, aucune annonce.

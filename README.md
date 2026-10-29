@@ -94,6 +94,6 @@ Même fonctionnement que Keurbook : le workflow `.github/workflows/deploy.yml` v
 
 - Fait : code, contenus de lancement (7 rubriques, 31 sous-rubriques, 178 objets, 10 occasions, 10 Top 10, 12 Psaumes, 8 articles Conseils dont 5 publiés et 3 programmés), tests, workflows, tag Amazon `keurbible-21`, 56 liens Amazon directs vérifiés, veille actus branchée (dépôt `teiki5320/veille`, 15 flux).
 - Fait le 29 octobre 2026 : secrets `CLOUDFLARE_API_TOKEN` (jeton « Keur Bible - publication GitHub », Cloudflare Pages en modification) et `CLOUDFLARE_ACCOUNT_ID` dans le dépôt, projet Pages `keurbible` créé par la première publication, domaines `keurbible.com` et `www.keurbible.com` reliés, règle de redirection Cloudflare de www vers l'adresse sans www (301, chaîne de requête conservée). Adresse de contact `keurbible@toakeur.com` confirmée par Jean.
-- Search Console : propriété de domaine créée et sitemap envoyé le 29 octobre 2026 (pas encore lu par Google).
-- Reste à faire : déclarer keurbible.com sur Amazon Partenaires et dans AdSense, Cloudflare Web Analytics.
+- Search Console : propriété de domaine créée et sitemap lu par Google le 29 octobre 2026 (85 pages découvertes).
+- Reste à faire : Bing Webmaster Tools, déclarer keurbible.com sur Amazon Partenaires et dans AdSense, Cloudflare Web Analytics.
 - Ensuite : Search Console, illustrations et épingles Pinterest, ASIN des autres objets.

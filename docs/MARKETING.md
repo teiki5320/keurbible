@@ -27,7 +27,7 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 ## Canaux
 
 - ✅ Site en ligne sur `keurbible.com` depuis le 29 octobre 2026.
-- ✅ Référencement naturel : Search Console créée (propriété de domaine keurbible.com) et sitemap envoyé le 29 octobre 2026, pas encore lu par Google (« Impossible de récupérer le sitemap » le jour même, le fichier répond pourtant normalement) ; IndexNow prêt (après chaque publication et chaque lundi) ; 8 articles Conseils écrits (5 datés du 28 octobre, 3 programmés jusqu'au 4 novembre 2026).
+- ✅ Référencement naturel : Search Console créée (propriété de domaine keurbible.com) et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (85 pages découvertes) ; indexation demandée pour l'accueil, /afro et le Top 10 des crèches ; IndexNow prêt (après chaque publication et chaque lundi) ; 8 articles Conseils écrits (5 datés du 28 octobre, 3 programmés jusqu'au 4 novembre 2026).
 - ⬜ Pinterest : aucun compte Keur Bible ; épingles verticales (1000 × 1500) prévues avec les illustrations.
 - ⬜ Actus : rubrique prête et Keur Bible ajouté à la veille le 29 octobre 2026 (15 flux) ; aucune actu publiée tant que le premier passage n'a pas eu lieu et que le site n'est pas en ligne.
 - ⬜ TikTok, YouTube, newsletter : aucun.
@@ -42,6 +42,6 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 ## Les 3 priorités
 
-- Faire lire le sitemap par Google (le renvoyer s'il reste « Impossible de récupérer ») et demander l'indexation des pages principales ; déclarer keurbible.com sur Amazon Partenaires et dans AdSense.
+- Suivre l'indexation des 85 pages dans Search Console ; inscrire keurbible.com dans Bing Webmaster Tools ; déclarer keurbible.com sur Amazon Partenaires et dans AdSense.
 - Préparer Noël : crèches, calendriers de l'Avent et cadeaux de Noël sont en tête des Top 10 ; ouvrir un compte Pinterest Keur Bible et publier les épingles avant l'Avent (29 novembre 2026).
 - Compléter les liens directs des Top 10 (34 objets sur 90 en recherche, surtout l'art afro, les crèches africaines et les Vierges noires) et contrôler les 56 liens chaque semaine (`npm run verifier-produits -- --ecrire --lot 30`).
