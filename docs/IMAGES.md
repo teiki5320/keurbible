@@ -21,5 +21,5 @@ Méthode reprise de Keur Kado (docs/IMAGES.md), décidée par Jean le 29 octobre
   - texte visible : `coloriages-versets-adultes` ;
   - écartée à la relecture : `croix-de-bapteme-or` (la chaîne enroulée au-dessus de la croix ressemblait à une croix ansée égyptienne).
   Petits écarts acceptés : `bracelet-dizainier-bois` (11 grains au lieu de 10, mais la croix en tau est juste), `pendentif-croix-ethiopienne` (croix ajourée plus générique qu'une vraie croix de Lalibela), `animaux-de-la-creche` (deux moutons), `statue-sainte-therese-de-lisieux` (roses à ses pieds).
-- **Suite possible** : pour les 19 objets sans image, il faudrait une image de référence (mode image2image) ou les vraies photos d'Amazon.
+- **Choix de Jean (29 octobre 2026)** : les 19 objets sans image le restent ; leur carte s'affiche sans image (`ObjetCarte.image` vaut `null`). Pour y revenir un jour, il faudrait une image de référence (mode image2image) ou les vraies photos d'Amazon.
 - Les vraies photos des produits ne pourraient venir que des outils officiels d'Amazon Partenaires (API Product Advertising).
