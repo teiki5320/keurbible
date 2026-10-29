@@ -10,7 +10,12 @@ Boutique-guide en français d'**objets chrétiens pour la maison et à offrir** 
 
 Le site est **100 % statique** : pas de serveur, pas de base de données. Tous les contenus sont dans le code ; le build produit le dossier `out/`.
 
-> Le **design est provisoire** (habillage « Parchemin » : fond clair, Cormorant Garamond et Source Sans 3, bleu marial et or) : le design définitif sera fait à part. Contenu de chaque page : [`docs/CONTENU.md`](docs/CONTENU.md).
+> Le **design est provisoire** (fond clair, Cormorant Garamond et Source Sans 3, brun et ambre du logo) : le design définitif sera fait à part. Contenu de chaque page : [`docs/CONTENU.md`](docs/CONTENU.md).
+
+## Logo
+
+- Originaux de Jean (1254 × 1254, l'Afrique lumineuse et la croix) : `docs/logos/` — `keurbible-logo-fond-blanc.png`, `keurbible-logo-fond-noir.png`, `keurbible-logo-transparent.png` (pour fond sombre), `keurbible-icone-sans-texte.png` (1024 × 1024) ; premières versions dans `docs/logos/originaux/`.
+- Utilisés sur le site (`npm run marque`, qui les produit depuis `docs/logos/`) : `public/brand/keurbible-embleme.webp` (en-tête), `public/brand/keurbible-logo.webp` (pied de page), `public/brand/keurbible-logo.png` (données structurées), `public/brand/keurbible-partage.jpg` (image de partage 1200 × 630), `src/app/icon.png` et `src/app/apple-icon.png`.
 
 ---
 

@@ -33,7 +33,13 @@ export default function HomePage() {
   if (getMaintenance().enabled) return null;
   const conseils = getConseils().slice(0, 3);
   const afro = objetsAfro();
-  const pagesAfro = [...new Map(afro.map((o) => [sousRubriqueOf(o).slug, sousRubriqueOf(o)])).values()].slice(0, 4);
+  // Les 4 sous-rubriques qui comptent le plus d'objets afro (Jésus noir et Vierge noire, crèches africaines…).
+  const parSous = new Map<string, { s: ReturnType<typeof sousRubriqueOf>; n: number }>();
+  for (const o of afro) {
+    const s = sousRubriqueOf(o);
+    parSous.set(s.slug, { s, n: (parSous.get(s.slug)?.n ?? 0) + 1 });
+  }
+  const pagesAfro = [...parSous.values()].sort((a, b) => b.n - a.n).slice(0, 4).map((x) => x.s);
   return (
     <>
       <script
@@ -86,7 +92,7 @@ export default function HomePage() {
       {/* 4. Art chrétien afro */}
       <section aria-labelledby="afro" className="mt-16 bg-accent py-14 text-white">
         <div className="container-page">
-          <p className="text-[11px] font-semibold tracking-[0.14em] text-[#e9c97f] uppercase">Notre rubrique phare</p>
+          <p className="text-[11px] font-semibold tracking-[0.14em] text-[#f5c26b] uppercase">Notre rubrique phare</p>
           <h2 id="afro" className="mt-2 font-serif text-[38px] leading-none sm:text-5xl">
             L&apos;art chrétien afro
           </h2>

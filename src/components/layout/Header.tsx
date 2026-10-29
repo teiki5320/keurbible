@@ -29,7 +29,7 @@ export function Header() {
   }, [open]);
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
         <div className="container-page flex h-16 items-center gap-8">
           <Link href="/" onClick={close} className="flex items-center gap-2.5 font-serif text-[28px] leading-none">
             <Embleme />

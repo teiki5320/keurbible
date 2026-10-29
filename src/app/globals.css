@@ -2,7 +2,7 @@
 
 /*
  * Design provisoire « Parchemin » : fond clair chaud, titres en Cormorant Garamond, texte en Source Sans 3,
- * accent bleu marial, filets dorés. Le design définitif sera fait à part.
+ * accent brun et ambre du logo. Le design définitif sera fait à part.
  */
 @theme {
   --color-paper: #fbf7f1;
@@ -11,10 +11,10 @@
   --color-line: #e8dfd3;
   --color-line-strong: #cdbeac;
   --color-faint: #73675c;
-  --color-accent: #1e4a7a;
-  --color-accent-soft: #e9eff6;
-  --color-gold: #a87a26;
-  --color-gold-soft: #f6eddb;
+  --color-accent: #7a3510;
+  --color-accent-soft: #f7ece2;
+  --color-gold: #a2560f;
+  --color-gold-soft: #fbf1e4;
   --color-white: #ffffff;
   --font-sans: var(--font-source-sans), system-ui, sans-serif;
   --font-serif: var(--font-cormorant), Georgia, serif;

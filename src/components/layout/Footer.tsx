@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { CookieSettingsLink } from "@/components/ads/CookieSettingsLink";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
-import { siteConfig } from "@/lib/config";
-import { Embleme } from "./Embleme";
+import { siteConfig, withBase } from "@/lib/config";
 import { EmailLink } from "./EmailLink";
 import { NAV, NAV_RUBRIQUES } from "./nav";
 
@@ -11,10 +10,8 @@ export function Footer() {
     <footer className="mt-24 border-t border-line bg-white">
       <div className="container-page grid gap-10 py-12 text-[15px] sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="flex items-center gap-2.5 font-serif text-[30px] leading-none">
-            <Embleme className="size-10" />
-            {siteConfig.name}
-          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={withBase("/brand/keurbible-logo.webp")} alt={`${siteConfig.name}, objets chrétiens pour la maison et à offrir`} width={480} height={480} loading="lazy" className="w-40" />
           <p className="mt-3 max-w-xs text-muted">{siteConfig.tagline}, pour toutes les Églises.</p>
           <Link href="/notre-demarche" className="mt-3 inline-block text-accent hover:text-ink">
             Notre démarche →
