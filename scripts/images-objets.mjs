@@ -1,4 +1,4 @@
-// Images des objets, créées par IA (OpenArt, Kling 3 Omni) : voir docs/IMAGES.md.
+// Images des objets, créées par IA (OpenArt, Kling 3 Omni ou GPT Image 2) : voir docs/IMAGES.md.
 // Convertit les images brutes .images/brut/<slug>.png (1024 px, non suivies par git) en public/objets/<slug>.webp
 // (480 × 480, qualité 80), puis écrit la liste des images du site : src/lib/contenus/images-objets.json
 // ({ slug: { image, alt } }), avec les textes alternatifs de docs/images/consignes.json.

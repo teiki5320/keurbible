@@ -53,4 +53,4 @@ En réserve : chapelets à offrir, cadeaux de mariage chrétiens, coloriages bib
 
 ## Images
 
-Choix de Jean (29 octobre 2026), à revoir plus tard : illustrations Keur Bible de scènes d'objets (Bible ouverte, croix, bougie, crèche), **sans visage de Jésus, de Marie ni des saints** ; pas de photo sur les cartes objet tant que les images officielles d'Amazon Partenaires ne sont pas accessibles. Les épingles Pinterest verticales (1000 × 1500) des Top 10 et des articles viendront avec ces illustrations.
+Premier choix de Jean (29 octobre 2026, matin), remplacé le même jour : illustrations de scènes sans visage de Jésus, de Marie ni des saints. Choix en place depuis le 29 octobre 2026 : une illustration de produit créée par IA par objet, figures sacrées représentées telles qu'elles sont, mise en scène sur des tissus africains (méthode : docs/IMAGES.md) ; 159 objets sur 178 en ont une. Les épingles Pinterest verticales (1000 × 1500) des Top 10 et des articles viendront avec ces illustrations.

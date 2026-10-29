@@ -22,7 +22,7 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 - 🎁 **Cadeaux par occasion** : 10 occasions (baptême, communion, mariage, Noël, condoléances…), avec des idées selon celui qui offre.
 - 📖 **Psaumes** : 12 Psaumes connus dans un carrousel sur l'accueil et une page chacun.
 - 🔟 **10 Top 10** pensés pour Google et Pinterest, dont les crèches de Noël au moment des fêtes.
-- 🖼️ **Images des objets** : 82 illustrations créées par IA (OpenArt) pour les objets des Top 10, mises en scène sur des tissus africains (wax, bogolan, kente, coton éthiopien), avec la mention « Illustration créée par IA ».
+- 🖼️ **Images des objets** : 159 illustrations créées par IA (OpenArt) pour 159 des 178 objets (29 octobre 2026), mises en scène sur des tissus africains (wax, bogolan, kente, coton éthiopien), avec la mention « Illustration créée par IA ».
 - 📝 **Liste d'envies partageable** par WhatsApp, pour les listes de baptême, de mariage ou de Noël.
 
 ## Canaux

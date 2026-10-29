@@ -3,9 +3,29 @@
     "image": "/objets/affiches-versets-a-encadrer.webp",
     "alt": "Six petites toiles bohèmes terracotta et sauge (croix, colombe, rameau, soleil, cœur, montagne) au mur, tissu wax devant"
   },
+  "ange-bois-a-suspendre": {
+    "image": "/objets/ange-bois-a-suspendre.webp",
+    "alt": "Ange en bois clair découpé avec un cœur, suspendu à une ficelle de jute, posé sur un tissu kente"
+  },
+  "ange-cime-du-sapin": {
+    "image": "/objets/ange-cime-du-sapin.webp",
+    "alt": "Ange de cime de sapin en robe ivoire et dorée aux ailes pailletées, posé sur un tissu kente rayé"
+  },
+  "ange-en-priere-souvenir": {
+    "image": "/objets/ange-en-priere-souvenir.webp",
+    "alt": "Ange agenouillé en résine blanche, mains jointes, près d'une bougie allumée, sur un tissu bogolan"
+  },
   "anges-noirs-pour-le-sapin": {
     "image": "/objets/anges-noirs-pour-le-sapin.webp",
     "alt": "Trois anges noirs à suspendre au sapin, robes blanches et ailes dorées, sur un tissu wax ocre"
+  },
+  "animaux-de-la-creche": {
+    "image": "/objets/animaux-de-la-creche.webp",
+    "alt": "Figurines de crèche peintes : âne gris, bœuf couché et deux moutons blancs, posés sur un tissu wax ocre"
+  },
+  "bague-dizainier": {
+    "image": "/objets/bague-dizainier.webp",
+    "alt": "Bague dizainier en argent, une rangée de petites perles et une croix, posée sur un tissu bogolan"
   },
   "bible-ados-texte-integral": {
     "image": "/objets/bible-ados-texte-integral.webp",
@@ -35,6 +55,10 @@
     "image": "/objets/bible-en-bande-dessinee.webp",
     "alt": "Bible en bande dessinée, couverture en cases avec l'arche dans la tempête, un lion et des remparts, sur du raphia"
   },
+  "bible-en-images-3-6-ans": {
+    "image": "/objets/bible-en-images-3-6-ans.webp",
+    "alt": "Bible pour enfants illustrée de l'arche de Noé, d'un arc-en-ciel et d'une colombe, posée sur un tissu wax"
+  },
   "bible-enfants-365-histoires": {
     "image": "/objets/bible-enfants-365-histoires.webp",
     "alt": "Bible pour enfants carrée illustrée d'un grand arbre plein d'oiseaux sous un arc-en-ciel, sur un tissu kente"
@@ -46,6 +70,10 @@
   "bible-enfants-illustrations-afro": {
     "image": "/objets/bible-enfants-illustrations-afro.webp",
     "alt": "Bible pour enfants illustrée d'un Jésus africain entouré d'enfants noirs sous un acacia, posée sur un tissu wax"
+  },
+  "bible-format-poche": {
+    "image": "/objets/bible-format-poche.webp",
+    "alt": "Bible de poche noire en similicuir à tranche dorée et croix dorée, posée sur un tissu wax ocre et indigo"
   },
   "bible-gros-caracteres": {
     "image": "/objets/bible-gros-caracteres.webp",
@@ -59,9 +87,17 @@
     "image": "/objets/bible-illustree-7-10-ans.webp",
     "alt": "Bible pour enfants reliée, couverture peinte d'une barque à voile au coucher du soleil, sur un bogolan brun et crème"
   },
+  "bible-illustree-personnages-africains": {
+    "image": "/objets/bible-illustree-personnages-africains.webp",
+    "alt": "Livre d'histoires bibliques illustré d'une Marie africaine en foulard wax portant l'Enfant, sur un tissu wax"
+  },
   "bible-louis-segond-1910": {
     "image": "/objets/bible-louis-segond-1910.webp",
     "alt": "Bible noire en similicuir souple à tranche dorée et croix en relief, posée sur un tissu wax ocre et indigo"
+  },
+  "bible-marges-larges-a-annoter": {
+    "image": "/objets/bible-marges-larges-a-annoter.webp",
+    "alt": "Bible à couverture de cuir brun ornée d'une petite croix, avec un crayon, posée sur un tissu wax ocre et indigo"
   },
   "bible-parole-de-vie": {
     "image": "/objets/bible-parole-de-vie.webp",
@@ -83,13 +119,37 @@
     "image": "/objets/bible-tob.webp",
     "alt": "Bible à couverture bleue ornée d'une croix dorée, posée sur un tissu kente"
   },
+  "boite-a-intentions-de-priere": {
+    "image": "/objets/boite-a-intentions-de-priere.webp",
+    "alt": "Boîte à intentions en bois clair, croix découpée et fente sur le couvercle, papiers pliés, sur un tissu wax"
+  },
   "bougie-de-bapteme": {
     "image": "/objets/bougie-de-bapteme.webp",
     "alt": "Bougie de baptême blanche ornée d'une colombe et d'une croix dorée, posée sur un tissu wax ocre et indigo"
   },
+  "bougie-de-noel-nativite": {
+    "image": "/objets/bougie-de-noel-nativite.webp",
+    "alt": "Grosse bougie ivoire décorée de la Nativité sous l'étoile, avec un brin de sapin, sur un tissu kente"
+  },
+  "bougie-de-paques-decoree": {
+    "image": "/objets/bougie-de-paques-decoree.webp",
+    "alt": "Bougie de Pâques blanche ornée d'une croix rouge et dorée et d'un brin de feuillage, sur un set en raphia"
+  },
+  "boules-de-noel-nativite": {
+    "image": "/objets/boules-de-noel-nativite.webp",
+    "alt": "Trois boules de Noël rouge, bleue et blanche peintes de la Nativité sous l'étoile, sur un tissu kente"
+  },
+  "bracelet-cordon-croix": {
+    "image": "/objets/bracelet-cordon-croix.webp",
+    "alt": "Bracelet en cordon tressé marron avec petite croix argentée, posé sur un tissu kente doré et vert"
+  },
   "bracelet-dizainier-bois": {
     "image": "/objets/bracelet-dizainier-bois.webp",
-    "alt": "Bracelet dizainier en perles de bois clair et perles bleues, avec petite croix en bois, posé sur un tissu kente"
+    "alt": "Bracelet dizainier en perles de bois clair et deux perles bleues, avec une croix en tau en bois, posé sur un tissu kente"
+  },
+  "bracelet-perles-africaines-croix": {
+    "image": "/objets/bracelet-perles-africaines-croix.webp",
+    "alt": "Bracelet de perles de verre africaines multicolores et de bois avec une croix dorée, sur un tissu kente"
   },
   "cadre-verset-esaie-41-10": {
     "image": "/objets/cadre-verset-esaie-41-10.webp",
@@ -99,9 +159,41 @@
     "image": "/objets/cadre-verset-jeremie-29-11.webp",
     "alt": "Cadre en bois clair avec affiche blanche aux traits roses et petit cœur, posé contre le mur sur un set en raphia"
   },
+  "cahier-activites-bibliques-jeux": {
+    "image": "/objets/cahier-activites-bibliques-jeux.webp",
+    "alt": "Cahier d'activités pour enfants illustré de l'arche de Noé et d'un arc-en-ciel, avec des crayons de couleur"
+  },
+  "cahier-coloriages-histoires-bible": {
+    "image": "/objets/cahier-coloriages-histoires-bible.webp",
+    "alt": "Cahier de coloriages ouvert sur l'arche de Noé, en partie colorié, avec des crayons gras sur du raphia"
+  },
+  "calendrier-avent-bois-creche": {
+    "image": "/objets/calendrier-avent-bois-creche.webp",
+    "alt": "Calendrier de l'Avent en bois en forme de maison à tiroirs, avec une petite crèche sculptée, sur un tissu bogolan"
+  },
   "calendrier-avent-chretien-enfant": {
     "image": "/objets/calendrier-avent-chretien-enfant.webp",
     "alt": "Calendrier de l'Avent illustré de la crèche de Bethléem sous un ciel étoilé, devant un bogolan"
+  },
+  "calendrier-avent-livre-histoires": {
+    "image": "/objets/calendrier-avent-livre-histoires.webp",
+    "alt": "Livre de l'Avent pour enfant, couverture bleu nuit avec l'étable de Bethléem et l'étoile, sur un bogolan"
+  },
+  "calendrier-avent-versets-bible": {
+    "image": "/objets/calendrier-avent-versets-bible.webp",
+    "alt": "Calendrier de l'Avent en bois en forme de sapin, petits rouleaux de versets noués de rouge, sur un bogolan"
+  },
+  "carnet-de-notes-de-predication": {
+    "image": "/objets/carnet-de-notes-de-predication.webp",
+    "alt": "Carnet de prédication en toile bleu marine avec croix dorée et élastique, posé sur un bogolan crème et brun"
+  },
+  "carnet-de-priere-enfant": {
+    "image": "/objets/carnet-de-priere-enfant.webp",
+    "alt": "Carnet de prière pour enfant illustré d'une colombe et d'un arc-en-ciel, avec crayons, sur un tissu kente"
+  },
+  "carnet-de-priere-guide": {
+    "image": "/objets/carnet-de-priere-guide.webp",
+    "alt": "Carnet de prière à couverture de lin vert et croix dorée, avec un crayon, posé sur un tissu bogolan"
   },
   "carnet-souvenir-premiere-communion": {
     "image": "/objets/carnet-souvenir-premiere-communion.webp",
@@ -111,9 +203,21 @@
     "image": "/objets/chapelet-bois-olivier.webp",
     "alt": "Chapelet en bois d'olivier avec crucifix, disposé en cercle sur un set de table en raphia tressé"
   },
+  "chapelet-orthodoxe-laine": {
+    "image": "/objets/chapelet-orthodoxe-laine.webp",
+    "alt": "Chapelet orthodoxe en laine noire à nœuds avec croix tressée et pompon, sur un tissu blanc à bordure tibeb"
+  },
+  "cierge-de-mariage": {
+    "image": "/objets/cierge-de-mariage.webp",
+    "alt": "Cierge de mariage blanc orné de deux alliances dorées, de roses et d'une croix, noué d'un ruban, sur raphia"
+  },
   "cierge-de-premiere-communion": {
     "image": "/objets/cierge-de-premiere-communion.webp",
     "alt": "Cierge blanc de première communion orné d'un calice, d'épis et d'un ruban doré, sur un bougeoir en laiton et un bogolan"
+  },
+  "coloriages-noel-nativite": {
+    "image": "/objets/coloriages-noel-nativite.webp",
+    "alt": "Cahier de coloriages ouvert sur un ange et la crèche, crayons de couleur à côté, sur un bogolan brun"
   },
   "couverture-bible-brodee-prenom": {
     "image": "/objets/couverture-bible-brodee-prenom.webp",
@@ -127,6 +231,10 @@
     "image": "/objets/creche-africaine-fil-de-fer-perles.webp",
     "alt": "Crèche africaine en fil de fer noir ornée de perles colorées, avec étoile filante, sur un raphia"
   },
+  "creche-africaine-miniature-bois": {
+    "image": "/objets/creche-africaine-miniature-bois.webp",
+    "alt": "Petite crèche africaine en bois sombre sculpté : Marie, Joseph au bâton et l'Enfant, sur un tissu wax"
+  },
   "creche-bois-olivier-bethleem": {
     "image": "/objets/creche-bois-olivier-bethleem.webp",
     "alt": "Crèche en bois d'olivier veiné avec la Sainte Famille, posée sur un tissu blanc éthiopien brodé"
@@ -138,6 +246,14 @@
   "creche-lumineuse-etable": {
     "image": "/objets/creche-lumineuse-etable.webp",
     "alt": "Crèche dans une étable en bois éclairée de l'intérieur, étoile lumineuse sur le toit, sur un raphia"
+  },
+  "creche-miniature-une-piece": {
+    "image": "/objets/creche-miniature-une-piece.webp",
+    "alt": "Crèche miniature d'une seule pièce en bois d'olivier sculpté, sous un toit étoilé, posée sur un tissu kente"
+  },
+  "creche-papier-a-monter": {
+    "image": "/objets/creche-papier-a-monter.webp",
+    "alt": "Crèche en carton à monter : étable, Marie, l'Enfant Jésus, bœuf, âne et moutons, sur un tissu kente"
   },
   "creche-provencale-santons": {
     "image": "/objets/creche-provencale-santons.webp",
@@ -151,13 +267,21 @@
     "image": "/objets/creche-tissu-wax.webp",
     "alt": "Crèche en tissu : poupées africaines de Marie, Joseph et Jésus vêtues de wax, sur un bogolan"
   },
+  "croix-a-poser-bois-olivier": {
+    "image": "/objets/croix-a-poser-bois-olivier.webp",
+    "alt": "Petite croix en bois d'olivier veiné sur son socle, posée sur un tissu kente aux rayures or, vert et rouge"
+  },
   "croix-a-poser-ceramique-blanche": {
     "image": "/objets/croix-a-poser-ceramique-blanche.webp",
     "alt": "Croix à poser en céramique blanche avec une colombe en relief, sur un tissu wax ocre et indigo"
   },
+  "croix-a-poser-verre-gravee": {
+    "image": "/objets/croix-a-poser-verre-gravee.webp",
+    "alt": "Croix à poser en verre épais transparent avec une colombe gravée, posée sur un set en raphia tressé"
+  },
   "croix-copte-bois": {
     "image": "/objets/croix-copte-bois.webp",
-    "alt": "Croix copte en bois sculpté d'entrelacs, aux branches pointues, posée sur un tissu blanc éthiopien à bordure tibeb"
+    "alt": "Croix copte en bois ajouré d'entrelacs, aux quatre bras égaux et pointus, debout sur un tissu blanc éthiopien à bordure tibeb"
   },
   "croix-de-lalibela": {
     "image": "/objets/croix-de-lalibela.webp",
@@ -165,11 +289,27 @@
   },
   "croix-de-saint-damien": {
     "image": "/objets/croix-de-saint-damien.webp",
-    "alt": "Croix peinte de saint Damien, Christ auréolé sur fond noir bordé de rouge et d'or, appuyée au mur sur du raphia"
+    "alt": "Croix de saint Damien peinte : Christ auréolé bras ouverts, saints et anges sur fond noir et rouge, au-dessus d'une natte de raphia"
+  },
+  "croix-de-table-metal-dore": {
+    "image": "/objets/croix-de-table-metal-dore.webp",
+    "alt": "Croix de table en métal doré poli sur un socle à gradins, posée sur un tissu kente or, vert et rouge"
+  },
+  "croix-en-bois-sur-cordon": {
+    "image": "/objets/croix-en-bois-sur-cordon.webp",
+    "alt": "Croix en bois clair sur un cordon de coton naturel, posée sur un set de table en raphia tressé"
+  },
+  "croix-ethiopienne-de-procession": {
+    "image": "/objets/croix-ethiopienne-de-procession.webp",
+    "alt": "Croix de procession éthiopienne en laiton ajouré sur pied, posée sur un tissu blanc à bordure tibeb"
   },
   "croix-ethiopienne-murale-metal": {
     "image": "/objets/croix-ethiopienne-murale-metal.webp",
     "alt": "Croix éthiopienne en métal doré ajouré accrochée au mur, au-dessus d'un tissu blanc éthiopien à bordure tibeb"
+  },
+  "croix-murale-bois-et-pierres": {
+    "image": "/objets/croix-murale-bois-et-pierres.webp",
+    "alt": "Croix murale en bois sombre incrustée de pierres turquoise, ambre et de nacre, devant un tissu bogolan"
   },
   "croix-murale-bois-olivier": {
     "image": "/objets/croix-murale-bois-olivier.webp",
@@ -191,6 +331,18 @@
     "image": "/objets/crucifix-bois-olivier-bethleem.webp",
     "alt": "Crucifix en bois d'olivier clair avec un Christ sculpté dans le même bois, dressé sur un tissu kente rayé"
   },
+  "crucifix-medaille-saint-benoit": {
+    "image": "/objets/crucifix-medaille-saint-benoit.webp",
+    "alt": "Crucifix en bois sombre avec Christ argenté et médaille ronde au centre, posé sur un tissu kente rayé"
+  },
+  "enfant-jesus-pour-la-creche": {
+    "image": "/objets/enfant-jesus-pour-la-creche.webp",
+    "alt": "Enfant Jésus en résine couché sur la paille dans une mangeoire en bois, posé sur un tissu wax ocre"
+  },
+  "etagere-murale-d-oratoire": {
+    "image": "/objets/etagere-murale-d-oratoire.webp",
+    "alt": "Étagère murale d'oratoire en chêne avec icône de la Vierge, lampe rouge et livre, au-dessus d'un tissu blanc"
+  },
   "etoile-de-bethleem-lumineuse": {
     "image": "/objets/etoile-de-bethleem-lumineuse.webp",
     "alt": "Étoile de Bethléem lumineuse dorée en forme de comète, guirlande de LED, posée sur un raphia"
@@ -198,6 +350,10 @@
   "etui-bible-cuir-zippe": {
     "image": "/objets/etui-bible-cuir-zippe.webp",
     "alt": "Étui de Bible en cuir brun zippé avec poignée et croix en relief, posé sur un bogolan crème et brun"
+  },
+  "guide-pour-lire-la-bible": {
+    "image": "/objets/guide-pour-lire-la-bible.webp",
+    "alt": "Guide pour lire la Bible, couverture bleu canard avec livre ouvert et lampe à huile, posé sur un bogolan"
   },
   "housse-bible-tissu-wax": {
     "image": "/objets/housse-bible-tissu-wax.webp",
@@ -211,25 +367,97 @@
     "image": "/objets/icone-ethiopienne-peinte.webp",
     "alt": "Icône éthiopienne peinte : Vierge à l'Enfant et deux anges aux grands yeux, fond rouge et jaune, sur un tissu tibeb"
   },
+  "icone-trinite-de-roublev": {
+    "image": "/objets/icone-trinite-de-roublev.webp",
+    "alt": "Icône de la Trinité de Roublev, trois anges autour d'une table, posée sur un tissu blanc à bordure tibeb"
+  },
+  "imagier-biblique-tout-carton": {
+    "image": "/objets/imagier-biblique-tout-carton.webp",
+    "alt": "Imagier en carton pour tout-petits, l'arche de Noé et un arc-en-ciel en couverture, sur un set en raphia"
+  },
   "journal-de-gratitude-chretien": {
     "image": "/objets/journal-de-gratitude-chretien.webp",
     "alt": "Journal de gratitude chrétien à couverture vert sauge ornée d'une colombe, debout sur un tissu kente, crayon à côté"
+  },
+  "lampe-a-huile-pour-icones": {
+    "image": "/objets/lampe-a-huile-pour-icones.webp",
+    "alt": "Lampe à huile pour icônes en verre rouge sur pied en laiton, flamme allumée, sur un tissu blanc à bordure tibeb"
+  },
+  "livre-autocollants-bible-enfants": {
+    "image": "/objets/livre-autocollants-bible-enfants.webp",
+    "alt": "Livre d'autocollants de l'arche de Noé avec autocollants girafe, éléphant et lion, posé sur un tissu wax"
+  },
+  "livre-de-prieres-enfants-illustre": {
+    "image": "/objets/livre-de-prieres-enfants-illustre.webp",
+    "alt": "Livre de prières pour enfants illustré d'un agneau endormi sous la lune et les étoiles, sur un tissu kente"
+  },
+  "livre-de-prieres-orthodoxe": {
+    "image": "/objets/livre-de-prieres-orthodoxe.webp",
+    "alt": "Livre de prières orthodoxe bordeaux à croix orthodoxe dorée et signet rouge, sur un tissu blanc tibeb"
   },
   "livre-histoire-de-noel-enfant": {
     "image": "/objets/livre-histoire-de-noel-enfant.webp",
     "alt": "Livre sonore de l'histoire de Noël, couverture illustrée de la Nativité, posé sur un bogolan"
   },
+  "livre-histoire-de-paques-enfant": {
+    "image": "/objets/livre-histoire-de-paques-enfant.webp",
+    "alt": "Album pour enfants illustré du tombeau vide, de lys et d'une colombe, avec deux œufs en chocolat"
+  },
+  "livre-meditations-quotidiennes": {
+    "image": "/objets/livre-meditations-quotidiennes.webp",
+    "alt": "Livre de méditations quotidiennes en lin crème orné d'un rameau d'olivier doré, posé sur un bogolan"
+  },
+  "livre-preparation-au-mariage": {
+    "image": "/objets/livre-preparation-au-mariage.webp",
+    "alt": "Livre pour préparer son mariage, couverture ivoire avec alliances dorées, croix et olivier, sur un tissu wax"
+  },
+  "livre-preparer-sa-confirmation": {
+    "image": "/objets/livre-preparer-sa-confirmation.webp",
+    "alt": "Livre à couverture rouge orné d'une colombe blanche et de flammes dorées, posé sur un tissu wax"
+  },
+  "livre-prieres-deuil-consolation": {
+    "image": "/objets/livre-prieres-deuil-consolation.webp",
+    "alt": "Livre de prières bleu nuit orné d'une colombe argentée, avec une rose blanche, sur un tissu éthiopien blanc"
+  },
+  "livre-psaumes-prier-au-quotidien": {
+    "image": "/objets/livre-psaumes-prier-au-quotidien.webp",
+    "alt": "Petit livre des Psaumes relié en toile vert sapin avec une lyre dorée et un signet, sur un set en raphia"
+  },
+  "livre-saints-d-afrique": {
+    "image": "/objets/livre-saints-d-afrique.webp",
+    "alt": "Livre aux saints d'Afrique, couverture avec une croix dorée et un baobab au couchant, sur un tissu kente"
+  },
   "missel-des-enfants": {
     "image": "/objets/missel-des-enfants.webp",
     "alt": "Missel pour enfants à couverture crème ornée d'un calice doré, posé sur un tissu kente"
+  },
+  "nouveau-testament-et-psaumes-poche": {
+    "image": "/objets/nouveau-testament-et-psaumes-poche.webp",
+    "alt": "Nouveau Testament et Psaumes de poche, couverture bleu marine à croix dorée, posé sur un tissu wax ocre et indigo"
+  },
+  "onglets-livres-de-la-bible": {
+    "image": "/objets/onglets-livres-de-la-bible.webp",
+    "alt": "Bible noire debout, la tranche garnie d'onglets adhésifs de couleurs vives, sur un tissu bogolan brun et crème"
   },
   "pendentif-croix-argent": {
     "image": "/objets/pendentif-croix-argent.webp",
     "alt": "Pendentif croix en argent poli et sa chaîne, posé sur un tissu wax ocre, indigo et terracotta"
   },
+  "pendentif-croix-ethiopienne": {
+    "image": "/objets/pendentif-croix-ethiopienne.webp",
+    "alt": "Pendentif croix éthiopienne en argent ajouré sur cordon noir, posé sur un tissu blanc à bordure tibeb"
+  },
+  "pendentif-croix-homme-acier": {
+    "image": "/objets/pendentif-croix-homme-acier.webp",
+    "alt": "Pendentif croix en acier brossé sur chaîne maille vénitienne, posé à plat sur un tissu wax ocre et indigo"
+  },
   "petite-statue-vierge-chevet-enfant": {
     "image": "/objets/petite-statue-vierge-chevet-enfant.webp",
     "alt": "Petite Vierge Marie aux formes rondes, voile bleu pastel, sur un tissu wax ocre et indigo"
+  },
+  "plan-de-lecture-bible-en-un-an": {
+    "image": "/objets/plan-de-lecture-bible-en-un-an.webp",
+    "alt": "Carnet en lin vert sauge orné d'une petite croix dorée, avec un crayon, posé sur un tissu bogolan"
   },
   "plaque-benediction-chambre-enfant": {
     "image": "/objets/plaque-benediction-chambre-enfant.webp",
@@ -239,6 +467,18 @@
     "image": "/objets/plaque-murale-psaume-23.webp",
     "alt": "Plaque murale en bois blanchi gravée d'un bâton de berger et d'un agneau, accrochée au-dessus d'un tissu kente"
   },
+  "prie-dieu-bois": {
+    "image": "/objets/prie-dieu-bois.webp",
+    "alt": "Prie-Dieu en chêne avec agenouilloir de velours bordeaux et croix sculptée, posé sur un tapis de raphia"
+  },
+  "pupitre-de-bible-bois": {
+    "image": "/objets/pupitre-de-bible-bois.webp",
+    "alt": "Pupitre en bois clair avec croix découpée portant une Bible ouverte, posé sur un tissu wax ocre et indigo"
+  },
+  "recits-bibliques-7-10-ans": {
+    "image": "/objets/recits-bibliques-7-10-ans.webp",
+    "alt": "Livre de récits bibliques illustré : Jésus assis avec des enfants sous un olivier, posé sur un tissu wax"
+  },
   "reproduction-vierge-noire-du-puy": {
     "image": "/objets/reproduction-vierge-noire-du-puy.webp",
     "alt": "Reproduction de Notre-Dame du Puy, Vierge noire au grand manteau rouge et or, sur un bogolan"
@@ -247,9 +487,21 @@
     "image": "/objets/reproduction-vierge-noire-rocamadour.webp",
     "alt": "Vierge noire de Rocamadour en bois sombre, assise avec l'Enfant couronné, sur un tissu wax ocre"
   },
+  "rois-mages-figurines": {
+    "image": "/objets/rois-mages-figurines.webp",
+    "alt": "Trois figurines peintes des Rois mages en robes colorées, couronnés et portant leurs présents, sur du raphia"
+  },
+  "sac-a-bible-avec-poches": {
+    "image": "/objets/sac-a-bible-avec-poches.webp",
+    "alt": "Sac à Bible matelassé bordeaux avec anses, poche zippée et petite croix brodée, sur un bogolan crème et brun"
+  },
   "santons-africains": {
     "image": "/objets/santons-africains.webp",
     "alt": "Santons africains en argile peinte : Marie en wax, rois mages et berger, posés sur un tissu wax"
+  },
+  "santons-de-provence-argile": {
+    "image": "/objets/santons-de-provence-argile.webp",
+    "alt": "Cinq santons de Provence en argile peinte : berger, lavandière, boulanger, vieille au fagot et fillette"
   },
   "statue-ange-gardien-enfant": {
     "image": "/objets/statue-ange-gardien-enfant.webp",
@@ -262,6 +514,26 @@
   "statue-notre-dame-de-lourdes": {
     "image": "/objets/statue-notre-dame-de-lourdes.webp",
     "alt": "Statue de Notre-Dame de Lourdes en robe blanche et ceinture bleue, sur un tissu bogolan"
+  },
+  "statue-saint-antoine-de-padoue": {
+    "image": "/objets/statue-saint-antoine-de-padoue.webp",
+    "alt": "Statue peinte de saint Antoine de Padoue en habit brun, portant l'Enfant Jésus et un lys, sur un set en raphia"
+  },
+  "statue-saint-francois-d-assise": {
+    "image": "/objets/statue-saint-francois-d-assise.webp",
+    "alt": "Statue de saint François d'Assise en habit brun, oiseaux sur les mains et agneau, posée sur un set en raphia"
+  },
+  "statue-saint-joseph-enfant-jesus": {
+    "image": "/objets/statue-saint-joseph-enfant-jesus.webp",
+    "alt": "Statue peinte de saint Joseph tenant l'Enfant Jésus et un lys, posée sur un set en raphia tressé"
+  },
+  "statue-saint-michel-archange": {
+    "image": "/objets/statue-saint-michel-archange.webp",
+    "alt": "Statue peinte de saint Michel archange, ailes déployées et épée levée sur le dragon, posée sur un tissu wax"
+  },
+  "statue-sainte-therese-de-lisieux": {
+    "image": "/objets/statue-sainte-therese-de-lisieux.webp",
+    "alt": "Statue de sainte Thérèse de Lisieux en habit de carmélite, croix en main et roses à ses pieds, sur tissu wax"
   },
   "statue-vierge-a-l-enfant-bois-sculpte": {
     "image": "/objets/statue-vierge-a-l-enfant-bois-sculpte.webp",
@@ -279,6 +551,10 @@
     "image": "/objets/statue-vierge-noire-a-l-enfant-bois.webp",
     "alt": "Vierge noire à l'Enfant sculptée en ébène aux reflets chauds, posée sur un bogolan crème et brun"
   },
+  "statuette-ange-noir": {
+    "image": "/objets/statuette-ange-noir.webp",
+    "alt": "Statuette d'ange à la peau noire en robe blanche, mains jointes, ailes blanches et dorées, sur un tissu bogolan"
+  },
   "statuette-saint-patron-prenom": {
     "image": "/objets/statuette-saint-patron-prenom.webp",
     "alt": "Statuette peinte de saint Joseph tenant un lys blanc, posée sur un tissu kente vert, or et rouge"
@@ -295,6 +571,14 @@
     "image": "/objets/tableau-arche-de-noe-enfant.webp",
     "alt": "Tableau d'enfant de l'arche de Noé à l'aquarelle, animaux et arc-en-ciel, cadre blanc posé sur un tissu wax"
   },
+  "tableau-de-la-nativite": {
+    "image": "/objets/tableau-de-la-nativite.webp",
+    "alt": "Tableau de la Nativité dans un cadre doré : Marie, Joseph et l'Enfant dans la crèche, devant un tissu kente"
+  },
+  "tableau-du-bon-pasteur": {
+    "image": "/objets/tableau-du-bon-pasteur.webp",
+    "alt": "Tableau du Bon Pasteur portant une brebis parmi son troupeau, cadre doré posé contre le mur, set en raphia"
+  },
   "tableau-jesus-noir": {
     "image": "/objets/tableau-jesus-noir.webp",
     "alt": "Toile moderne du Christ noir couronné d'épines, touches d'or et de bleu, accrochée au-dessus d'un tissu bogolan"
@@ -302,6 +586,10 @@
   "tableau-nativite-africaine": {
     "image": "/objets/tableau-nativite-africaine.webp",
     "alt": "Tableau naïf de la Nativité dans un village africain : case ronde, crèche, girafe et ciel étoilé, sur un tissu wax"
+  },
+  "tableau-scene-biblique-afro": {
+    "image": "/objets/tableau-scene-biblique-afro.webp",
+    "alt": "Toile du baptême de Jésus aux personnages africains, colombe dans un ciel orangé, posée sur une table"
   },
   "tableau-verset-josue-24-15-famille": {
     "image": "/objets/tableau-verset-josue-24-15-famille.webp",
@@ -311,6 +599,14 @@
     "image": "/objets/tableau-verset-tissu-wax.webp",
     "alt": "Cadre bordé de tissu wax orange, bleu et vert, avec une croix au centre, posé sur un set de table en raphia"
   },
+  "tableau-vierge-marie-africaine": {
+    "image": "/objets/tableau-vierge-marie-africaine.webp",
+    "alt": "Tableau d'une Vierge Marie africaine au voile bleu et à l'auréole dorée, posé contre le mur derrière un tissu wax"
+  },
+  "toile-de-la-cene": {
+    "image": "/objets/toile-de-la-cene.webp",
+    "alt": "Toile de la Cène d'après Léonard de Vinci posée contre le mur, tissu kente plié sur la table devant"
+  },
   "toile-sainte-famille-africaine": {
     "image": "/objets/toile-sainte-famille-africaine.webp",
     "alt": "Toile de la Sainte Famille africaine : Marie en pagne wax, Joseph en boubou et l'Enfant, fond doré, tissu kente devant"
@@ -318,6 +614,18 @@
   "toile-verset-josue-1-9": {
     "image": "/objets/toile-verset-josue-1-9.webp",
     "alt": "Toile murale représentant un lion et un agneau dans des tons dorés, accrochée au-dessus d'un tissu wax plié"
+  },
+  "veilleuse-ange-gardien": {
+    "image": "/objets/veilleuse-ange-gardien.webp",
+    "alt": "Veilleuse ange gardien blanche à genoux en prière, lumière douce allumée, posée sur un bogolan brun"
+  },
+  "veilleuse-croix-chambre-enfant": {
+    "image": "/objets/veilleuse-croix-chambre-enfant.webp",
+    "alt": "Veilleuse en forme de croix blanche à lumière douce, sur socle étoilé, posée sur un tissu wax ocre"
+  },
+  "veilleuse-de-recueillement": {
+    "image": "/objets/veilleuse-de-recueillement.webp",
+    "alt": "Veilleuse allumée dans un verre épais orné d'une colombe blanche, posée sur un dessous en raphia tressé"
   },
   "vierge-noire-bois-fonce-sculptee-main": {
     "image": "/objets/vierge-noire-bois-fonce-sculptee-main.webp",

@@ -9,7 +9,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions (en ligne depuis le 29 octobre 2026)
 - **Site** : keurbible.com (85 adresses dans le sitemap au lancement)
-- **IA et outils** : images des objets créées par IA (OpenArt, Kling 3 Omni : 82 images au 29 octobre 2026), veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
+- **IA et outils** : images des objets créées par IA (OpenArt, Kling 3 Omni et GPT Image 2 : 159 images au 29 octobre 2026), veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
 
 ## Parcours
 
@@ -82,7 +82,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 
 ## OpenArt (images créées par IA)
 
-- **Rôle** : une illustration par objet (photo de produit mise en scène sur un tissu africain), modèle Kling 3 Omni (text2image, 1:1, 1k, 10 crédits l'image). Méthode : docs/IMAGES.md.
+- **Rôle** : une illustration par objet (photo de produit mise en scène sur un tissu africain), modèle Kling 3 Omni (text2image, 1:1, 1k, 10 crédits l'image) ; GPT Image 2 (40 crédits l'image) pour les reprises qui demandent une forme exacte. Méthode : docs/IMAGES.md.
 - **Fichiers** : images brutes dans `.images/brut/` (non suivies) ; `npm run images-objets` les convertit en `public/objets/<slug>.webp` (480 × 480) et écrit `src/lib/contenus/images-objets.json`.
-- **État** : 82 images pour les 90 objets des Top 10 (29 octobre 2026) ; les autres objets restent à faire.
+- **État** : 159 images pour les 178 objets (29 octobre 2026 : 82 pour les objets des Top 10, puis 77 pour les autres) ; 19 objets sans image, liste dans docs/IMAGES.md.
 - **Console** : https://openart.ai (compte Pro de Jean ; crédits restants à vérifier dans la console).
