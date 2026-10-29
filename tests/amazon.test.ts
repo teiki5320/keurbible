@@ -5,7 +5,8 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { AMAZON_TAG, AMAZON_TAGS, amazonUrl, type AmazonEmplacement } from "../src/lib/amazon";
-import { OBJETS } from "../src/lib/catalogue";
+import { OBJETS, TOP10S } from "../src/lib/catalogue";
+import { AMAZON_ASINS } from "../src/lib/contenus";
 
 const emplacements = Object.keys(AMAZON_TAGS) as AmazonEmplacement[];
 
@@ -32,5 +33,28 @@ describe("Codes de suivi Amazon", () => {
     assert.equal(recherche.searchParams.get("i"), "stripbooks");
     assert.equal(new URL(amazonUrl({ amazonAsin: null, recherche: "croix murale bois" }, "top")).searchParams.get("i"), null);
     assert.equal(amazonUrl({ amazonAsin: "B000000000", recherche: "x" }, "rubrique"), "https://www.amazon.fr/dp/B000000000?tag=keurbible-21");
+  });
+});
+
+describe("ASIN vérifiés (src/lib/contenus/amazon-asins.json)", () => {
+  const slugs = new Set(OBJETS.map((o) => o.slug));
+  it("chaque ASIN vérifié appartient à un objet du site, avec le titre lu sur Amazon et sa date de vérification", () => {
+    for (const [slug, v] of Object.entries(AMAZON_ASINS)) {
+      assert.ok(slugs.has(slug), `objet inconnu : ${slug}`);
+      assert.match(v.asin, /^[A-Z0-9]{10}$/, slug);
+      assert.ok(v.titre.length > 10, `${slug} : titre Amazon absent`);
+      assert.match(v.verifie_le, /^20\d\d-\d\d-\d\d$/, slug);
+    }
+  });
+  it("un objet avec ASIN vérifié mène à sa fiche Amazon, les autres à une recherche", () => {
+    for (const o of OBJETS) {
+      const url = new URL(amazonUrl(o, "top"));
+      assert.equal(url.pathname.startsWith("/dp/"), Boolean(AMAZON_ASINS[o.slug]), o.slug);
+    }
+  });
+  it("au moins la moitié des objets des Top 10 ont un lien direct", () => {
+    const dansTops = new Set(TOP10S.flatMap((t) => t.items.map((i) => i.slug)));
+    const directs = [...dansTops].filter((s) => AMAZON_ASINS[s]).length;
+    assert.ok(directs * 2 >= dansTops.size, `${directs} sur ${dansTops.size}`);
   });
 });

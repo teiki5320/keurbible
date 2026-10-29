@@ -39,14 +39,16 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Tous l
 | Top 10 | `src/lib/contenus/top10/<slug>.ts` (ordre des onglets : `PLAN_TOP10`) |
 | Psaumes | `src/lib/contenus/psaumes.ts` |
 | Articles Conseils | `content/conseils/<slug>.md` (paraissent à leur date) |
-| Actus | lues dans le navigateur depuis `https://teiki5320.github.io/veille/actus/keurbible.json` ; `public/veille/entites.json` (rubriques et occasions, tags `rubrique:<slug>` et `occasion:<slug>`) est généré au build |
+| ASIN vérifiés | `src/lib/contenus/amazon-asins.json` |
+| Actus | lues dans le navigateur depuis `https://teiki5320.github.io/veille/actus/keurbible.json` (Keur Bible est dans la tâche de veille depuis le 29 octobre 2026) ; `public/veille/entites.json` (rubriques et occasions, tags `rubrique:<slug>` et `occasion:<slug>`) est généré au build |
 
 Règles de rédaction : [`docs/REDACTION.md`](docs/REDACTION.md). Champs exacts : `src/lib/types.ts`. Les tests (`npm test`) vérifient la cohérence : plan suivi, chaque objet dans une sous-rubrique, 10 objets existants par Top 10, longueurs, liens internes, double numérotation des Psaumes, etc.
 
 ### Amazon Partenaires
 
 - Liens construits par `src/lib/amazon.ts` avec le tag `keurbible-21` (`NEXT_PUBLIC_AMAZON_TAG` pour le changer). Code de suivi par emplacement (rubrique, occasion, top, conseil) : table unique `AMAZON_TAGS` (tous à `keurbible-21` pour l'instant).
-- Si le champ `amazonAsin` d'un objet est rempli (ASIN vérifié sur Amazon.fr), le bouton mène à la fiche ; sinon à une **recherche Amazon** avec les mots de l'objet (rayon Livres pour les Bibles et les livres). Au 29 octobre 2026, aucun ASIN n'est encore vérifié : tous les boutons ouvrent une recherche.
+- Si l'objet a un ASIN vérifié (`src/lib/contenus/amazon-asins.json` : fiche ouverte, titre conforme, bouton d'achat présent, date de vérification), le bouton mène à la fiche ; sinon à une **recherche Amazon** avec les mots de l'objet (rayon Livres pour les Bibles et les livres). Au 29 octobre 2026 : 56 ASIN vérifiés, tous pour des objets des Top 10 (56 sur 90) ; les 122 autres objets ouvrent une recherche. L'art chrétien afro artisanal (crèches en wax, Vierges noires sculptées, croix éthiopiennes) est rare sur Amazon : 2 objets sur 10 du Top 10 afro ont un lien direct.
+- Recherche de produits : `npm run chercher-produits` (relève les premiers résultats Amazon dans `.amazon/candidats.json`, rien n'est choisi automatiquement) ; vérification : `npm run verifier-produits -- --ecrire --ajouter .amazon/choix.json` (ajout d'ASIN choisis) ou `npm run verifier-produits -- --ecrire --lot 30` (contrôle des liens déjà vérifiés). À lancer sur le Mac (Chrome + Playwright) ; le script s'arrête de lui-même si Amazon demande un captcha.
 - Aucun prix affiché. Mention obligatoire dans le pied de page et les pages légales.
 
 ### Publicité (Google AdSense)
@@ -85,6 +87,6 @@ Même fonctionnement que Keurbook : le workflow `.github/workflows/deploy.yml` v
 
 ### État de la mise en route (29 octobre 2026)
 
-- Fait : code, contenus de lancement (7 rubriques, 31 sous-rubriques, 178 objets, 10 occasions, 10 Top 10, 12 Psaumes, 8 articles Conseils dont 5 publiés et 3 programmés), tests, workflows, tag Amazon `keurbible-21`.
-- À faire par Jean : ajouter les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` au dépôt keurbible ; après la première publication, relier `keurbible.com` (et `www`) au projet Pages `keurbible` dans Cloudflare ; déclarer keurbible.com sur Amazon Partenaires et dans AdSense ; confirmer l'adresse de contact (`keurbible@toakeur.com` par défaut) ; brancher la veille actus (`actus/keurbible.json`).
-- Ensuite : vérifier les ASIN, créer les illustrations et les épingles Pinterest, Search Console.
+- Fait : code, contenus de lancement (7 rubriques, 31 sous-rubriques, 178 objets, 10 occasions, 10 Top 10, 12 Psaumes, 8 articles Conseils dont 5 publiés et 3 programmés), tests, workflows, tag Amazon `keurbible-21`, 56 liens Amazon directs vérifiés, veille actus branchée (dépôt `teiki5320/veille`, 15 flux).
+- À faire par Jean : ajouter les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` au dépôt keurbible ; après la première publication, relier `keurbible.com` (et `www`) au projet Pages `keurbible` dans Cloudflare ; déclarer keurbible.com sur Amazon Partenaires et dans AdSense ; adresse de contact `keurbible@toakeur.com` confirmée par Jean le 29 octobre 2026.
+- Ensuite : Search Console, illustrations et épingles Pinterest, ASIN des autres objets.

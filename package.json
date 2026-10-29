@@ -10,7 +10,9 @@
     "typecheck": "next typegen && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "test:sortie": "tsx --test tests/sortie/*.test.ts",
-    "marque": "tsx scripts/marque.mjs"
+    "marque": "tsx scripts/marque.mjs",
+    "chercher-produits": "tsx scripts/chercher-produits.mjs",
+    "verifier-produits": "tsx scripts/verifier-produits.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",
@@ -27,6 +29,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "playwright": "^1.63.0",
     "sharp": "0.35.4",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",

@@ -4,6 +4,7 @@
  */
 import type { Top10 } from "../top10/types";
 import type { Objet, Rubrique, SousRubrique } from "../types";
+import asins from "./amazon-asins.json";
 import { PLAN_TOP10 } from "./plan";
 import * as artChretien from "./rubriques/art-chretien";
 import * as bibles from "./rubriques/bibles";
@@ -31,7 +32,13 @@ const FICHIERS = [bibles, croix, chapelets, artChretien, statues, creches, livre
 
 export const RUBRIQUES: Rubrique[] = FICHIERS.map((f) => f.rubrique);
 export const SOUS_RUBRIQUES: SousRubrique[] = FICHIERS.flatMap((f) => f.sousRubriques);
-export const OBJETS: Objet[] = FICHIERS.flatMap((f) => f.objets);
+/**
+ * ASIN vérifiés sur Amazon.fr (src/lib/contenus/amazon-asins.json, tenu par scripts/verifier-produits.mjs) :
+ * produit ouvert, titre conforme à l'objet, bouton d'achat présent. Les autres objets gardent une recherche Amazon.
+ */
+export const AMAZON_ASINS: Record<string, { asin: string; titre: string; verifie_le: string }> = asins.actifs;
+
+export const OBJETS: Objet[] = FICHIERS.flatMap((f) => f.objets).map((o) => ({ ...o, amazonAsin: AMAZON_ASINS[o.slug]?.asin ?? o.amazonAsin }));
 
 const TOPS: Top10[] = [artAfro, biblesAOffrir, biblesEnfants, cadeauxBapteme, cadeauxCommunion, cadeauxNoel, crechesNoel, croixMurales, statuesVierge, versetsMuraux];
 

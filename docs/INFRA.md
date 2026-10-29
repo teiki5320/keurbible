@@ -9,14 +9,14 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions (pas encore en ligne)
 - **Site** : keurbible.com (85 adresses dans le sitemap au lancement)
-- **IA et outils** : veille actus (à brancher), IndexNow
+- **IA et outils** : veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow
 
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible, secrets à ajouter [à faire] → 🌍 keurbible.com — domaine à relier au projet [à faire]
 - 📝 **Contenu** : ✍️ Articles Conseils — 5 publiés, 3 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow — après chaque publication et chaque lundi [pas encore] → 🔍 Google — Search Console à créer [à faire]
-- 📰 **Veille actus** : 📡 Tâche de veille — Keur Bible à ajouter [à faire] → 🐙 Dépôt veille — actus/keurbible.json [pas encore] → 🌍 keurbible.com — accueil (4), /actus (20) [pas encore]
-- 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 0 ASIN vérifié sur 178 objets, recherches Amazon [à faire]
+- 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, premier passage à 19 h le 29/10 [en cours] → 🌍 keurbible.com — accueil (4), /actus (20) [pas encore]
+- 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 56 ASIN vérifiés sur 178 objets (56 sur 90 dans les Top 10) [en cours]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — script en place, aucun bloc créé [en cours] → ✅ Validation du site — site à déclarer [à faire] → 💶 Revenus — aucun [pas encore]
 
 ## Vue d'ensemble
@@ -47,13 +47,14 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 
 - **Domaine** : `keurbible.com`, adresse canonique sans www.
 - **Registraire et DNS** : Cloudflare (serveurs de noms Cloudflare). Le domaine n'est pas encore relié au projet Pages (aucune adresse au 29 octobre 2026).
-- **Adresse de contact** : `keurbible@toakeur.com` par défaut (`NEXT_PUBLIC_CONTACT_EMAIL`), à confirmer.
+- **Adresse de contact** : `keurbible@toakeur.com` (`NEXT_PUBLIC_CONTACT_EMAIL`), confirmée par Jean le 29 octobre 2026.
 - **Console** : tableau de bord Cloudflare, rubrique Domaines → `keurbible.com`.
 
 ## Amazon Partenaires (affiliation)
 
 - **Rôle** : les boutons « Voir sur Amazon » (au moins 44 px de haut) mènent à Amazon.fr avec le tag `keurbible-21` (`src/lib/amazon.ts`, réglable par `NEXT_PUBLIC_AMAZON_TAG`). Un code par emplacement (rubrique, occasion, top, conseil) dans la table unique `AMAZON_TAGS`, tous à `keurbible-21`.
-- **Liens** : aucun ASIN vérifié au 29 octobre 2026 : les 178 objets ouvrent une recherche Amazon (rayon Livres pour les Bibles et les livres). Un ASIN n'est ajouté qu'après vérification de la fiche sur Amazon.fr.
+- **Liens** : 56 objets ont un ASIN vérifié le 29 octobre 2026 (`src/lib/contenus/amazon-asins.json` : produit choisi parmi les résultats Amazon parce qu'il correspond à l'objet, fiche ouverte, titre conforme, bouton d'achat présent) et mènent à leur fiche ; les 122 autres ouvrent une recherche Amazon (rayon Livres pour les Bibles et les livres). Les 56 sont tous des objets des Top 10 (56 sur 90). L'art afro artisanal manque sur Amazon : 2 objets sur 10 du Top 10 afro en lien direct.
+- **Outils** (sur le Mac, Chrome + Playwright) : `npm run chercher-produits` relève les résultats Amazon de chaque objet (`.amazon/candidats.json`, non suivi) ; `npm run verifier-produits -- --ecrire --ajouter .amazon/choix.json` ajoute les ASIN choisis après vérification ; `npm run verifier-produits -- --ecrire --lot 30` recontrôle les liens directs (un produit sans bouton d'achat revient à la recherche). Arrêt automatique si Amazon demande un captcha.
 - **Site déclaré** : keurbible.com à déclarer sur le compte Amazon Partenaires.
 - **Console** : https://partenaires.amazon.fr
 
@@ -71,6 +72,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 ## Veille actus
 
 - **Rôle** : actus de la culture chrétienne en Afrique et dans la diaspora (fêtes et pèlerinages, gospel, art sacré et patrimoine, livres et films ; sans politique ni scandale), même mécanique que Keurbook.
-- **Lecture** : le site lit `https://teiki5320.github.io/veille/actus/keurbible.json` dans le navigateur (fichier absent = bloc absent, page intacte) et, au build, les articles complets `articles/keurbible/`. **Keur Bible n'est pas encore ajouté à la tâche de veille** (29 octobre 2026).
+- **Lecture** : le site lit `https://teiki5320.github.io/veille/actus/keurbible.json` dans le navigateur (fichier absent = bloc absent, page intacte) et, au build, les articles complets `articles/keurbible/`.
+- **Tâche de veille** : Keur Bible ajouté le 29 octobre 2026 (`sites/keurbible.json` du dépôt veille : 15 flux testés — La Croix, Vatican News, ACI Africa, Aleteia, Zenit, Église catholique en France, Réforme, Regards protestants, Christianisme Aujourd'hui, Christianity Today, Orthodoxie.com, Africultures, RFI, Le Monde ; carte à l'icône « croix »). Exclusions : politique, scandales, polémiques entre Églises, persécutions. Premier passage prévu le 29 octobre à 19 h ; peu d'actus attendues certains jours.
 - **Fiches pour la veille** : `public/veille/entites.json` (7 rubriques et 10 occasions, tags `rubrique:<slug>` et `occasion:<slug>`), généré à chaque build.
 - **Console** : https://github.com/teiki5320/veille

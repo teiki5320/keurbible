@@ -9,7 +9,7 @@
 - **Production** : pas encore en ligne
 - **Domaine & SSL** : keurbible.com sur Cloudflare, pas encore relié au site
 - **Visibilité** : aucune page indexée (site pas encore publié)
-- **Contact** : keurbible@toakeur.com (à confirmer)
+- **Contact** : keurbible@toakeur.com
 
 ## Boutiques
 
@@ -24,12 +24,12 @@
 
 ## Ce qui reste, dans l'ordre
 
-1. ✅ **Code et contenus** : site construit et contrôlé en local le 29 octobre 2026 (85 adresses).
+1. ✅ **Code et contenus** : site construit et contrôlé le 29 octobre 2026 (85 adresses), sur le Mac et par GitHub Actions (tout au vert jusqu'à l'étape des secrets Cloudflare) ; 56 liens Amazon directs vérifiés.
 2. **Secrets Cloudflare** : ajouter `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` au dépôt keurbible (Settings → Secrets and variables → Actions), puis relancer « Publier le site ».
 3. **Domaine** : dans Cloudflare, Workers & Pages → `keurbible` → Domaines personnalisés : ajouter `keurbible.com` et `www.keurbible.com` (redirection de www vers l'adresse sans www).
 4. **Search Console** : propriété de domaine `keurbible.com`, envoi du sitemap.
 5. **Amazon Partenaires et AdSense** : déclarer keurbible.com sur les deux comptes, créer les blocs d'annonces.
-6. **Veille actus** : ajouter Keur Bible à la tâche de veille (`actus/keurbible.json`).
+6. ✅ **Veille actus** : Keur Bible ajouté à la tâche de veille le 29 octobre 2026 (`sites/keurbible.json`, 15 flux).
 7. **Design définitif** et illustrations.
 
 ## Web · Production
@@ -42,7 +42,7 @@
 | Mise en ligne | à venir |
 | Dépôt | https://github.com/teiki5320/keurbible |
 | Taille | 85 adresses dans le sitemap construit en local (29 octobre 2026) |
-| Contact affiché | `keurbible@toakeur.com` (à confirmer) |
+| Contact affiché | `keurbible@toakeur.com` |
 | Maintenance | désactivée (`content/maintenance.json`) |
 
 ## Domaine & SSL

@@ -12,8 +12,8 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 - [en cours] **Lancement** : affiliation Amazon Partenaires (tag `keurbible-21`) ; site pas encore en ligne au 29 octobre 2026.
 - **AdSense** : même compte que Keurbook ; site à déclarer après la mise en ligne.
-- **Liens Amazon directs** : vérifier les ASIN des objets des Top 10 d'abord (aucun au 29 octobre 2026).
-- **Partenariats** : artisans et boutiques d'art chrétien africain, une fois l'audience mesurée.
+- [en cours] **Liens Amazon directs** : 56 ASIN vérifiés le 29 octobre 2026, tous dans les Top 10 (56 objets sur 90) ; les autres objets ouvrent une recherche Amazon.
+- **Partenariats** : artisans et boutiques d'art chrétien africain, une fois l'audience mesurée (l'art afro artisanal est presque absent d'Amazon : 2 objets sur 10 du Top 10 afro en lien direct).
 
 ## Points forts
 
@@ -29,14 +29,14 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 - ⬜ Site en ligne sur `keurbible.com` : pas encore (secrets Cloudflare et domaine à régler).
 - ⬜ Référencement naturel : Search Console à créer ; IndexNow prêt (après chaque publication et chaque lundi) ; 8 articles Conseils écrits (5 datés du 28 octobre, 3 programmés jusqu'au 4 novembre 2026).
 - ⬜ Pinterest : aucun compte Keur Bible ; épingles verticales (1000 × 1500) prévues avec les illustrations.
-- ⬜ Actus : rubrique prête, veille à brancher.
+- ⬜ Actus : rubrique prête et Keur Bible ajouté à la veille le 29 octobre 2026 (15 flux) ; aucune actu publiée tant que le premier passage n'a pas eu lieu et que le site n'est pas en ligne.
 - ⬜ TikTok, YouTube, newsletter : aucun.
 - ⬜ Mesure d'audience : Cloudflare Web Analytics à activer après la mise en ligne.
 
 ## Mesures
 
 - **Pages indexées par Google** : aucune (site pas encore en ligne, 29 octobre 2026)
-- **Liens Amazon directs** : 0 objet sur 178 (29 octobre 2026)
+- **Liens Amazon directs** : 56 objets sur 178, dont 56 sur 90 dans les Top 10 (29 octobre 2026)
 - **Articles Conseils** : 8 écrits, 5 publiés à la date du 28 octobre, 3 programmés (29 octobre 2026)
 - **Visites, clics et revenus** : aucun
 
@@ -44,4 +44,4 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 - Mettre le site en ligne : secrets Cloudflare dans le dépôt keurbible, domaine keurbible.com relié au projet Pages, Search Console et sitemap.
 - Préparer Noël : crèches, calendriers de l'Avent et cadeaux de Noël sont en tête des Top 10 ; ouvrir un compte Pinterest Keur Bible et publier les épingles avant l'Avent (29 novembre 2026).
-- Vérifier les ASIN des objets des Top 10 pour passer des recherches Amazon aux liens directs.
+- Compléter les liens directs des Top 10 (34 objets sur 90 en recherche, surtout l'art afro, les crèches africaines et les Vierges noires) et contrôler les 56 liens chaque semaine (`npm run verifier-produits -- --ecrire --lot 30`).
