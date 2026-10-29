@@ -4,9 +4,10 @@ import { BlocActus } from "@/components/actus/BlocActus";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { CarteLien, GrilleLiens } from "@/components/layout/CarteLien";
 import { Section } from "@/components/layout/Section";
+import { CoupsDeCoeur } from "@/components/accueil/CoupsDeCoeur";
 import { HeroLumiere } from "@/components/accueil/HeroLumiere";
 import { PsaumeDuJour } from "@/components/psaumes/PsaumeDuJour";
-import { OCCASIONS, PSAUMES, RUBRIQUES, TOP10S, objetsAfro, psaumeRefVersets, sousRubriqueOf } from "@/lib/catalogue";
+import { OCCASIONS, PSAUMES, RUBRIQUES, TOP10S, coupsDeCoeur, objetsAfro, psaumeRefVersets, sousRubriqueOf } from "@/lib/catalogue";
 import { siteConfig } from "@/lib/config";
 import { getConseils } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
@@ -27,7 +28,7 @@ const sujet = (title: string) => {
 };
 
 /**
- * Accueil : accroche, carrousel des Psaumes, rubriques, art chrétien afro, cadeaux par occasion, Top 10,
+ * Accueil : accroche, carrousel des Psaumes, coups de cœur (n° 1 des Top 10), rubriques, art chrétien afro, cadeaux par occasion, Top 10,
  * derniers conseils et actus. Aucun lien Amazon sur l'accueil (seulement des liens vers les pages du site).
  */
 export default function HomePage() {
@@ -76,7 +77,15 @@ export default function HomePage() {
         <PsaumeDuJour psaumes={PSAUMES.map((p) => ({ slug: p.slug, reference: psaumeRefVersets(p), texte: p.texte, pour: p.pour }))} />
       </Section>
 
-      {/* 3. Rubriques */}
+      {/* 3. Coups de cœur : le n° 1 de chaque Top 10, chaque carte mène à l'objet dans sa rubrique */}
+      <Section title="Nos coups de cœur" href="/top-10" linkLabel="Tous les Top 10" id="coups-de-coeur">
+        <p className="-mt-2 mb-6 max-w-2xl text-[16px] leading-relaxed text-muted">
+          Le numéro 1 de chacun de nos Top 10 : les objets que nous conseillons en premier, pour la maison ou pour offrir.
+        </p>
+        <CoupsDeCoeur items={coupsDeCoeur().map(({ carte, top }) => ({ carte, sujet: `Top 10 ${top.tab}` }))} />
+      </Section>
+
+      {/* 4. Rubriques */}
       <Section title="Nos rubriques" id="rubriques">
         <GrilleLiens>
           {RUBRIQUES.map((r) => (
@@ -90,7 +99,7 @@ export default function HomePage() {
         </GrilleLiens>
       </Section>
 
-      {/* 4. Art chrétien afro : lueur qui se promène, braises qui montent */}
+      {/* 5. Art chrétien afro : lueur qui se promène, braises qui montent */}
       <section aria-labelledby="afro" className="container-page mt-20 kb-reveal">
         <div className="kb-afro rounded-2xl border border-line-strong bg-white px-6 py-14 sm:px-12">
           {[8, 22, 38, 55, 71, 86].map((x, i) => (
@@ -119,7 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Cadeaux par occasion */}
+      {/* 6. Cadeaux par occasion */}
       <Section title="Un cadeau pour chaque occasion" href="/cadeaux" linkLabel="Toutes les occasions" id="cadeaux">
         <div className="kb-marquee" aria-hidden>
           <div className="kb-track">
@@ -141,7 +150,7 @@ export default function HomePage() {
         </ul>
       </Section>
 
-      {/* 6. Top 10 */}
+      {/* 7. Top 10 */}
       <Section title="Nos Top 10" href="/top-10" linkLabel="Tous les Top 10" id="top-10">
         <GrilleLiens colonnes={4}>
           {TOP10S.map((t) => (
@@ -152,14 +161,14 @@ export default function HomePage() {
         </GrilleLiens>
       </Section>
 
-      {/* 7. Derniers conseils */}
+      {/* 8. Derniers conseils */}
       {conseils.length > 0 && (
         <Section title="Nos derniers conseils" href="/conseils" linkLabel="Tous les conseils" id="conseils">
           <ConseilGrid conseils={conseils} />
         </Section>
       )}
 
-      {/* 8. Actus (lues en direct depuis la veille ; bloc absent s'il n'y en a pas) */}
+      {/* 9. Actus (lues en direct depuis la veille ; bloc absent s'il n'y en a pas) */}
       <BlocActus className="container-page mt-16" surtitre="En ce moment" titre="Les actus" limite={4} lien={{ href: "/actus", label: "Toutes les actus" }} />
     </>
   );

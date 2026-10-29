@@ -4,6 +4,7 @@
  */
 import { amazonUrl, type AmazonEmplacement } from "./amazon";
 import { IMAGES_OBJETS, OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S } from "./contenus";
+import type { Top10 } from "./top10/types";
 import type { Objet, Occasion, Psaume, Rubrique, SousRubrique, Tradition } from "./types";
 
 export { OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S };
@@ -102,6 +103,20 @@ export function toCarte(objet: Objet, emplacement: AmazonEmplacement): ObjetCart
 }
 
 export const toCartes = (objets: Objet[], emplacement: AmazonEmplacement) => objets.map((o) => toCarte(o, emplacement));
+
+/**
+ * « Nos coups de cœur » de l'accueil : le n° 1 de chaque Top 10, dans l'ordre des onglets, sans doublon
+ * et seulement s'il a une image ; 8 au plus. Aucun nouveau classement : ce sont nos choix déjà expliqués dans les Top 10.
+ */
+export function coupsDeCoeur(max = 8): Array<{ carte: ObjetCarte; top: Top10 }> {
+  const vus = new Set<string>();
+  return TOP10S.flatMap((top) => {
+    const objet = objetBySlug(top.items[0].slug);
+    if (!objet || vus.has(objet.slug) || !IMAGES_OBJETS[objet.slug]) return [];
+    vus.add(objet.slug);
+    return [{ carte: toCarte(objet, "rubrique"), top }];
+  }).slice(0, max);
+}
 
 /** « Psaume 23 (22) » : numérotation hébraïque, puis grecque entre parenthèses si elle diffère. */
 export function psaumeRef(p: Pick<Psaume, "numero" | "numeroGrec">): string {

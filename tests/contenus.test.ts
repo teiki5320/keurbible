@@ -7,7 +7,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
-import { OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S } from "../src/lib/catalogue";
+import { OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S, coupsDeCoeur } from "../src/lib/catalogue";
 import { IMAGES_OBJETS } from "../src/lib/contenus";
 import { PLAN_OCCASIONS, PLAN_PSAUMES, PLAN_RUBRIQUES, PLAN_TOP10 } from "../src/lib/contenus/plan";
 import { TITRE_MAX } from "../src/lib/metadata";
@@ -120,6 +120,15 @@ describe("Top 10", () => {
         const communs = a.items.filter((i) => b.items.some((j) => j.slug === i.slug)).length;
         assert.ok(communs <= 3, `${a.slug} et ${b.slug} : ${communs} objets en commun`);
       }
+  });
+  it("coups de cœur de l'accueil : 8 n° 1 de Top 10, sans doublon, tous avec une image", () => {
+    const c = coupsDeCoeur();
+    assert.equal(c.length, 8);
+    assert.equal(new Set(c.map((x) => x.carte.slug)).size, 8);
+    for (const { carte, top } of c) {
+      assert.equal(top.items[0].slug, carte.slug);
+      assert.ok(carte.image, `${carte.slug} : pas d'image`);
+    }
   });
 });
 

@@ -12,7 +12,7 @@ Document de référence (contenu et structure), validé par Jean le 29 octobre 2
 
 ## Arborescence
 
-1. **Accueil** — `/` : accroche, **carrousel des Psaumes** (12 cartes, Louis Segond 1910), rubriques, bloc « Art chrétien afro », cadeaux par occasion, Top 10, derniers conseils, actus. Aucun lien Amazon.
+1. **Accueil** — `/` : accroche, **carrousel des Psaumes** (12 cartes, Louis Segond 1910), **« Nos coups de cœur »** (depuis le 29 octobre 2026 : le n° 1 de chaque Top 10, 8 objets sans doublon, avec image ; chaque carte mène à l'objet dans sa rubrique), rubriques, bloc « Art chrétien afro », cadeaux par occasion, Top 10, derniers conseils, actus. Aucun lien Amazon : les boutons Amazon sont sur les pages des objets.
 2. **7 rubriques d'objets** — `/<rubrique>` (guide d'achat) et `/<rubrique>/<sous-rubrique>` : Bibles · Croix et crucifix · Chapelets et prière · Art chrétien · Statues et Vierges · Crèches et Noël · Livres et coloriages (adresses fixes dans `src/lib/contenus/plan.ts`).
 3. **Cadeaux par occasion** — `/cadeaux` et `/cadeaux/<occasion>` : baptême, première communion, profession de foi, confirmation, mariage, fête des mères, fête des pères, Noël, Pâques, condoléances.
 4. **Art chrétien afro** — `/afro` : page phare, tous les objets afro des rubriques (Jésus noir, Vierge noire, crèches africaines, croix éthiopiennes et coptes…).

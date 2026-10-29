@@ -23,7 +23,7 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Tous l
 
 | Page | Adresse |
 | --- | --- |
-| Accueil (accroche, carrousel des 12 Psaumes, rubriques, art afro, occasions, Top 10, conseils, actus ; aucun lien Amazon) | `/` |
+| Accueil (accroche, carrousel des 12 Psaumes, coups de cœur (n° 1 des Top 10), rubriques, art afro, occasions, Top 10, conseils, actus ; aucun lien Amazon) | `/` |
 | 7 rubriques et 31 sous-rubriques (objets, filtre « Pour quelle tradition ? ») | `/<rubrique>`, `/<rubrique>/<sous-rubrique>` |
 | Cadeaux par occasion (10 occasions) | `/cadeaux`, `/cadeaux/<occasion>` |
 | Art chrétien afro (page phare) | `/afro` |
