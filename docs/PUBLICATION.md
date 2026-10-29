@@ -20,7 +20,7 @@
 | Domaine | [ok] keurbible.com, www redirigé (301) |
 | SSL | [ok] Certificat Cloudflare, HSTS actif |
 | Indexation | [en cours] Sitemap lu le 29/10 (85 pages découvertes), indexation demandée pour 3 pages |
-| Mesure d'audience | [pas encore] Cloudflare Web Analytics à activer |
+| Mesure d'audience | [ok] Cloudflare Web Analytics, sans cookie (depuis le 29/10) |
 
 ## Ce qui reste, dans l'ordre
 

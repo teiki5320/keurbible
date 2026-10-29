@@ -27,18 +27,18 @@ Mis à jour le 29 octobre 2026. Un canal n'est coché que s'il est prouvé (comp
 ## Canaux
 
 - ✅ Site en ligne sur `keurbible.com` depuis le 29 octobre 2026.
-- ✅ Référencement naturel : Search Console créée (propriété de domaine keurbible.com) et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (85 pages découvertes) ; indexation demandée pour l'accueil, /afro et le Top 10 des crèches ; IndexNow prêt (après chaque publication et chaque lundi) ; 8 articles Conseils écrits (5 datés du 28 octobre, 3 programmés jusqu'au 4 novembre 2026).
+- ✅ Référencement naturel : Search Console créée (propriété de domaine keurbible.com) et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (85 pages découvertes) ; indexation demandée pour l'accueil, /afro et le Top 10 des crèches ; IndexNow prêt (après chaque publication et chaque lundi) ; 32 articles Conseils écrits (5 publiés, 27 programmés jusqu'au 30 décembre 2026 ; la routine « Sites du jour » complète ensuite à 3 par semaine).
 - ✅ Bing : site vérifié dans Bing Webmaster Tools (balise `msvalidate.01`, compte qui porte déjà les autres sites Keur) et sitemap envoyé le 29 octobre 2026 ; IndexNow après chaque publication et chaque lundi.
 - ⬜ Pinterest : aucun compte Keur Bible ; épingles verticales (1000 × 1500) prévues avec les illustrations.
 - ⬜ Actus : rubrique prête et Keur Bible ajouté à la veille le 29 octobre 2026 (15 flux) ; aucune actu publiée tant que le premier passage n'a pas eu lieu et que le site n'est pas en ligne.
 - ⬜ TikTok, YouTube, newsletter : aucun.
-- ⬜ Mesure d'audience : Cloudflare Web Analytics à activer après la mise en ligne.
+- ✅ Mesure d'audience : Cloudflare Web Analytics, sans cookie, active depuis le 29 octobre 2026.
 
 ## Mesures
 
 - **Pages indexées par Google** : aucune (site en ligne et sitemap envoyé le 29 octobre 2026)
 - **Liens Amazon directs** : 56 objets sur 178, dont 56 sur 90 dans les Top 10 (29 octobre 2026)
-- **Articles Conseils** : 8 écrits, 5 publiés à la date du 28 octobre, 3 programmés (29 octobre 2026)
+- **Articles Conseils** : 32 écrits, 5 publiés, 27 programmés lundi, mercredi et vendredi jusqu'au 30 décembre 2026 (29 octobre 2026 ; 24 ajoutés ce jour-là pour l'Avent, Noël et l'Épiphanie)
 - **Visites, clics et revenus** : aucun
 
 ## Les 3 priorités

@@ -9,12 +9,12 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions (en ligne depuis le 29 octobre 2026)
 - **Site** : keurbible.com (85 adresses dans le sitemap au lancement)
-- **IA et outils** : veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow
+- **IA et outils** : veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
 
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible [ok] → 🌍 keurbible.com — en ligne, réponse 200, www redirigé [ok]
-- 📝 **Contenu** : ✍️ Articles Conseils — 5 publiés, 3 programmés [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — sitemap lu, 85 pages découvertes [en cours]
+- 📝 **Contenu** : ✍️ Articles Conseils — 5 publiés, 27 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — sitemap lu, 85 pages découvertes [en cours]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, premier passage à 19 h le 29/10 [en cours] → 🌍 keurbible.com — accueil (4), /actus (20) [pas encore]
 - 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 56 ASIN vérifiés sur 178 objets (56 sur 90 dans les Top 10) [en cours]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — script en place, aucun bloc créé [en cours] → ✅ Validation du site — site à déclarer [à faire] → 💶 Revenus — aucun [pas encore]
@@ -41,6 +41,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Fournisseur** : Cloudflare Pages, projet `keurbible` (créé par la première publication le 29 octobre 2026), publié par `wrangler` depuis `deploy.yml`.
 - **En-têtes** : `public/_headers` (politique de sécurité limitée au site, à Google AdSense, à Cloudflare Web Analytics et à `teiki5320.github.io` pour la veille, HSTS, cache) ; adresses `*.pages.dev` en `noindex`, fichiers `.txt` internes de Next.js en `noindex` (sauf `ads.txt`, `robots.txt` et la clé IndexNow).
 - **Redirections** : `public/_redirects`.
+- **Cache des pages** : depuis le 29 octobre 2026, une règle de cache Cloudflare (Caching → Cache Rules, « Pages HTML en cache 10 min », même réglage que Keurbook) garde les pages HTML de keurbible.com (adresses sans point) 10 minutes chez Cloudflare ; les erreurs et redirections (codes 300 et plus) ne sont jamais gardées. Une page republiée apparaît donc en 10 minutes au plus. Réponse du serveur : environ 0,1 s au lieu de 0,3 à 0,9 s.
 - **Console** : tableau de bord Cloudflare, rubrique Workers & Pages → `keurbible`.
 
 ## Nom de domaine
@@ -67,7 +68,9 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 
 ## Analytics (mesure d'usage)
 
-- **Fournisseur** : Cloudflare Web Analytics, gratuit et sans cookie, à activer sur le projet après la mise en ligne (la politique de sécurité l'autorise déjà).
+- **Fournisseur** : Cloudflare Web Analytics, gratuit et sans cookie, activé le 29 octobre 2026 en configuration automatique (Cloudflare ajoute la balise aux pages servies, rien dans le code ; balise constatée en ligne le même jour). La politique de sécurité de `public/_headers` autorise son script et son envoi. La page Confidentialité décrit cette mesure.
+- **Chiffres** : à vérifier dans la console.
+- **Console** : tableau de bord Cloudflare, rubrique Analytics & Logs → Web Analytics.
 
 ## Veille actus
 
