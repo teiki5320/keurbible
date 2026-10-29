@@ -30,7 +30,7 @@ Menu : Cadeaux · Art afro · Top 10 · Psaumes · Conseils · Actus · Ma liste
 
 1. **Rubrique** : fil d'Ariane, présentation, sous-rubriques, « Comment choisir », objets rangés par sous-rubrique avec le filtre « Pour quelle tradition ? », Top 10 et conseils liés, 3 questions fréquentes, 1 annonce, autres rubriques.
 2. **Sous-rubrique** : présentation, objets avec le filtre, Top 10 et conseils liés, 1 annonce, sous-rubriques voisines.
-3. **Carte objet** (pas de fiche par objet, pour éviter les pages trop minces) : traditions, mention « Art afro », nom, notre description, bouton « Voir sur Amazon » (fiche si l'ASIN est vérifié, sinon recherche) avec la mention partenaire, bouton « Ma liste ». Pas de photo pour l'instant (aucune image trompeuse).
+3. **Carte objet** (pas de fiche par objet, pour éviter les pages trop minces) : traditions, mention « Art afro », nom, notre description, bouton « Voir sur Amazon » (fiche si l'ASIN est vérifié, sinon recherche) avec la mention partenaire, bouton « Ma liste ». Depuis le 29 octobre 2026, illustration créée par IA en haut de la carte (159 objets sur 178), avec la mention « Illustration créée par IA : l'article vendu sur Amazon peut différer. » ; les 19 autres gardent une carte sans image.
 4. **Occasion** : ce qu'est la fête dans les différentes Églises, « Selon celui qui offre », idées de cadeaux, Top 10 et conseils liés, questions fréquentes, 1 annonce.
 5. **Top 10** : onglets, intro avec le critère (« notre classement, pas un palmarès officiel »), 10 objets avec « Pourquoi on l'a choisi », « Par où commencer », questions fréquentes, « Voir aussi ». Sans publicité.
 6. **Psaume** : verset en grand, présentation, « Quand le lire », objets liés, autres Psaumes. Sans publicité.

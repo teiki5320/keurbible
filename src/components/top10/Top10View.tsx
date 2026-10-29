@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element -- site statique : images non optimisées par Next.js */
 import Link from "next/link";
 import { Faq } from "@/components/layout/Faq";
 import { ListeButton } from "@/components/liste/ListeButton";
 import { AmazonButton, AmazonNote } from "@/components/objet/AmazonButton";
+import { withBase } from "@/lib/config";
 import { TOP10_UPDATED } from "@/lib/contenus";
 import type { Top10Objet } from "@/lib/data/top10";
 import type { Top10 } from "@/lib/top10/types";
@@ -58,9 +60,23 @@ export function Top10View({ tops, top, objets }: { tops: Top10[]; top: Top10; ob
                     </h2>
                   </div>
                 </div>
-                <p className="mt-4 text-[16px] leading-relaxed text-ink/85">{o.description}</p>
-                <h3 className="eyebrow mt-5">Pourquoi on l&apos;a choisi</h3>
-                <p className="mt-2 text-[16px] leading-relaxed text-ink/85">{o.why}</p>
+                <div className={o.image ? "mt-5 sm:grid sm:grid-cols-[14rem_1fr] sm:gap-6" : ""}>
+                  {o.image && (
+                    <img
+                      src={withBase(o.image.src)}
+                      alt={o.image.alt}
+                      width={480}
+                      height={480}
+                      loading="lazy"
+                      className="mb-4 aspect-square w-full rounded-lg object-cover sm:mb-0"
+                    />
+                  )}
+                  <div>
+                    <p className={`${o.image ? "" : "mt-4 "}text-[16px] leading-relaxed text-ink/85`}>{o.description}</p>
+                    <h3 className="eyebrow mt-5">Pourquoi on l&apos;a choisi</h3>
+                    <p className="mt-2 text-[16px] leading-relaxed text-ink/85">{o.why}</p>
+                  </div>
+                </div>
                 <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-3">
                   <AmazonButton href={o.amazonUrl} nom={o.nom} className="py-3" />
                   <ListeButton slug={o.slug} nom={o.nom} />
@@ -68,7 +84,7 @@ export function Top10View({ tops, top, objets }: { tops: Top10[]; top: Top10; ob
                     {o.sousRubrique.nom} →
                   </Link>
                 </div>
-                <AmazonNote recherche={!o.lienDirect} />
+                <AmazonNote recherche={!o.lienDirect} illustrationIA={Boolean(o.image)} />
               </section>
             </li>
           ))}

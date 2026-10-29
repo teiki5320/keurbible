@@ -97,7 +97,7 @@ Même fonctionnement que Keurbook : le workflow `.github/workflows/deploy.yml` v
 - Search Console : propriété de domaine créée et sitemap lu par Google le 29 octobre 2026 (85 pages découvertes).
 - Bing Webmaster Tools : site vérifié (balise `msvalidate.01`, `BING_VERIFICATION` dans `src/lib/config.ts`) et sitemap envoyé le 29 octobre 2026.
 - Cloudflare : règle de cache « Pages HTML en cache 10 min » (comme Keurbook) et Web Analytics (sans cookie, configuration automatique) depuis le 29 octobre 2026.
-- Images des objets : 159 illustrations créées par IA (OpenArt, Kling 3 Omni, et GPT Image 2 pour 3 reprises) pour 159 des 178 objets, le 29 octobre 2026, dans `public/objets/` ; méthode et état : [`docs/IMAGES.md`](docs/IMAGES.md). Leur place dans les cartes est faite par le design (Claude Design).
+- Images des objets : 159 illustrations créées par IA (OpenArt, Kling 3 Omni, et GPT Image 2 pour 3 reprises) pour 159 des 178 objets, le 29 octobre 2026, dans `public/objets/` ; méthode et état : [`docs/IMAGES.md`](docs/IMAGES.md). Affichées en haut des cartes objets et dans les Top 10 depuis le 29 octobre 2026, avec la mention « Illustration créée par IA ».
 - Studio : Keur Bible ajouté le 29 octobre 2026 aux routines Fiches du jour, Point du matin et Sites du jour (articles, référencement le dimanche des semaines paires, vérification des liens Amazon) et au code du Studio (Indexation, Planning).
 - Amazon Partenaires et AdSense : keurbible.com déclaré sur les deux comptes (vérifié le 29 octobre 2026), blocs d'annonces créés et branchés ; examen AdSense demandé le 29 octobre 2026, à suivre dans la console.
 - Ensuite : épingles Pinterest, ASIN des autres objets.

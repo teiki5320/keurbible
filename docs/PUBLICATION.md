@@ -30,7 +30,7 @@
 4. **Search Console** : propriété de domaine `keurbible.com` créée et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (« Opération effectuée », 85 pages découvertes) ; indexation demandée pour l'accueil, /afro et /top-10/creches-de-noel.
 5. **Amazon Partenaires et AdSense** : keurbible.com déclaré sur les deux comptes (vérifié le 29 octobre 2026) ; bandeau de consentement et 2 blocs d'annonces créés le même jour ; examen AdSense demandé le 29 octobre 2026 (« En préparation » dans la console), à suivre.
 6. ✅ **Veille actus** : Keur Bible ajouté à la tâche de veille le 29 octobre 2026 (`sites/keurbible.json`, 15 flux).
-7. **Design définitif** et illustrations : 159 illustrations d'objets créées le 29 octobre 2026 (159 objets sur 178), à placer dans les cartes par le design (Claude Design).
+7. **Design définitif** et illustrations : 159 illustrations d'objets créées le 29 octobre 2026 (159 objets sur 178), affichées dans les cartes objets et les Top 10 depuis le 29 octobre 2026 (mention « Illustration créée par IA ») ; le style peut encore être retouché par le design (Claude Design).
 
 ## Web · Production
 
