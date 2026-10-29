@@ -17,7 +17,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - 📝 **Contenu** : ✍️ Articles Conseils — 5 publiés, 27 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — sitemap lu, 85 pages découvertes [en cours]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, premier passage à 19 h le 29/10 [en cours] → 🌍 keurbible.com — accueil (4), /actus (20) [pas encore]
 - 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 56 ASIN vérifiés sur 178 objets (56 sur 90 dans les Top 10) [en cours]
-- 📰 **Publicité** : 📰 AdSense (publicité web) — script en place, aucun bloc créé [en cours] → ✅ Validation du site — site à déclarer [à faire] → 💶 Revenus — aucun [pas encore]
+- 📰 **Publicité** : 📰 AdSense (publicité web) — site ajouté, 2 blocs créés [en cours] → ✅ Validation du site — examen à demander [à faire] → 💶 Revenus — aucun [pas encore]
 
 ## Vue d'ensemble
 
@@ -56,14 +56,14 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Rôle** : les boutons « Voir sur Amazon » (au moins 44 px de haut) mènent à Amazon.fr avec le tag `keurbible-21` (`src/lib/amazon.ts`, réglable par `NEXT_PUBLIC_AMAZON_TAG`). Un code par emplacement (rubrique, occasion, top, conseil) dans la table unique `AMAZON_TAGS`, tous à `keurbible-21`.
 - **Liens** : 56 objets ont un ASIN vérifié le 29 octobre 2026 (`src/lib/contenus/amazon-asins.json` : produit choisi parmi les résultats Amazon parce qu'il correspond à l'objet, fiche ouverte, titre conforme, bouton d'achat présent) et mènent à leur fiche ; les 122 autres ouvrent une recherche Amazon (rayon Livres pour les Bibles et les livres). Les 56 sont tous des objets des Top 10 (56 sur 90). L'art afro artisanal manque sur Amazon : 2 objets sur 10 du Top 10 afro en lien direct.
 - **Outils** (sur le Mac, Chrome + Playwright) : `npm run chercher-produits` relève les résultats Amazon de chaque objet (`.amazon/candidats.json`, non suivi) ; `npm run verifier-produits -- --ecrire --ajouter .amazon/choix.json` ajoute les ASIN choisis après vérification ; `npm run verifier-produits -- --ecrire --lot 30` recontrôle les liens directs (un produit sans bouton d'achat revient à la recherche). Arrêt automatique si Amazon demande un captcha.
-- **Site déclaré** : keurbible.com à déclarer sur le compte Amazon Partenaires.
+- **Site déclaré** : keurbible.com figure dans la liste des sites du compte Amazon Partenaires (vérifié le 29 octobre 2026).
 - **Console** : https://partenaires.amazon.fr
 
 ## AdSense (publicité web)
 
 - **Rôle** : annonces Google, une fois le site validé. Même compte que Keurbook (`pub-2680784147246798`, géré avec `admin@toakeur.com`). Script et balise `google-adsense-account` dans `src/app/layout.tsx` ; identifiant dans `src/lib/config.ts` (`ADSENSE_CLIENT`). `public/ads.txt` publié avec le site.
-- **Emplacements** (composant `AdSlot`, mention « Publicité ») : 1 en bas des rubriques, sous-rubriques et occasions (`NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE`), 2 dans les articles Conseils et 1 en fin d'article d'actu (`NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE`). Aucun bloc créé au 29 octobre 2026 : rien ne s'affiche.
-- **Validation du site et revenus** : site à déclarer dans AdSense après la mise en ligne ; aucun revenu.
+- **Emplacements** (composant `AdSlot`, mention « Publicité ») : 1 en bas des rubriques, sous-rubriques et occasions (`NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE`), 2 dans les articles Conseils et 1 en fin d'article d'actu (`NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE`). Blocs « Keur Bible - Page rubrique » (6721406659) et « Keur Bible - Article conseil » (1239521829) créés le 29 octobre 2026, valeurs par défaut dans `src/lib/config.ts` ; rien ne s'affiche avant la validation.
+- **Validation du site et revenus** : keurbible.com ajouté dans AdSense et propriété validée le 29 octobre 2026 ; bandeau de consentement européen (« European regulations message - keurbible.com ») publié le même jour ; examen du site pas encore demandé ; aucun revenu.
 - **Console** : https://adsense.google.com
 
 ## Analytics (mesure d'usage)

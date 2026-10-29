@@ -58,7 +58,7 @@ Règles de rédaction : [`docs/REDACTION.md`](docs/REDACTION.md). Champs exacts 
 
 ### Publicité (Google AdSense)
 
-- Même compte AdSense que Keurbook (`pub-2680784147246798`) : script chargé sur les pages, `public/ads.txt` publié. Le site n'est **pas encore déclaré** dans AdSense et aucun bloc d'annonces n'est créé (`NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE`, `_ARTICLE` vides) : aucune annonce ne s'affiche.
+- Même compte AdSense que Keurbook (`pub-2680784147246798`) : script chargé sur les pages, `public/ads.txt` publié. Site ajouté dans AdSense et propriété validée le 29 octobre 2026, bandeau de consentement européen publié, blocs « Keur Bible - Page rubrique » (6721406659) et « Keur Bible - Article conseil » (1239521829) créés le même jour. Examen du site pas encore demandé : aucune annonce ne s'affiche avant la validation.
 - Emplacements prévus : 1 en bas des rubriques, sous-rubriques et occasions ; 2 dans les articles Conseils, 1 en fin d'article d'actu. Aucune sur l'accueil, les Top 10, les Psaumes, la liste d'envies et les pages légales.
 
 ## Démarrage
@@ -99,5 +99,5 @@ Même fonctionnement que Keurbook : le workflow `.github/workflows/deploy.yml` v
 - Cloudflare : règle de cache « Pages HTML en cache 10 min » (comme Keurbook) et Web Analytics (sans cookie, configuration automatique) depuis le 29 octobre 2026.
 - Images des objets : 159 illustrations créées par IA (OpenArt, Kling 3 Omni, et GPT Image 2 pour 3 reprises) pour 159 des 178 objets, le 29 octobre 2026, dans `public/objets/` ; méthode et état : [`docs/IMAGES.md`](docs/IMAGES.md). Leur place dans les cartes est faite par le design (Claude Design).
 - Studio : Keur Bible ajouté le 29 octobre 2026 aux routines Fiches du jour, Point du matin et Sites du jour (articles, référencement le dimanche des semaines paires, vérification des liens Amazon) et au code du Studio (Indexation, Planning).
-- Reste à faire : déclarer keurbible.com sur Amazon Partenaires et dans AdSense.
-- Ensuite : Search Console, illustrations et épingles Pinterest, ASIN des autres objets.
+- Amazon Partenaires et AdSense : keurbible.com déclaré sur les deux comptes (vérifié le 29 octobre 2026), blocs d'annonces créés et branchés ; reste à demander l'examen AdSense.
+- Ensuite : épingles Pinterest, ASIN des autres objets.

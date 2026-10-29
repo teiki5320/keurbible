@@ -33,14 +33,14 @@ export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-
 
 /**
  * Identifiants des blocs d'annonces AdSense (Annonces → Par bloc d'annonces, blocs « Keur Bible - … »), publics eux aussi.
- * Un emplacement sans identifiant n'affiche rien (aucun bloc créé pour l'instant : le site n'est pas encore validé).
+ * Un emplacement sans identifiant n'affiche rien. Blocs créés le 29 octobre 2026 ; Google n'affiche des annonces qu'après la validation du site.
  * Pages sans annonce : accueil, Top 10, liste d'envies, Psaumes, pages légales, 404.
  * - rubrique : 1 annonce en bas d'une rubrique, d'une sous-rubrique ou d'une occasion, après les objets ;
  * - article : 2 annonces dans un conseil (au milieu du texte, puis en fin de page), 1 en fin d'article d'actu.
  */
 export const ADSENSE_SLOTS = {
-  rubrique: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE ?? "",
-  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "",
+  rubrique: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE ?? "6721406659",
+  article: process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE ?? "1239521829",
 };
 export type AdPlacement = keyof typeof ADSENSE_SLOTS;
 
