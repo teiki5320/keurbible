@@ -5,7 +5,10 @@
  */
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S } from "../src/lib/catalogue";
+import { IMAGES_OBJETS } from "../src/lib/contenus";
 import { PLAN_OCCASIONS, PLAN_PSAUMES, PLAN_RUBRIQUES, PLAN_TOP10 } from "../src/lib/contenus/plan";
 import { TITRE_MAX } from "../src/lib/metadata";
 import { PAGES } from "./pages";
@@ -138,5 +141,16 @@ describe("Psaumes", () => {
       for (const s of p.objets) assert.ok(slugsObjets.has(s), `${p.slug} : objet inconnu ${s}`);
     }
     assert.equal(new Set(PSAUMES.map((p) => p.pour)).size, PSAUMES.length, "lignes « pour » en double");
+  });
+});
+
+describe("Images des objets (src/lib/contenus/images-objets.json)", () => {
+  it("chaque image appartient à un objet du site, son fichier existe et elle a un texte alternatif", () => {
+    for (const [slug, { image, alt }] of Object.entries(IMAGES_OBJETS)) {
+      assert.ok(slugsObjets.has(slug), `objet inconnu : ${slug}`);
+      assert.equal(image, `/objets/${slug}.webp`, slug);
+      assert.ok(existsSync(join(import.meta.dirname, "..", "public", image)), `fichier absent : ${image}`);
+      assert.ok(alt.length >= 20 && alt.length <= 140, `${slug} : texte alternatif de ${alt.length} caractères`);
+    }
   });
 });

@@ -17,6 +17,8 @@
 # Images du site (noms stables) : cache d'une semaine.
 /brand/*
   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/objets/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
 
 # Adresses techniques de Cloudflare Pages : pas d'indexation (seul keurbible.com compte).
 https://:project.pages.dev/*

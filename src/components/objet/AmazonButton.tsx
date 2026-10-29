@@ -18,13 +18,15 @@ export function AmazonButton({ href, nom, small = false, className = "" }: { hre
 
 /**
  * Petites lignes sous les boutons Amazon : lien partenaire, puis (sans ASIN vérifié) rappel que le bouton
- * ouvre une recherche, où l'on choisit soi-même le modèle.
+ * ouvre une recherche, où l'on choisit soi-même le modèle, et (si la carte montre l'image de l'objet)
+ * que cette image est une illustration créée par IA (voir docs/IMAGES.md).
  */
-export function AmazonNote({ recherche = false, className = "" }: { recherche?: boolean; className?: string }) {
+export function AmazonNote({ recherche = false, illustrationIA = false, className = "" }: { recherche?: boolean; illustrationIA?: boolean; className?: string }) {
   return (
     <div className={`mt-2 space-y-1 text-[11.5px] leading-snug text-faint ${className}`}>
       <p>Lien partenaire Amazon. Prix, disponibilité et vendeur sont indiqués sur Amazon.</p>
       {recherche && <p>Le lien ouvre une recherche Amazon : comparez les modèles avant de choisir.</p>}
+      {illustrationIA && <p>Illustration créée par IA : l&apos;article vendu sur Amazon peut différer.</p>}
     </div>
   );
 }

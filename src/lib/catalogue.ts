@@ -3,7 +3,7 @@
  * Fonctions pures : utilisées par les pages, le plan du site et les tests.
  */
 import { amazonUrl, type AmazonEmplacement } from "./amazon";
-import { OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S } from "./contenus";
+import { IMAGES_OBJETS, OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S } from "./contenus";
 import type { Objet, Occasion, Psaume, Rubrique, SousRubrique, Tradition } from "./types";
 
 export { OBJETS, OCCASIONS, PSAUMES, RUBRIQUES, SOUS_RUBRIQUES, TOP10S };
@@ -72,6 +72,12 @@ export interface ObjetCarte {
   lienDirect: boolean;
   /** Sous-rubrique de l'objet (nom et adresse). */
   sousRubrique: { nom: string; href: string };
+  /**
+   * Image de l'objet créée par IA (public/objets/<slug>.webp, 480 × 480) et son texte alternatif, ou null.
+   * Partout où elle est affichée, mettre la mention « Illustration créée par IA : l'article vendu sur Amazon peut différer. »
+   * (AmazonNote avec illustrationIA).
+   */
+  image: { src: string; alt: string } | null;
   path: string;
 }
 
@@ -91,6 +97,7 @@ export function toCarte(objet: Objet, emplacement: AmazonEmplacement): ObjetCart
     lienDirect: Boolean(objet.amazonAsin),
     sousRubrique: { nom: s.nom, href: `/${s.rubrique}/${s.slug}` },
     path: objetPath(objet),
+    image: IMAGES_OBJETS[objet.slug] ? { src: IMAGES_OBJETS[objet.slug].image, alt: IMAGES_OBJETS[objet.slug].alt } : null,
   };
 }
 

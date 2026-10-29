@@ -9,7 +9,7 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions (en ligne depuis le 29 octobre 2026)
 - **Site** : keurbible.com (85 adresses dans le sitemap au lancement)
-- **IA et outils** : veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
+- **IA et outils** : images des objets créées par IA (OpenArt, Kling 3 Omni : 82 images au 29 octobre 2026), veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
 
 ## Parcours
 
@@ -79,3 +79,10 @@ Mis à jour le 29 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Tâche de veille** : Keur Bible ajouté le 29 octobre 2026 (`sites/keurbible.json` du dépôt veille : 15 flux testés — La Croix, Vatican News, ACI Africa, Aleteia, Zenit, Église catholique en France, Réforme, Regards protestants, Christianisme Aujourd'hui, Christianity Today, Orthodoxie.com, Africultures, RFI, Le Monde ; carte à l'icône « croix »). Exclusions : politique, scandales, polémiques entre Églises, persécutions. Premier passage prévu le 29 octobre à 19 h ; peu d'actus attendues certains jours.
 - **Fiches pour la veille** : `public/veille/entites.json` (7 rubriques et 10 occasions, tags `rubrique:<slug>` et `occasion:<slug>`), généré à chaque build.
 - **Console** : https://github.com/teiki5320/veille
+
+## OpenArt (images créées par IA)
+
+- **Rôle** : une illustration par objet (photo de produit mise en scène sur un tissu africain), modèle Kling 3 Omni (text2image, 1:1, 1k, 10 crédits l'image). Méthode : docs/IMAGES.md.
+- **Fichiers** : images brutes dans `.images/brut/` (non suivies) ; `npm run images-objets` les convertit en `public/objets/<slug>.webp` (480 × 480) et écrit `src/lib/contenus/images-objets.json`.
+- **État** : 82 images pour les 90 objets des Top 10 (29 octobre 2026) ; les autres objets restent à faire.
+- **Console** : https://openart.ai (compte Pro de Jean ; crédits restants à vérifier dans la console).

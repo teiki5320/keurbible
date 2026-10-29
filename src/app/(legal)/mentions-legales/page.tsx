@@ -100,8 +100,10 @@ export default function LegalNoticePage() {
           public. Les traductions récentes de la Bible sont présentées, jamais citées.
         </li>
         <li>
-          Les illustrations éventuelles sont créées pour {siteConfig.name} : elles ne représentent pas les objets vendus, qui
-          sont décrits sur Amazon.
+          Les images des objets sont des <strong>illustrations créées par intelligence artificielle</strong> pour{" "}
+          {siteConfig.name} (OpenArt), à partir de la description du produit : ce ne sont pas des photos des articles
+          vendus, qui peuvent différer. Chaque carte qui en montre une le précise. Les vraies photos des produits ne
+          pourraient venir que des outils officiels d&apos;Amazon Partenaires.
         </li>
         <li>Pour toute demande de retrait ou de correction, écrivez à l&apos;adresse de contact.</li>
       </ul>

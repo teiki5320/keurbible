@@ -5,6 +5,7 @@
 import type { Top10 } from "../top10/types";
 import type { Objet, Rubrique, SousRubrique } from "../types";
 import asins from "./amazon-asins.json";
+import images from "./images-objets.json";
 import { PLAN_TOP10 } from "./plan";
 import * as artChretien from "./rubriques/art-chretien";
 import * as bibles from "./rubriques/bibles";
@@ -37,6 +38,12 @@ export const SOUS_RUBRIQUES: SousRubrique[] = FICHIERS.flatMap((f) => f.sousRubr
  * produit ouvert, titre conforme à l'objet, bouton d'achat présent. Les autres objets gardent une recherche Amazon.
  */
 export const AMAZON_ASINS: Record<string, { asin: string; titre: string; verifie_le: string }> = asins.actifs;
+
+/**
+ * Images des objets créées par IA (public/objets/<slug>.webp, 480 × 480), avec leur texte alternatif :
+ * src/lib/contenus/images-objets.json, écrit par scripts/images-objets.mjs (méthode : docs/IMAGES.md).
+ */
+export const IMAGES_OBJETS: Record<string, { image: string; alt: string }> = images;
 
 export const OBJETS: Objet[] = FICHIERS.flatMap((f) => f.objets).map((o) => ({ ...o, amazonAsin: AMAZON_ASINS[o.slug]?.asin ?? o.amazonAsin }));
 

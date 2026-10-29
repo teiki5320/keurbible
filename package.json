@@ -12,7 +12,8 @@
     "test:sortie": "tsx --test tests/sortie/*.test.ts",
     "marque": "tsx scripts/marque.mjs",
     "chercher-produits": "tsx scripts/chercher-produits.mjs",
-    "verifier-produits": "tsx scripts/verifier-produits.mjs"
+    "verifier-produits": "tsx scripts/verifier-produits.mjs",
+    "images-objets": "node scripts/images-objets.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",

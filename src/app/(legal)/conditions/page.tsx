@@ -49,8 +49,9 @@ export default function TermsPage() {
       <p>
         Les sélections, Top 10 et conseils reflètent l&apos;avis de la rédaction ; ce ne sont pas des palmarès officiels. Ils
         s&apos;adressent aux chrétiens de toutes les Églises, sans prendre parti entre elles. Les versets bibliques sont cités
-        dans la traduction Louis Segond 1910, qui est dans le domaine public. Les illustrations éventuelles sont créées pour
-        {siteConfig.name} et ne représentent pas les objets vendus.
+        dans la traduction Louis Segond 1910, qui est dans le domaine public. Les images des objets sont des
+        illustrations créées par intelligence artificielle pour {siteConfig.name} : l&apos;article vendu sur Amazon peut
+        différer.
       </p>
 
       <h2>Article 5 — Propriété intellectuelle</h2>
