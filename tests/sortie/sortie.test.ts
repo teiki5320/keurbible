@@ -107,12 +107,13 @@ describe("Site construit (out/)", () => {
     assert.ok((html.match(/Traduction Louis Segond 1910/g) ?? []).length >= 12, "12 cartes de Psaumes attendues");
   });
 
-  it("l'accueil porte le code AdSense (site en examen) et, si elle existe, une balise Bing valide", () => {
+  it("l'accueil porte le code AdSense et la balise de vérification Bing", () => {
     const html = readFileSync(join(out, "index.html"), "utf8");
     assert.match(html, /<meta name="google-adsense-account" content="ca-pub-\d+"/);
     assert.match(html, /pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-\d+/);
     const bing = html.match(/<meta name="msvalidate\.01" content="([^"]*)"/);
-    if (bing) assert.match(bing[1], /^[0-9A-F]{32}$/);
+    assert.ok(bing, "balise de vérification Bing absente");
+    assert.match(bing[1], /^[0-9A-F]{32}$/);
   });
 
   it("robots.txt annonce le plan du site, qui contient les fiches avec leur date", () => {

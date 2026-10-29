@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
-import { ADSENSE_CLIENT, siteConfig } from "@/lib/config";
+import { ADSENSE_CLIENT, BING_VERIFICATION, siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
@@ -27,8 +27,11 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false },
   // Grande image autorisée dans Google Discover et les résultats.
   robots: { "max-image-preview": "large" },
-  // Validation du site dans AdSense.
-  ...(ADSENSE_CLIENT && { other: { "google-adsense-account": ADSENSE_CLIENT } }),
+  // Validation du site dans AdSense et dans Bing Webmaster Tools.
+  other: {
+    ...(ADSENSE_CLIENT && { "google-adsense-account": ADSENSE_CLIENT }),
+    ...(BING_VERIFICATION && { "msvalidate.01": BING_VERIFICATION }),
+  },
 };
 
 export const viewport: Viewport = {

@@ -44,6 +44,9 @@ export const ADSENSE_SLOTS = {
 };
 export type AdPlacement = keyof typeof ADSENSE_SLOTS;
 
+/** Code de vérification de Bing Webmaster Tools (balise msvalidate.01, public par conception : il figure dans chaque page). */
+export const BING_VERIFICATION = process.env.NEXT_PUBLIC_BING_VERIFICATION ?? "8BA824DE3FC8A5F0EC901A67D71AB314";
+
 /** Informations légales de l'éditeur, affichées dans les mentions légales et les conditions d'utilisation. */
 export const legalConfig = {
   companyName: process.env.NEXT_PUBLIC_LEGAL_COMPANY_NAME || "ALOHASH",
