@@ -8,7 +8,7 @@
 
 - **Production** : en ligne sur keurbible.com depuis le 29 octobre 2026
 - **Domaine & SSL** : keurbible.com sur Cloudflare, relié au projet Pages, www redirigé (301), certificat Cloudflare
-- **Visibilité** : Search Console créée et sitemap lu par Google le 29 octobre 2026 (85 pages découvertes) ; IndexNow après chaque publication et chaque lundi
+- **Visibilité** : Search Console et Bing Webmaster Tools le 29 octobre 2026 (sitemap lu par Google, 85 pages découvertes ; envoyé à Bing) ; IndexNow après chaque publication et chaque lundi
 - **Contact** : keurbible@toakeur.com
 
 ## Boutiques
@@ -55,5 +55,6 @@
 
 - **Sitemap** : `https://keurbible.com/sitemap.xml` (85 adresses) ; `robots.txt` autorise tout et cite le sitemap.
 - **Google Search Console** : propriété de domaine `keurbible.com` créée le 29 octobre 2026, sitemap lu le même jour (85 pages découvertes), indexation demandée pour l'accueil, /afro et /top-10/creches-de-noel.
-- **IndexNow** : prêt (`indexnow.yml`, clé publiée avec le site).
+- **Bing Webmaster Tools** : keurbible.com ajouté et vérifié le 29 octobre 2026 (balise `msvalidate.01` dans chaque page, `BING_VERIFICATION` dans `src/lib/config.ts`), sitemap envoyé le même jour (en traitement).
+- **IndexNow** : tout le sitemap signalé après chaque publication réussie de `main` et chaque lundi (première exécution réussie le 29 octobre 2026).
 - **Publicité** : script AdSense et `ads.txt` publiés avec le site ; site à déclarer, aucune annonce.
