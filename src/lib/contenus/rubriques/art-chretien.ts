@@ -67,9 +67,9 @@ export const sousRubriques: SousRubrique[] = [
     nom: "Jésus noir et Vierge noire",
     titre: "Jésus noir et Vierge noire : l'art chrétien africain",
     description:
-      "Tableaux de Jésus noir, Vierge noire à l'Enfant, Sainte Famille et Nativité africaines, Christ noir en croix : un art chrétien qui ressemble à l'Afrique.",
+      "Jésus noir en tableau, Vierge noire à l'Enfant, Sainte Famille et Nativité africaines, Christ noir en croix : l'art chrétien d'Afrique et de la diaspora.",
     intro:
-      "Partout dans le monde, les chrétiens ont donné au Christ et à Marie les traits de leur peuple. En Afrique et dans la diaspora, les représentations d'un Jésus noir et d'une Vierge noire touchent profondément les familles. Ces images disent simplement que l'Évangile parle à chacun, dans sa propre histoire.",
+      "Partout dans le monde, les chrétiens ont donné au Christ et à Marie les traits de leur peuple. En Afrique, cette tradition est très ancienne : l'Église d'Éthiopie, chrétienne depuis le IVe siècle, a développé son propre art sacré, avec ses icônes, ses manuscrits peints et ses croix ouvragées. Aujourd'hui, en Afrique et dans la diaspora, les représentations d'un Jésus noir et d'une Vierge noire touchent profondément les familles. Ces images disent simplement que l'Évangile parle à chacun, dans sa propre histoire.",
   },
 ];
 

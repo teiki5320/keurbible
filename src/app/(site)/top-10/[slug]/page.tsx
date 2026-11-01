@@ -4,7 +4,7 @@ import { Top10View } from "@/components/top10/Top10View";
 import { siteConfig } from "@/lib/config";
 import { getMaintenance } from "@/lib/data/settings";
 import { getTop10BySlug, getTop10Objets, getTop10s } from "@/lib/data/top10";
-import { breadcrumbLd, itemListLd, jsonLd } from "@/lib/json-ld";
+import { breadcrumbLd, faqLd, itemListLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
@@ -39,7 +39,8 @@ export default async function Top10Page({ params }: PageProps<"/top-10/[slug]">)
       { name: "Top 10", url: `${siteConfig.url}/top-10` },
       { name: top.title, url },
     ]),
-  ];
+    faqLd(top.faq),
+  ].filter(Boolean);
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }} />

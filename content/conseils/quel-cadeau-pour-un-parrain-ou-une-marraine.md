@@ -46,7 +46,7 @@ Adaptez le cadeau à l'Église du parrain ou de la marraine.
 
 - **Pour un catholique**, un chapelet en bois d'olivier, une statue de la Vierge ou une médaille sont des cadeaux très appréciés.
 - **Pour un orthodoxe**, une icône, par exemple la Vierge de tendresse qui tient l'Enfant joue contre joue, trouvera sa place dans le coin des icônes de la maison.
-- **Pour un protestant ou un évangélique**, préférez une belle Bible, un verset à accrocher ou un carnet de prière. Une croix sans corps convient mieux qu'un crucifix ; notre article [Croix ou crucifix : quelle différence et laquelle choisir ?](/conseils/croix-ou-crucifix-quelle-difference) vous aide à choisir.
+- **Pour un protestant ou un évangélique**, préférez une belle Bible, un verset à accrocher ou un carnet de prière. Une croix sans corps convient mieux qu'un crucifix ; notre article [Crucifix ou croix : quelle différence et lequel choisir ?](/conseils/croix-ou-crucifix-quelle-difference) vous aide à choisir.
 
 Si la famille et le parrain ne sont pas de la même Église, un objet qui convient à tous les chrétiens, comme une croix simple ou un verset mural, évite toute gêne.
 

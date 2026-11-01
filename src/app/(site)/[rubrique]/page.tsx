@@ -14,7 +14,7 @@ import { RUBRIQUES, TOP10S, objetsOfRubrique, objetsOfSousRubrique, rubriqueBySl
 import { siteConfig } from "@/lib/config";
 import { getConseilsVers } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
-import { breadcrumbLd, itemListLd, jsonLd } from "@/lib/json-ld";
+import { breadcrumbLd, faqLd, itemListLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
 
 export const dynamicParams = false;
@@ -54,7 +54,8 @@ export default async function RubriquePage({ params }: PageProps<"/[rubrique]">)
               { name: r.nom, url },
             ]),
             itemListLd(r.titre, sous.map((s) => ({ name: s.nom, url: `${url}/${s.slug}` }))),
-          ]),
+            faqLd(r.faq),
+          ].filter(Boolean)),
         }}
       />
       <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: r.nom }]} />

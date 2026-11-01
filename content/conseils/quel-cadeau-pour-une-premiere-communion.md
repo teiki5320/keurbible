@@ -25,7 +25,7 @@ Le plus beau cadeau est celui qui aidera l'enfant à continuer à prier une fois
 
 - **Un chapelet**, souvent le premier vrai chapelet de l'enfant, en bois, en nacre ou en pierres de couleur. Voyez nos [chapelets](/chapelets-et-priere/chapelets).
 - **Un dizainier ou un bracelet**, plus facile à porter pour un enfant, que l'on glisse au poignet ou dans la poche : voyez nos [dizainiers et bracelets](/chapelets-et-priere/dizainiers-et-bracelets).
-- **Une croix**, à accrocher dans sa chambre ou à porter en pendentif.
+- **Une croix**, à accrocher dans sa chambre ou à porter en pendentif. Croix nue ou crucifix ? Notre article [Crucifix ou croix : quelle différence ?](/conseils/croix-ou-crucifix-quelle-difference) vous aide à choisir.
 - **Un livre de prières pour enfants** ou un missel adapté à son âge, pour suivre la messe. Voyez nos [livres de prière](/livres-et-coloriages/livres-de-priere).
 - **Une Bible pour les jeunes**, avec un texte complet et des explications simples, qui prend le relais de la Bible illustrée des petits.
 - **Une médaille** de la Vierge ou du saint patron de l'enfant, gravée de la date.

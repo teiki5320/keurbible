@@ -22,3 +22,20 @@ export function itemListLd(name: string, items: Array<{ name: string; url: strin
     itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, url: it.url })),
   };
 }
+
+/**
+ * Questions fréquentes (FAQPage), seulement pour une FAQ affichée sur la page. Les liens Markdown des réponses
+ * sont réduits à leur texte. Renvoie null s'il n'y a aucune question, pour ne rien publier.
+ */
+export function faqLd(items: Array<{ q: string; a: string }> | undefined) {
+  if (!items || items.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*/g, "") },
+    })),
+  };
+}

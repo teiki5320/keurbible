@@ -1,6 +1,6 @@
 ---
-title: Croix ou crucifix : quelle différence et laquelle choisir ?
-description: Un crucifix porte le corps du Christ, une croix est nue. Ce que chacune exprime, les usages selon les Églises et comment bien choisir.
+title: Crucifix ou croix : quelle différence et lequel choisir ?
+description: Un crucifix est une croix qui porte le corps du Christ ; une croix est nue. Le sens de chacun, les usages selon les Églises et comment choisir.
 date: 2026-10-28
 theme: choisir
 resume: Le crucifix est une croix qui porte le corps du Christ ; la croix simple est nue. Les catholiques et les orthodoxes aiment le crucifix, les protestants et les évangéliques préfèrent souvent la croix sans corps : choisissez selon votre tradition ou celle de la personne à qui vous l'offrez.

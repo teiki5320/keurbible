@@ -13,7 +13,7 @@ import { OCCASIONS, TOP10S, objetsOfOccasion, occasionBySlug, toCartes } from "@
 import { siteConfig } from "@/lib/config";
 import { getConseilsVers } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
-import { breadcrumbLd, itemListLd, jsonLd } from "@/lib/json-ld";
+import { breadcrumbLd, faqLd, itemListLd, jsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/metadata";
 
 export const dynamicParams = false;
@@ -51,7 +51,8 @@ export default async function OccasionPage({ params }: PageProps<"/cadeaux/[occa
               { name: o.nom, url },
             ]),
             itemListLd(o.titre, objets.map((x) => ({ name: x.nom, url: `${siteConfig.url}/cadeaux/${o.slug}#${x.slug}` }))),
-          ]),
+            faqLd(o.faq),
+          ].filter(Boolean)),
         }}
       />
       <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: "Cadeaux", href: "/cadeaux" }, { name: o.nom }]} />

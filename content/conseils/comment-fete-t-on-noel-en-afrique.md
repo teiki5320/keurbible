@@ -42,7 +42,7 @@ Cette différence de date ne vient pas d'un désaccord sur la foi : ces Églises
 
 En France, beaucoup de familles venues d'Afrique gardent leurs façons de fêter Noël. Des communautés catholiques africaines, des paroisses où les chorales chantent dans les langues du pays et de nombreuses Églises évangéliques africaines organisent des célébrations très vivantes. Les familles éthiopiennes et érythréennes se retrouvent souvent le 7 janvier dans leurs églises.
 
-À la maison, ces traditions passent aussi par les objets. Une [crèche africaine](/creches-et-noel/creches-africaines), en bois sculpté ou en tissu wax, montre la Sainte Famille avec des visages d'Afrique. Un tableau de la Nativité africaine, des anges noirs suspendus au sapin ou une icône éthiopienne disent aux enfants que l'histoire de Noël est aussi la leur.
+À la maison, ces traditions passent aussi par les objets. Une [crèche africaine](/creches-et-noel/creches-africaines), en bois sculpté ou en tissu wax, montre la Sainte Famille avec des visages d'Afrique. Un tableau de la Nativité africaine ou d'un [Jésus noir](/art-chretien/jesus-noir-et-vierge-noire), des anges noirs suspendus au sapin ou une icône éthiopienne disent aux enfants que l'histoire de Noël est aussi la leur.
 
 ## Quelques idées pour vivre Noël « à l'africaine »
 

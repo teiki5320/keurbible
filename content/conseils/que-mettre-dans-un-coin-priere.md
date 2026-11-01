@@ -28,7 +28,7 @@ Inutile d'avoir une grande maison : un coin de 50 centimètres suffit souvent. D
 Ces trois objets conviennent à tous les chrétiens.
 
 - **Une Bible**, ouverte ou posée bien en vue, pour lire un passage chaque jour. Si vous hésitez sur l'édition, lisez notre article [Quelle Bible choisir pour débuter ?](/conseils/quelle-bible-choisir-pour-debuter).
-- **Une croix ou un crucifix**, accroché au-dessus ou posé sur le meuble. Notre article [Croix ou crucifix : quelle différence ?](/conseils/croix-ou-crucifix-quelle-difference) vous aidera à choisir.
+- **Une croix ou un crucifix**, accroché au-dessus ou posé sur le meuble. Notre article [Crucifix ou croix : quelle différence ?](/conseils/croix-ou-crucifix-quelle-difference) vous aidera à choisir.
 - **Une petite lumière** : une bougie, une lampe à huile ou une veilleuse. On l'allume pour le temps de prière, comme un signe que l'on se met en présence de Dieu. Voyez nos [bougies et veilleuses](/chapelets-et-priere/bougies-et-veilleuses).
 
 Un joli tissu sous les objets suffit souvent à donner au coin un air soigné et paisible.
@@ -41,7 +41,7 @@ Un joli tissu sous les objets suffit souvent à donner au coin un air soigné et
 
 **Chez les protestants et les évangéliques**, le coin prière est généralement plus sobre : une Bible ouverte, un [verset mural](/art-chretien/versets-muraux), un carnet pour noter ses sujets de prière et les réponses reçues. Certains préfèrent d'ailleurs ne pas avoir de coin particulier, et c'est très bien ainsi.
 
-Dans beaucoup de familles africaines, on aime aussi y mettre un tableau ou une statue aux traits africains, ou un tissu wax qui rappelle le pays.
+Dans beaucoup de familles africaines, on aime aussi y mettre un tableau ou une statue aux traits africains, comme un [Jésus noir ou une Vierge noire](/art-chretien/jesus-noir-et-vierge-noire), ou un tissu wax qui rappelle le pays.
 
 ## Le faire vivre au fil de l'année
 
