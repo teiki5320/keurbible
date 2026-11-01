@@ -250,6 +250,11 @@
       "titre": "Holyart Statues en Bois Peint: Vierge à l'enfant Statue Peinte Bois Val Gardena, 12 cm (4.73 inc.)",
       "verifie_le": "2026-10-31"
     },
+    "statue-vierge-medaille-miraculeuse": {
+      "asin": "B08JCQ99P3",
+      "titre": "Statue de Notre-Dame Immaculée ou Miraculeuse en Résine Hauteur 40 cm Peint à la Main.",
+      "verifie_le": "2026-11-01"
+    },
     "sticker-mural-verset-biblique": {
       "asin": "B0GSVN7BS9",
       "titre": "Ticha Quant à moi et à ma maison, nous servirons l'Éternel. Sticker mural religieux en vinyle, verset biblique, décoration chrétienne pour la maison, 56 x 36 cm.",
@@ -276,11 +281,5 @@
       "verifie_le": "2026-10-31"
     }
   },
-  "indisponibles": {
-    "statue-vierge-medaille-miraculeuse": {
-      "asin": "B07T4YJ1MP",
-      "constate_le": "2026-10-31",
-      "note": "Plus de bouton d'achat sur Amazon.fr : retour à la recherche Amazon."
-    }
-  }
+  "indisponibles": {}
 }
