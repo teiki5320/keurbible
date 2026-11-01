@@ -1,6 +1,6 @@
 # INFRA — fiche technique
 
-Mis à jour le 31 octobre 2026, d'après le code du dépôt. Aucun secret ici : uniquement des noms de variables et de consoles.
+Mis à jour le 1er novembre 2026, d'après le code du dépôt. Aucun secret ici : uniquement des noms de variables et de consoles.
 
 ## En bref
 
@@ -8,15 +8,15 @@ Mis à jour le 31 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Stack** : Next.js 16 en export statique, React 19, Tailwind CSS 4
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions (en ligne depuis le 29 octobre 2026)
-- **Site** : keurbible.com (92 adresses dans le sitemap au 31 octobre 2026)
+- **Site** : keurbible.com (96 adresses dans le sitemap au 1er novembre 2026)
 - **IA et outils** : images des objets créées par IA (OpenArt, Kling 3 Omni et GPT Image 2 : 159 images au 29 octobre 2026), veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
 
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible [ok] → 🌍 keurbible.com — en ligne, réponse 200, www redirigé [ok]
 - 📝 **Contenu** : ✍️ Articles Conseils — 6 publiés, 26 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — sitemap lu, indexation en traitement (31/10) [pas encore]
-- 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, 1er passage le 29/10 à 19 h [ok] → 🌍 keurbible.com — 6 actus sur l'accueil et /actus [ok]
-- 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 55 ASIN sur 178 objets (55 sur 90 en Top 10) [à faire]
+- 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, 1er passage le 29/10 à 19 h [ok] → 🌍 keurbible.com — 10 actus sur l'accueil et /actus [ok]
+- 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 56 ASIN sur 178 objets (56 sur 90 en Top 10) [à faire]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — site ajouté, 2 blocs créés [ok] → ✅ Validation du site — « En préparation » (vérifié le 31/10) [pas encore] → 💶 Revenus — aucun [pas encore]
 
 ## Vue d'ensemble
@@ -24,7 +24,7 @@ Mis à jour le 31 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Plateforme** : boutique-guide en français d'objets chrétiens pour la maison et à offrir, pour toutes les Églises, en priorité la diaspora africaine en France.
 - **Stack** : Next.js 16 (export statique) + React 19 + Tailwind CSS 4, TypeScript, Marked pour les articles Markdown. Contenus dans `src/lib/contenus/` (plan, rubriques et objets, occasions, Top 10, Psaumes) et `content/conseils/`. Base technique reprise de Keurbook (code seulement).
 - **Backend** : aucun. Site entièrement statique (dossier `out/`), sans base de données ni compte. La liste d'envies reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense, après accord dans le bandeau de consentement.
-- **Taille** : 92 adresses dans le sitemap au 31 octobre 2026, 85 au lancement (accueil, 7 rubriques, 31 sous-rubriques, page Cadeaux et 10 occasions, page afro, 10 Top 10, page Psaumes et 12 Psaumes, page Conseils et 6 articles publiés, page Actus et 6 actus, notre démarche, 3 pages légales). 178 objets.
+- **Taille** : 96 adresses dans le sitemap au 1er novembre 2026, 85 au lancement (accueil, 7 rubriques, 31 sous-rubriques, page Cadeaux et 10 occasions, page afro, 10 Top 10, page Psaumes et 12 Psaumes, page Conseils et 6 articles publiés, page Actus et 10 actus, notre démarche, 3 pages légales). 178 objets.
 - **Particularités** : interrupteur de maintenance dans `content/maintenance.json` (désactivé), tests de cohérence des contenus dans `tests/`, contrôle du site construit avant chaque mise en ligne (`tests/sortie/`).
 
 ## GitHub
@@ -54,7 +54,7 @@ Mis à jour le 31 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 ## Amazon Partenaires (affiliation)
 
 - **Rôle** : les boutons « Voir sur Amazon » (au moins 44 px de haut) mènent à Amazon.fr avec le tag `keurbible-21` (`src/lib/amazon.ts`, réglable par `NEXT_PUBLIC_AMAZON_TAG`). Un code par emplacement (rubrique, occasion, top, conseil) dans la table unique `AMAZON_TAGS`, tous à `keurbible-21`.
-- **Liens** : 55 objets ont un ASIN vérifié depuis le 29 octobre 2026 (`src/lib/contenus/amazon-asins.json` : produit choisi parmi les résultats Amazon parce qu'il correspond à l'objet, fiche ouverte, titre conforme, bouton d'achat présent) et mènent à leur fiche ; les 123 autres ouvrent une recherche Amazon (rayon Livres pour les Bibles et les livres). Les 55 sont tous des objets des Top 10 (55 sur 90). L'art afro artisanal manque sur Amazon : 2 objets sur 10 du Top 10 afro en lien direct. Contrôle du 31 octobre 2026 : 30 liens directs recontrôlés, 29 disponibles, 1 indisponible (statue de la Vierge de la médaille miraculeuse, plus de bouton d'achat : retour à la recherche Amazon, noté dans `indisponibles`).
+- **Liens** : 56 objets ont un ASIN vérifié depuis le 29 octobre 2026 (`src/lib/contenus/amazon-asins.json` : produit choisi parmi les résultats Amazon parce qu'il correspond à l'objet, fiche ouverte, titre conforme, bouton d'achat présent) et mènent à leur fiche ; les 122 autres ouvrent une recherche Amazon (rayon Livres pour les Bibles et les livres). Les 56 sont tous des objets des Top 10 (56 sur 90). L'art afro artisanal manque sur Amazon : 2 objets sur 10 du Top 10 afro en lien direct. Contrôle du 31 octobre 2026 : 30 liens directs recontrôlés, 29 disponibles, 1 indisponible (statue de la Vierge de la médaille miraculeuse, plus de bouton d'achat : retour à la recherche Amazon, noté dans `indisponibles`) ; le 1er novembre 2026, nouveau produit vérifié pour cette statue (B08JCQ99P3, l'ancien n'est plus en vente) et contrôle arrêté par un captcha Amazon après 1 lien (disponible) ; aucun lien indisponible.
 - **Outils** (sur le Mac, Chrome + Playwright) : `npm run chercher-produits` relève les résultats Amazon de chaque objet (`.amazon/candidats.json`, non suivi) ; `npm run verifier-produits -- --ecrire --ajouter .amazon/choix.json` ajoute les ASIN choisis après vérification ; `npm run verifier-produits -- --ecrire --lot 30` recontrôle les liens directs (un produit sans bouton d'achat revient à la recherche). Arrêt automatique si Amazon demande un captcha.
 - **Site déclaré** : keurbible.com figure dans la liste des sites du compte Amazon Partenaires (vérifié le 29 octobre 2026).
 - **Console** : https://partenaires.amazon.fr
@@ -76,7 +76,7 @@ Mis à jour le 31 octobre 2026, d'après le code du dépôt. Aucun secret ici : 
 
 - **Rôle** : actus de la culture chrétienne en Afrique et dans la diaspora (fêtes et pèlerinages, gospel, art sacré et patrimoine, livres et films ; sans politique ni scandale), même mécanique que Keurbook.
 - **Lecture** : le site lit `https://teiki5320.github.io/veille/actus/keurbible.json` dans le navigateur (fichier absent = bloc absent, page intacte) et, au build, les articles complets `articles/keurbible/`.
-- **Tâche de veille** : Keur Bible ajouté le 29 octobre 2026 (`sites/keurbible.json` du dépôt veille : 15 flux testés — La Croix, Vatican News, ACI Africa, Aleteia, Zenit, Église catholique en France, Réforme, Regards protestants, Christianisme Aujourd'hui, Christianity Today, Orthodoxie.com, Africultures, RFI, Le Monde ; carte à l'icône « croix »). Exclusions : politique, scandales, polémiques entre Églises, persécutions. Premier passage le 29 octobre 2026 à 19 h : 6 actus en ligne sur l'accueil et /actus (vérifié le 31 octobre 2026) ; peu d'actus attendues certains jours.
+- **Tâche de veille** : Keur Bible ajouté le 29 octobre 2026 (`sites/keurbible.json` du dépôt veille : 15 flux testés — La Croix, Vatican News, ACI Africa, Aleteia, Zenit, Église catholique en France, Réforme, Regards protestants, Christianisme Aujourd'hui, Christianity Today, Orthodoxie.com, Africultures, RFI, Le Monde ; carte à l'icône « croix »). Exclusions : politique, scandales, polémiques entre Églises, persécutions. Premier passage le 29 octobre 2026 à 19 h : 10 actus en ligne sur l'accueil et /actus (vérifié le 1er novembre 2026) ; peu d'actus attendues certains jours.
 - **Fiches pour la veille** : `public/veille/entites.json` (7 rubriques et 10 occasions, tags `rubrique:<slug>` et `occasion:<slug>`), généré à chaque build.
 - **Console** : https://github.com/teiki5320/veille
 
