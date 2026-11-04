@@ -1,6 +1,6 @@
 # INFRA — fiche technique
 
-Mis à jour le 3 novembre 2026, d'après le code du dépôt. Aucun secret ici : uniquement des noms de variables et de consoles.
+Mis à jour le 4 novembre 2026, d'après le code du dépôt. Aucun secret ici : uniquement des noms de variables et de consoles.
 
 ## En bref
 
@@ -8,23 +8,23 @@ Mis à jour le 3 novembre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Stack** : Next.js 16 en export statique, React 19, Tailwind CSS 4
 - **Backend** : aucun — site statique, sans base ni compte
 - **Distribution** : Cloudflare Pages, publié par GitHub Actions (en ligne depuis le 29 octobre 2026)
-- **Site** : keurbible.com (99 adresses dans le sitemap au 3 novembre 2026)
+- **Site** : keurbible.com (103 adresses dans le sitemap au 4 novembre 2026)
 - **IA et outils** : images des objets créées par IA (OpenArt, Kling 3 Omni et GPT Image 2 : 159 images au 29 octobre 2026), veille actus (2 passages par jour, depuis le 29 octobre 2026), IndexNow, Cloudflare Web Analytics, routines du Studio (Fiches du jour, Point du matin, Sites du jour : articles, référencement, produits Amazon) depuis le 29 octobre 2026
 
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible [ok] → 🌍 keurbible.com — en ligne, réponse 200, www redirigé [ok]
-- 📝 **Contenu** : ✍️ Articles Conseils — 7 publiés, 25 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — sitemap lu, indexation en traitement (31/10) [pas encore]
-- 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, 1er passage le 29/10 à 19 h [ok] → 🌍 keurbible.com — 12 actus sur l'accueil et /actus [ok]
+- 📝 **Contenu** : ✍️ Articles Conseils — 8 publiés, 24 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — sitemap lu, indexation en traitement (4/11) [pas encore]
+- 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, 1er passage le 29/10 à 19 h [ok] → 🌍 keurbible.com — 15 actus sur l'accueil et /actus [ok]
 - 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 56 ASIN sur 178 objets (56 sur 90 en Top 10) [à faire]
-- 📰 **Publicité** : 📰 AdSense (publicité web) — site ajouté, 2 blocs créés [ok] → ✅ Validation du site — « En préparation » (vérifié le 31/10) [pas encore] → 💶 Revenus — aucun [pas encore]
+- 📰 **Publicité** : 📰 AdSense (publicité web) — site ajouté, 2 blocs créés [ok] → ✅ Validation du site — « En préparation » (vérifié le 4/11) [pas encore] → 💶 Revenus — aucun [pas encore]
 
 ## Vue d'ensemble
 
 - **Plateforme** : boutique-guide en français d'objets chrétiens pour la maison et à offrir, pour toutes les Églises, en priorité la diaspora africaine en France.
 - **Stack** : Next.js 16 (export statique) + React 19 + Tailwind CSS 4, TypeScript, Marked pour les articles Markdown. Contenus dans `src/lib/contenus/` (plan, rubriques et objets, occasions, Top 10, Psaumes) et `content/conseils/`. Base technique reprise de Keurbook (code seulement).
 - **Backend** : aucun. Site entièrement statique (dossier `out/`), sans base de données ni compte. La liste d'envies reste dans le navigateur du visiteur. Seuls cookies : ceux de Google AdSense, après accord dans le bandeau de consentement.
-- **Taille** : 99 adresses dans le sitemap au 3 novembre 2026, 85 au lancement (accueil, 7 rubriques, 31 sous-rubriques, page Cadeaux et 10 occasions, page afro, 10 Top 10, page Psaumes et 12 Psaumes, page Conseils et 7 articles publiés, page Actus et 12 actus, notre démarche, 3 pages légales). 178 objets.
+- **Taille** : 103 adresses dans le sitemap au 4 novembre 2026, 85 au lancement (accueil, 7 rubriques, 31 sous-rubriques, page Cadeaux et 10 occasions, page afro, 10 Top 10, page Psaumes et 12 Psaumes, page Conseils et 8 articles publiés, page Actus et 15 actus, notre démarche, 3 pages légales). 178 objets.
 - **Particularités** : interrupteur de maintenance dans `content/maintenance.json` (désactivé), tests de cohérence des contenus dans `tests/`, contrôle du site construit avant chaque mise en ligne (`tests/sortie/`).
 
 ## GitHub
@@ -63,7 +63,7 @@ Mis à jour le 3 novembre 2026, d'après le code du dépôt. Aucun secret ici : 
 
 - **Rôle** : annonces Google, une fois le site validé. Même compte que Keurbook (`pub-2680784147246798`, géré avec `admin@toakeur.com`). Script et balise `google-adsense-account` dans `src/app/layout.tsx` ; identifiant dans `src/lib/config.ts` (`ADSENSE_CLIENT`). `public/ads.txt` publié avec le site.
 - **Emplacements** (composant `AdSlot`, mention « Publicité ») : 1 en bas des rubriques, sous-rubriques et occasions (`NEXT_PUBLIC_ADSENSE_SLOT_RUBRIQUE`), 2 dans les articles Conseils et 1 en fin d'article d'actu (`NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE`). Blocs « Keur Bible - Page rubrique » (6721406659) et « Keur Bible - Article conseil » (1239521829) créés le 29 octobre 2026, valeurs par défaut dans `src/lib/config.ts` ; rien ne s'affiche avant la validation.
-- **Validation du site et revenus** : keurbible.com ajouté dans AdSense et propriété validée le 29 octobre 2026 ; bandeau de consentement européen (« European regulations message - keurbible.com ») publié le même jour ; examen du site demandé le 29 octobre 2026 ; toujours « En préparation » (vérifié dans la console le 31 octobre 2026, ads.txt encore « Introuvable » côté AdSense alors qu'il est bien servi sur keurbible.com/ads.txt) ; aucun revenu.
+- **Validation du site et revenus** : keurbible.com ajouté dans AdSense et propriété validée le 29 octobre 2026 ; bandeau de consentement européen (« European regulations message - keurbible.com ») publié le même jour ; examen du site demandé le 29 octobre 2026 ; toujours « En préparation » (vérifié dans la console le 4 novembre 2026, ads.txt encore « Introuvable » côté AdSense alors qu'il est bien servi sur keurbible.com/ads.txt) ; aucun revenu.
 - **Console** : https://adsense.google.com
 
 ## Analytics (mesure d'usage)
@@ -76,7 +76,7 @@ Mis à jour le 3 novembre 2026, d'après le code du dépôt. Aucun secret ici : 
 
 - **Rôle** : actus de la culture chrétienne en Afrique et dans la diaspora (fêtes et pèlerinages, gospel, art sacré et patrimoine, livres et films ; sans politique ni scandale), même mécanique que Keurbook.
 - **Lecture** : le site lit `https://teiki5320.github.io/veille/actus/keurbible.json` dans le navigateur (fichier absent = bloc absent, page intacte) et, au build, les articles complets `articles/keurbible/`.
-- **Tâche de veille** : Keur Bible ajouté le 29 octobre 2026 (`sites/keurbible.json` du dépôt veille : 15 flux testés — La Croix, Vatican News, ACI Africa, Aleteia, Zenit, Église catholique en France, Réforme, Regards protestants, Christianisme Aujourd'hui, Christianity Today, Orthodoxie.com, Africultures, RFI, Le Monde ; carte à l'icône « croix »). Exclusions : politique, scandales, polémiques entre Églises, persécutions. Premier passage le 29 octobre 2026 à 19 h : 12 actus en ligne sur l'accueil et /actus (vérifié le 3 novembre 2026) ; peu d'actus attendues certains jours.
+- **Tâche de veille** : Keur Bible ajouté le 29 octobre 2026 (`sites/keurbible.json` du dépôt veille : 15 flux testés — La Croix, Vatican News, ACI Africa, Aleteia, Zenit, Église catholique en France, Réforme, Regards protestants, Christianisme Aujourd'hui, Christianity Today, Orthodoxie.com, Africultures, RFI, Le Monde ; carte à l'icône « croix »). Exclusions : politique, scandales, polémiques entre Églises, persécutions. Premier passage le 29 octobre 2026 à 19 h : 15 actus en ligne sur l'accueil et /actus (vérifié le 4 novembre 2026) ; peu d'actus attendues certains jours.
 - **Fiches pour la veille** : `public/veille/entites.json` (7 rubriques et 10 occasions, tags `rubrique:<slug>` et `occasion:<slug>`), généré à chaque build.
 - **Console** : https://github.com/teiki5320/veille
 
