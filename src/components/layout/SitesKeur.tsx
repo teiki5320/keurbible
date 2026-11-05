@@ -62,14 +62,14 @@ export function SitesKeur({ className = "" }: { className?: string }) {
         <ul>
           {SITES.map((s) => (
             <li key={s.href}>
-              <a href={s.href} className={lien}>
+              <a href={s.href} className={lien} data-umami-event="Menu sites Keur" data-umami-event-site={s.nom}>
                 <span className="font-semibold">{s.nom}</span> — {s.texte}
               </a>
             </li>
           ))}
         </ul>
         <div className="mt-1 border-t border-line pt-1">
-          <a href="https://toakeur.com/" className={lien}>
+          <a href="https://toakeur.com/" className={lien} data-umami-event="Menu sites Keur" data-umami-event-site="toakeur.com">
             Toute la maison : toakeur.com
           </a>
         </div>

@@ -9,6 +9,8 @@ export function AmazonButton({ href, nom, small = false, className = "" }: { hre
       target="_blank"
       rel="sponsored nofollow noopener"
       aria-label={`Voir sur Amazon : ${nom}, lien partenaire (nouvel onglet)`}
+      data-umami-event="Clic Amazon"
+      data-umami-event-produit={nom}
       className={`${small ? "btn-primary min-h-11 px-4 py-2 text-[13px]" : "btn-primary min-h-11"} ${className}`}
     >
       Voir sur Amazon

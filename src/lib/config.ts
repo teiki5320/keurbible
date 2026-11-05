@@ -25,6 +25,9 @@ export const siteConfig = {
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "keurbible@toakeur.com",
 };
 
+/** Umami Cloud (offre gratuite, région UE) : identifiant public du site, visible dans chaque page (pas un secret). Un seul « site » Umami partagé par tous les sites Keur (filtrer par nom de domaine), depuis le 5 novembre 2026. */
+export const UMAMI_WEBSITE_ID = "d1715415-5452-48af-a9fa-69e3e2de06f3";
+
 /**
  * Google AdSense : identifiant d'éditeur (public par conception : il figure dans le code de chaque page et dans ads.txt).
  * Vide = aucune publicité ni script Google sur le site.

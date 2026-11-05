@@ -71,6 +71,12 @@ Mis à jour le 5 novembre 2026, d'après le code du dépôt. Aucun secret ici : 
 - **Fournisseur** : Cloudflare Web Analytics, gratuit et sans cookie, activé le 29 octobre 2026 en configuration automatique (Cloudflare ajoute la balise aux pages servies, rien dans le code ; balise constatée en ligne le même jour). La politique de sécurité de `public/_headers` autorise son script et son envoi. La page Confidentialité décrit cette mesure.
 - **Chiffres** : à vérifier dans la console.
 - **Console** : tableau de bord Cloudflare, rubrique Analytics & Logs → Web Analytics.
+- **Umami (essai depuis le 5 novembre 2026)** : Umami Cloud, offre gratuite (1 site, 100 000 événements par mois,
+  pas d'accès API), région UE, sans cookie. Un seul « site » Umami partagé par tous les sites Keur : filtrer par
+  nom de domaine (hostname) dans la console. Balise dans `src/app/layout.tsx` (identifiant public `UMAMI_WEBSITE_ID`
+  dans `src/lib/config.ts`, limitée à `keurbible.com`) ; `public/_headers` autorise `cloud.umami.is` (script) et
+  `gateway.umami.is` (envoi). Clics comptés : « Clic Amazon » (avec le nom de l'objet) et « Menu sites Keur » (avec
+  le site). Console : https://cloud.umami.is. Cloudflare reste en place.
 
 ## Veille actus
 

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Mulish } from "next/font/google";
-import { ADSENSE_CLIENT, BING_VERIFICATION, siteConfig } from "@/lib/config";
+import { ADSENSE_CLIENT, BING_VERIFICATION, UMAMI_WEBSITE_ID, siteConfig } from "@/lib/config";
 import { DEFAULT_SHARE_IMAGES } from "@/lib/metadata";
 import "./globals.css";
 
@@ -44,16 +44,18 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className={`${mulish.variable} ${cinzel.variable} antialiased`} suppressHydrationWarning>
-      {ADSENSE_CLIENT && (
-        <head>
-          {/* Code AdSense : charge les annonces et le bandeau de consentement de Google (réglé dans AdSense). */}
+      <head>
+        {/* Mesure d'audience Umami, sans cookie : visites, et clics marqués data-umami-event (Amazon, menu des sites Keur). */}
+        <script defer src="https://cloud.umami.is/script.js" data-website-id={UMAMI_WEBSITE_ID} data-domains="keurbible.com" />
+        {/* Code AdSense : charge les annonces et le bandeau de consentement de Google (réglé dans AdSense). */}
+        {ADSENSE_CLIENT && (
           <script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
             crossOrigin="anonymous"
           />
-        </head>
-      )}
+        )}
+      </head>
       <body className="flex min-h-dvh flex-col">
         <a href="#contenu" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:rounded focus:bg-white focus:p-2">
           Aller au contenu
