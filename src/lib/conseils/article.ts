@@ -19,6 +19,10 @@ export interface Conseil {
   body: string;
   /** Illustration Keur Bible : public/conseils/<slug>.webp, si elle existe. */
   image?: string | null;
+  /** Crédit d'une photo libre de droits (« Auteur · licence »), s'il y en a une ; sinon l'illustration est celle de Keur Bible. */
+  imageCredit?: string;
+  /** Page d'origine de la photo (lien du crédit). */
+  imagePage?: string;
 }
 
 export const DESCRIPTION_MIN = 70;
@@ -44,6 +48,8 @@ export function parseConseil(slug: string, raw: string): Conseil {
     theme,
     resume: meta.resume ?? "",
     objets: list(meta.objets),
+    imageCredit: meta.imageCredit || undefined,
+    imagePage: /^https:\/\//.test(meta.imagePage ?? "") ? meta.imagePage : undefined,
     body: match[2].trim(),
   };
 }

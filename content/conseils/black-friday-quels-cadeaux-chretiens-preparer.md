@@ -5,6 +5,8 @@ date: 2026-11-23
 theme: offrir
 resume: Le Black Friday est le vendredi 27 novembre 2026. Pour des cadeaux chrétiens, le plus utile est de préparer sa liste avant : qui offrir, quel objet, quel budget. Comparez ensuite les offres avec calme, sans vous presser, et vérifiez toujours la fiche du produit sur Amazon.fr.
 objets: creche-bois-olivier-bethleem, bible-gros-caracteres, livre-histoire-de-noel-enfant, icone-de-la-nativite, couronne-de-l-avent-quatre-bougies, bible-enfants-365-histoires
+imageCredit: PHILIP János · CC0 (Wikimedia Commons)
+imagePage: https://commons.wikimedia.org/wiki/File:Advent_wreath_with_violet_and_rose_candles_3.jpg
 ---
 Chaque année, fin novembre, les magasins et les sites parlent de Black Friday. En 2026, il tombe le vendredi 27 novembre, quelques jours avant le début de l'Avent. C'est aussi le moment où beaucoup de familles commencent à penser aux cadeaux de Noël. Voici comment aborder cette période avec calme, quand on cherche des objets chrétiens.
 
