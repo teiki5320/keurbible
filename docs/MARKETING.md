@@ -24,7 +24,7 @@ Mis à jour le 6 novembre 2026. Un canal n'est coché que s'il est prouvé (comp
 ## Canaux
 
 - ✅ Site en ligne sur `keurbible.com` depuis le 29 octobre 2026.
-- ✅ Référencement naturel : Search Console créée (propriété de domaine keurbible.com) et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (85 pages découvertes), rapport d'indexation encore en traitement le 6 novembre 2026 ; indexation demandée pour l'accueil, /afro et le Top 10 des crèches ; IndexNow prêt (après chaque publication et chaque lundi) ; 32 articles Conseils écrits (9 publiés au 6 novembre 2026, 23 programmés jusqu'au 30 décembre 2026 ; la routine « Sites du jour » complète ensuite à 3 par semaine).
+- ✅ Référencement naturel : Search Console créée (propriété de domaine keurbible.com) et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (85 pages découvertes), rapport d'indexation encore en traitement le 6 novembre 2026 ; indexation demandée pour l'accueil, /afro et le Top 10 des crèches ; IndexNow prêt (après chaque publication et chaque lundi) ; 33 articles Conseils écrits (9 publiés au 6 novembre 2026, 24 programmés jusqu'au 30 décembre 2026 ; la routine « Sites du jour » complète ensuite à 3 par semaine).
 - ✅ Bing : site vérifié dans Bing Webmaster Tools (balise `msvalidate.01`, compte qui porte déjà les autres sites Keur) et sitemap envoyé le 29 octobre 2026 ; IndexNow après chaque publication et chaque lundi.
 - ⬜ Pinterest : aucun compte Keur Bible ; épingles verticales (1000 × 1500) prévues avec les illustrations.
 - ✅ Actus : Keur Bible dans la veille depuis le 29 octobre 2026 (15 flux, 2 passages par jour) ; 21 actus en ligne au 6 novembre 2026 (premier passage le 29 octobre à 19 h).
@@ -35,7 +35,7 @@ Mis à jour le 6 novembre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 - **Pages indexées par Google** : à vérifier dans la console (rapport « en traitement » le 6 novembre 2026)
 - **Liens Amazon directs** : 56 objets sur 178, dont 56 sur 90 dans les Top 10 (1er novembre 2026 : statue de la Vierge de la médaille miraculeuse reliée à un nouveau produit, aucun lien indisponible ; 2 novembre 2026 : contrôle arrêté par un captcha Amazon après 1 lien disponible ; 3 novembre 2026 : 30 liens recontrôlés, 30 disponibles, aucun indisponible ; 5 et 6 novembre 2026 : contrôle arrêté par un captcha après 1 lien disponible)
-- **Articles Conseils** : 32 écrits, 9 publiés, 23 programmés lundi, mercredi et vendredi jusqu'au 30 décembre 2026 (6 novembre 2026)
+- **Articles Conseils** : 33 écrits, 9 publiés, 24 programmés lundi, mercredi et vendredi jusqu'au 30 décembre 2026 (6 novembre 2026)
 - **Actus publiées** : 21 (6 novembre 2026)
 - **Visites** : à vérifier dans la console (Cloudflare Web Analytics et Umami)
 - **Revenus** : aucun côté AdSense (site pas encore validé) ; Amazon à vérifier dans la console
