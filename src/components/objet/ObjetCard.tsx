@@ -38,7 +38,7 @@ export function ObjetCard({ objet, lienRubrique = false, titre: Titre = "h3" }: 
       )}
       <div className="mt-auto pt-4">
         <div className="flex flex-wrap items-center gap-2">
-          <AmazonButton href={objet.amazonUrl} nom={objet.nom} small />
+          <AmazonButton href={objet.amazonUrl} nom={objet.nom} emplacement={objet.amazonEmplacement} small />
           <ListeButton slug={objet.slug} nom={objet.nom} />
         </div>
         <AmazonNote recherche={!objet.lienDirect} illustrationIA={Boolean(objet.image)} />

@@ -78,7 +78,7 @@ export function Top10View({ tops, top, objets }: { tops: Top10[]; top: Top10; ob
                   </div>
                 </div>
                 <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-3">
-                  <AmazonButton href={o.amazonUrl} nom={o.nom} className="py-3" />
+                  <AmazonButton href={o.amazonUrl} nom={o.nom} emplacement={o.amazonEmplacement} className="py-3" />
                   <ListeButton slug={o.slug} nom={o.nom} />
                   <Link href={o.sousRubrique.href} prefetch={false} className="text-sm text-accent hover:text-ink">
                     {o.sousRubrique.nom} →

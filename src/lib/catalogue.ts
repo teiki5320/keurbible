@@ -69,6 +69,8 @@ export interface ObjetCarte {
   classesTradition: string;
   afro: boolean;
   amazonUrl: string;
+  /** Emplacement du bouton, pour le suivi des clics. */
+  amazonEmplacement: AmazonEmplacement;
   /** Lien direct vers la fiche Amazon (ASIN vérifié) ou recherche. */
   lienDirect: boolean;
   /** Sous-rubrique de l'objet (nom et adresse). */
@@ -95,6 +97,7 @@ export function toCarte(objet: Objet, emplacement: AmazonEmplacement): ObjetCart
       .join(" "),
     afro: objet.afro,
     amazonUrl: amazonUrl(objet, emplacement),
+    amazonEmplacement: emplacement,
     lienDirect: Boolean(objet.amazonAsin),
     sousRubrique: { nom: s.nom, href: `/${s.rubrique}/${s.slug}` },
     path: objetPath(objet),

@@ -48,7 +48,7 @@ export function ListeVue({ objets }: { objets: ObjetCarte[] }) {
                     {o.nom}
                   </Link>
                   <div className="mt-2">
-                    <AmazonButton href={o.amazonUrl} nom={o.nom} small />
+                    <AmazonButton href={o.amazonUrl} nom={o.nom} emplacement={o.amazonEmplacement} small />
                     <AmazonNote recherche={!o.lienDirect} />
                   </div>
                 </li>
@@ -87,7 +87,7 @@ export function ListeVue({ objets }: { objets: ObjetCarte[] }) {
                     {o.sousRubrique.nom} · {o.traditions}
                   </p>
                   <div className="mt-2">
-                    <AmazonButton href={o.amazonUrl} nom={o.nom} small />
+                    <AmazonButton href={o.amazonUrl} nom={o.nom} emplacement={o.amazonEmplacement} small />
                     <AmazonNote recherche={!o.lienDirect} />
                   </div>
                 </div>
