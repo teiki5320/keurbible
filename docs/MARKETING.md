@@ -12,7 +12,7 @@ Mis à jour le 9 novembre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 - [fait] **Aujourd'hui** : site en ligne sur keurbible.com depuis le 29 octobre 2026, affiliation Amazon Partenaires (tag `keurbible-21`).
 - [en cours] **AdSense** : même compte que Keurbook ; site ajouté, bandeau de consentement et 2 blocs d'annonces créés le 29 octobre 2026 ; examen demandé le même jour, toujours « En préparation » (vérifié le 9 novembre 2026).
-- **Liens Amazon directs** : 56 ASIN vérifiés, tous dans les Top 10 (56 objets sur 90 au 1er novembre 2026) ; les autres objets ouvrent une recherche Amazon.
+- **Liens Amazon directs** : 55 ASIN vérifiés, tous dans les Top 10 (55 objets sur 90 au 9 novembre 2026) ; les autres objets ouvrent une recherche Amazon.
 - **Partenariats** : artisans et boutiques d'art chrétien africain, une fois l'audience mesurée (l'art afro artisanal est presque absent d'Amazon : 2 objets sur 10 du Top 10 afro en lien direct).
 
 ## Points forts
@@ -34,7 +34,7 @@ Mis à jour le 9 novembre 2026. Un canal n'est coché que s'il est prouvé (comp
 ## Mesures
 
 - **Pages indexées par Google** : à vérifier dans la console (rapport « en traitement » le 9 novembre 2026)
-- **Liens Amazon directs** : 56 objets sur 178, dont 56 sur 90 dans les Top 10 (1er novembre 2026 : statue de la Vierge de la médaille miraculeuse reliée à un nouveau produit, aucun lien indisponible ; 2 novembre 2026 : contrôle arrêté par un captcha Amazon après 1 lien disponible ; 3 novembre 2026 : 30 liens recontrôlés, 30 disponibles, aucun indisponible ; 5, 6, 7, 8 et 9 novembre 2026 : contrôle arrêté par un captcha après 1 lien disponible)
+- **Liens Amazon directs** : 55 objets sur 178, dont 55 sur 90 dans les Top 10 (9 novembre 2026 au soir : 22 liens contrôlés à la main, 21 disponibles, 1 indisponible, l'étoile de Bethléem lumineuse, revenue à la recherche Amazon ; 1er novembre 2026 : statue de la Vierge de la médaille miraculeuse reliée à un nouveau produit, aucun lien indisponible ; 2 novembre 2026 : contrôle arrêté par un captcha Amazon après 1 lien disponible ; 3 novembre 2026 : 30 liens recontrôlés, 30 disponibles, aucun indisponible ; 5, 6, 7, 8 et 9 novembre 2026 : contrôle arrêté par un captcha après 1 lien disponible)
 - **Articles Conseils** : 33 écrits, 10 publiés, 23 programmés lundi, mercredi et vendredi jusqu'au 30 décembre 2026 (9 novembre 2026)
 - **Actus publiées** : 27 (9 novembre 2026)
 - **Visites** : à vérifier dans la console (Cloudflare Web Analytics et Umami)
@@ -44,4 +44,4 @@ Mis à jour le 9 novembre 2026. Un canal n'est coché que s'il est prouvé (comp
 
 - Suivre l'indexation des 117 pages dans Search Console et Bing Webmaster Tools ; suivre l'examen AdSense dans la console.
 - Préparer Noël : crèches, calendriers de l'Avent et cadeaux de Noël sont en tête des Top 10 ; ouvrir un compte Pinterest Keur Bible et publier les épingles avant l'Avent (29 novembre 2026).
-- Compléter les liens directs des Top 10 (34 objets sur 90 en recherche, surtout l'art afro, les crèches africaines et les Vierges noires) et contrôler les 56 liens chaque semaine (`npm run verifier-produits -- --ecrire --lot 30`).
+- Compléter les liens directs des Top 10 (35 objets sur 90 en recherche, surtout l'art afro, les crèches africaines et les Vierges noires) et contrôler les 55 liens chaque semaine (`npm run verifier-produits -- --ecrire --lot 30`).

@@ -24,7 +24,7 @@
 
 ## Ce qui reste, dans l'ordre
 
-1. ✅ **Code et contenus** : site construit et contrôlé le 29 octobre 2026 (85 adresses), sur le Mac et par GitHub Actions (tout au vert jusqu'à l'étape des secrets Cloudflare) ; 56 liens Amazon directs vérifiés.
+1. ✅ **Code et contenus** : site construit et contrôlé le 29 octobre 2026 (85 adresses), sur le Mac et par GitHub Actions (tout au vert jusqu'à l'étape des secrets Cloudflare) ; 56 liens Amazon directs vérifiés à cette date (55 au 9 novembre 2026).
 2. ✅ **Secrets Cloudflare** : `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` ajoutés au dépôt le 29 octobre 2026 ; première publication réussie le même jour.
 3. ✅ **Domaine** : `keurbible.com` et `www.keurbible.com` reliés au projet le 29 octobre 2026, règle de redirection de www vers l'adresse sans www (301).
 4. **Search Console** : propriété de domaine `keurbible.com` créée et sitemap envoyé le 29 octobre 2026, lu par Google le même jour (« Opération effectuée », 85 pages découvertes) ; indexation demandée pour l'accueil, /afro et /top-10/creches-de-noel ; rapport d'indexation encore en traitement le 9 novembre 2026.

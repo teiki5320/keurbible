@@ -16,6 +16,16 @@ interface Donnees {
 
 let cache: Donnees | null = null;
 
+/**
+ * Doublons : même information publiée deux fois par la veille (deux sources, deux passages).
+ * id du doublon → id de l'article gardé. Le doublon n'a pas de page ; son ancienne adresse est redirigée
+ * en 301 vers l'article gardé dans public/_redirects, et ses cartes mènent à l'article gardé.
+ */
+const DOUBLONS: Record<string, string> = {
+  // Nomination du père Avelino Chico au Vatican (5 novembre 2026) : article ACI Africa, doublon de celui de Vatican News.
+  cd30bda0f155850fd8fa9125ec6f570a12a01f9e: "5a985785320101ff262781efe5607bfaab5c6913",
+};
+
 function lire(): Donnees {
   if (cache) return cache;
   try {
@@ -23,7 +33,7 @@ function lire(): Donnees {
     const actus = nettoyerFichier({ actus: brut.actus })?.actus ?? [];
     const articles = (Array.isArray(brut.articles) ? brut.articles : [])
       .map(nettoyerArticle)
-      .filter((a): a is ArticleActu => a !== null)
+      .filter((a): a is ArticleActu => a !== null && !(a.id in DOUBLONS))
       .sort((a, b) => Date.parse(b.publie_le) - Date.parse(a.publie_le));
     cache = { actus, articles };
   } catch {
@@ -43,7 +53,9 @@ export function getArticleActu(slug: string): ArticleActu | undefined {
 
 /** Pages construites : id de l'actu → adresse /actus/<slug>/ (donné aux cartes d'actus). */
 export function getConstruits(): Record<string, string> {
-  return Object.fromEntries(lire().articles.map((a) => [a.id, a.slug]));
+  const construits: Record<string, string> = Object.fromEntries(lire().articles.map((a) => [a.id, a.slug]));
+  for (const [doublon, garde] of Object.entries(DOUBLONS)) if (construits[garde]) construits[doublon] = construits[garde];
+  return construits;
 }
 
 /** Actus lues au moment de la construction (pour « Autres actus »). */
