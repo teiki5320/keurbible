@@ -58,7 +58,7 @@ Règles de rédaction : [`docs/REDACTION.md`](docs/REDACTION.md). Champs exacts 
 
 ### Publicité (Google AdSense)
 
-- Même compte AdSense que Keurbook (`pub-2680784147246798`) : script chargé sur les pages, `public/ads.txt` publié. Site ajouté dans AdSense et propriété validée le 29 octobre 2026, bandeau de consentement européen publié, blocs « Keur Bible - Page rubrique » (6721406659) et « Keur Bible - Article conseil » (1239521829) créés le même jour. Examen du site demandé le 29 octobre 2026, toujours « En préparation » (vérifié dans la console le 9 novembre 2026) : aucune annonce ne s'affiche avant la validation.
+- Même compte AdSense que Keurbook (`pub-2680784147246798`) : script chargé sur les pages, `public/ads.txt` publié. Site ajouté dans AdSense et propriété validée le 29 octobre 2026, bandeau de consentement européen publié, blocs « Keur Bible - Page rubrique » (6721406659) et « Keur Bible - Article conseil » (1239521829) créés le même jour. Examen du site demandé le 29 octobre 2026, toujours « En préparation » (vérifié dans la console le 11 novembre 2026) : aucune annonce ne s'affiche avant la validation.
 - Emplacements prévus : 1 en bas des rubriques, sous-rubriques et occasions ; 2 dans les articles Conseils, 1 en fin d'article d'actu. Aucune sur l'accueil, les Top 10, les Psaumes, la liste d'envies et les pages légales.
 
 ## Démarrage
@@ -92,12 +92,12 @@ Même fonctionnement que Keurbook : le workflow `.github/workflows/deploy.yml` v
 
 ### État de la mise en route (29 octobre 2026)
 
-- Fait : code, contenus de lancement (7 rubriques, 31 sous-rubriques, 178 objets, 10 occasions, 10 Top 10, 12 Psaumes, 8 articles Conseils au lancement ; 24 articles ajoutés le 29 octobre 2026, soit 32 au total, puis 1 article Black Friday le 7 novembre 2026, soit 33 : 10 publiés au 9 novembre 2026, 23 programmés lundi, mercredi et vendredi jusqu'au 30 décembre 2026), tests, workflows, tag Amazon `keurbible-21`, 55 liens Amazon directs vérifiés au 9 novembre 2026, veille actus branchée (dépôt `teiki5320/veille`, 15 flux).
+- Fait : code, contenus de lancement (7 rubriques, 31 sous-rubriques, 178 objets, 10 occasions, 10 Top 10, 12 Psaumes, 8 articles Conseils au lancement ; 24 articles ajoutés le 29 octobre 2026, soit 32 au total, puis 1 article Black Friday le 7 novembre 2026, soit 33 : 11 publiés au 11 novembre 2026, 22 programmés lundi, mercredi et vendredi jusqu'au 30 décembre 2026), tests, workflows, tag Amazon `keurbible-21`, 55 liens Amazon directs vérifiés au 9 novembre 2026, veille actus branchée (dépôt `teiki5320/veille`, 15 flux).
 - Fait le 29 octobre 2026 : secrets `CLOUDFLARE_API_TOKEN` (jeton « Keur Bible - publication GitHub », Cloudflare Pages en modification) et `CLOUDFLARE_ACCOUNT_ID` dans le dépôt, projet Pages `keurbible` créé par la première publication, domaines `keurbible.com` et `www.keurbible.com` reliés, règle de redirection Cloudflare de www vers l'adresse sans www (301, chaîne de requête conservée). Adresse de contact `keurbible@toakeur.com` confirmée par Jean.
-- Search Console : propriété de domaine créée et sitemap lu par Google le 29 octobre 2026 (85 pages découvertes).
+- Search Console : propriété de domaine créée et sitemap lu par Google le 29 octobre 2026 (85 pages découvertes) ; 111 pages dans l'index de Google au rapport du 6 novembre 2026.
 - Bing Webmaster Tools : site vérifié (balise `msvalidate.01`, `BING_VERIFICATION` dans `src/lib/config.ts`) et sitemap envoyé le 29 octobre 2026.
 - Cloudflare : règle de cache « Pages HTML en cache 10 min » (comme Keurbook) et Web Analytics (sans cookie, configuration automatique) depuis le 29 octobre 2026.
 - Images des objets : 159 illustrations créées par IA (OpenArt, Kling 3 Omni, et GPT Image 2 pour 3 reprises) pour 159 des 178 objets, le 29 octobre 2026, dans `public/objets/` ; méthode et état : [`docs/IMAGES.md`](docs/IMAGES.md). Affichées en haut des cartes objets et dans les Top 10 depuis le 29 octobre 2026, avec la mention « Illustration créée par IA ».
 - Studio : Keur Bible ajouté le 29 octobre 2026 aux routines Fiches du jour, Point du matin et Sites du jour (articles, référencement le dimanche des semaines paires, vérification des liens Amazon) et au code du Studio (Indexation, Planning).
-- Amazon Partenaires et AdSense : keurbible.com déclaré sur les deux comptes (vérifié le 29 octobre 2026), blocs d'annonces créés et branchés ; examen AdSense demandé le 29 octobre 2026, toujours « En préparation » (vérifié le 9 novembre 2026).
+- Amazon Partenaires et AdSense : keurbible.com déclaré sur les deux comptes (vérifié le 29 octobre 2026), blocs d'annonces créés et branchés ; examen AdSense demandé le 29 octobre 2026, toujours « En préparation » (vérifié le 11 novembre 2026).
 - Ensuite : épingles Pinterest, ASIN des autres objets.
