@@ -66,9 +66,9 @@ export const sousRubriques: SousRubrique[] = [
     slug: "etuis-et-couvertures",
     rubrique: "bibles",
     nom: "Étuis et couvertures",
-    titre: "Étuis et housses de Bible : protéger sa Bible",
+    titre: "Housse et étui de Bible : protéger sa Bible",
     description:
-      "Étui en cuir zippé, housse en tissu wax, couverture brodée au prénom, sac à Bible : de quoi protéger et emporter sa Bible chaque dimanche.",
+      "Housse de Bible en tissu wax, étui en cuir zippé, couverture brodée au prénom, sac à Bible : de quoi protéger et emporter sa Bible chaque dimanche.",
     intro:
       "Une Bible que l'on emporte au culte ou à la messe chaque semaine s'abîme vite. Un étui la protège, garde avec elle un stylo, des feuillets et des lunettes, et lui donne une allure personnelle. C'est aussi un petit cadeau très apprécié, seul ou avec une Bible neuve.",
   },

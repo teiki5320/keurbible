@@ -26,7 +26,7 @@ C'est la résolution la plus courante, et l'une des plus belles. Quelques façon
 
 - **Lire la Bible en un an**, avec un plan de lecture : quelques chapitres par jour, de la Genèse à l'Apocalypse. Un carnet dédié aide à cocher les jours et à ne pas se perdre.
 - **Lire un Évangile en un mois** : Marc compte seize chapitres, c'est le plus court. Un chapitre tous les deux jours suffit.
-- **Lire un Psaume par jour** : il y en a cent cinquante, de quoi accompagner cinq mois. Commencez par nos [Psaumes à méditer](/psaumes).
+- **Lire un Psaume par jour** : il y en a cent cinquante, de quoi accompagner cinq mois. Commencez par nos [Psaumes à méditer](/psaumes), et confiez vos projets de l'année avec le Psaume 37 (36) : « [Recommande ton sort à l'Éternel](/psaumes/psaume-37), mets en lui ta confiance, et il agira. »
 
 Choisissez un moment fixe : le café du matin, le trajet en transport, le soir avant de dormir. Comme le dit le Psaume 119 (118) : « Ta parole est une lampe à mes pieds, et une lumière sur mon sentier » (Psaume 119 (118).105). Voyez notre page sur le [Psaume 119](/psaumes/psaume-119).
 

@@ -65,11 +65,11 @@ export const sousRubriques: SousRubrique[] = [
     slug: "croix-ethiopiennes-et-coptes",
     rubrique: "croix-et-crucifix",
     nom: "Croix éthiopiennes et coptes",
-    titre: "Croix éthiopiennes et coptes : l'art des Églises d'Afrique",
+    titre: "Croix éthiopienne et croix copte : l'art chrétien d'Afrique",
     description:
-      "Croix éthiopiennes ajourées, croix de Lalibela, croix coptes d'Égypte, pendentifs : les croix des plus anciennes Églises d'Afrique.",
+      "Croix éthiopienne ajourée, croix de Lalibela, croix copte d'Égypte, pendentif : les croix des plus anciennes Églises d'Afrique, à accrocher ou offrir.",
     intro:
-      "L'Éthiopie et l'Égypte comptent parmi les plus anciennes terres chrétiennes du monde. Leurs Églises orthodoxes ont créé des croix d'une grande finesse, ajourées et couvertes d'entrelacs. Accrocher une de ces croix chez soi, c'est rappeler que le christianisme a des racines africaines très anciennes.",
+      "L'Éthiopie et l'Égypte comptent parmi les plus anciennes terres chrétiennes du monde. Leurs Églises orthodoxes ont créé des croix d'une grande finesse, ajourées et couvertes d'entrelacs. Accrocher une de ces croix chez soi, c'est rappeler que le christianisme a des racines africaines très anciennes. Les croix éthiopiennes les plus célèbres viennent de Lalibela ; on distingue la croix de procession, la croix de main et la croix de cou, que beaucoup portent en pendentif.",
   },
   {
     slug: "pendentifs-croix",

@@ -24,7 +24,7 @@ Pour débuter, la question la plus utile est donc simple : est-ce que je compren
 
 **La Parole de Vie.** Publiée en 2000 par l'Alliance biblique française, elle utilise un vocabulaire courant et des phrases courtes. Elle a été pensée en particulier pour les personnes dont le français n'est pas la langue maternelle. C'est souvent un excellent premier choix, pour les adultes comme pour les jeunes.
 
-**La Bible du Semeur.** Traduite par une équipe de biblistes évangéliques et parue en 1992, elle se lit de façon fluide, tout en restant soignée.
+**La Bible du Semeur.** Traduite par une équipe de biblistes évangéliques et parue en 1992, elle se lit de façon fluide, tout en restant soignée. Est-elle catholique ? Non : c'est une traduction évangélique, et comme les Bibles protestantes, elle ne contient pas les livres deutérocanoniques des Bibles catholiques (voir plus bas). Un catholique peut la lire chez lui, mais il n'y retrouvera ni ces livres ni le texte entendu à la messe.
 
 **La traduction liturgique (AELF).** Publiée en 2013, c'est le texte que l'on entend à la messe dans les pays francophones. Si vous allez à l'église catholique, vous retrouverez chez vous les mots entendus le dimanche.
 
@@ -45,9 +45,9 @@ Si vous choisissez une Bible pour suivre la messe, prenez une édition qui conti
 ## Nos conseils pour bien commencer
 
 - **Une traduction lisible.** La Parole de Vie, le Semeur ou la Segond 21 sont de bons points de départ. Notre page [Éditions et traductions](/bibles/editions-et-traductions) les présente une à une.
-- **Le bon format.** Une Bible de poche pour les transports, une édition en gros caractères si vous lisez avec difficulté : voyez nos [formats et gros caractères](/bibles/formats-et-gros-caracteres). Un [étui ou une couverture](/bibles/etuis-et-couvertures) protégera une Bible que l'on emporte partout.
+- **Le bon format.** Une Bible de poche pour les transports, une édition en gros caractères si vous lisez avec difficulté : voyez nos [formats et gros caractères](/bibles/formats-et-gros-caracteres). Un [étui ou une housse de Bible](/bibles/etuis-et-couvertures) protégera une Bible que l'on emporte partout.
 - **Des notes et des introductions.** Elles aident beaucoup à comprendre le contexte de chaque livre.
 - **Par où commencer ?** Rien n'oblige à lire dans l'ordre. Beaucoup de lecteurs commencent par un Évangile, celui de Marc, le plus court, ou celui de Luc, puis découvrent les Psaumes. Notre sélection de [Psaumes](/psaumes) est une bonne porte d'entrée, à commencer par le [Psaume 23 (22)](/psaumes/psaume-23).
 - **Pour un enfant**, préférez une Bible illustrée adaptée à son âge : voyez nos [Bibles pour enfants](/bibles/bibles-pour-enfants).
 
-Comme le dit le Psaume 119 (118), verset 105 : « Ta parole est une lampe à mes pieds, et une lumière sur mon sentier. » Pour comparer les éditions, parcourez notre rubrique [Bibles](/bibles) ou notre [Top 10 des Bibles à offrir](/top-10/bibles-a-offrir).
+Comme le dit le Psaume 119 (118), verset 105 : « Ta parole est une lampe à mes pieds, et une lumière sur mon sentier. » Pour comparer les éditions, parcourez notre rubrique [Bibles](/bibles) ou notre [Top 10 des belles Bibles à offrir](/top-10/bibles-a-offrir).

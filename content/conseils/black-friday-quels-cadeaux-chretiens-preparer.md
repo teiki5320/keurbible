@@ -36,7 +36,7 @@ Si vous cherchez des cadeaux pour la fête de la Nativité, voici quelques piste
 - **Un livre pour un enfant.** Un livre de l'histoire de Noël se lit le soir, en famille. Pour les plus grands, une Bible en 365 histoires accompagne toute l'année. Retrouvez notre choix de [Bibles pour enfants](/bibles/bibles-pour-enfants).
 - **Une icône de la Nativité.** Elle convient bien à un proche catholique ou orthodoxe, et trouve sa place dans un coin de prière.
 - **Une couronne de l'Avent.** Elle rythme les quatre semaines avant Noël. L'Avent commence le dimanche 29 novembre 2026 : un cadeau de ce type doit donc arriver à temps.
-- **Une Bible en gros caractères** pour un parent ou un grand-parent dont la vue a baissé.
+- **Une Bible en gros caractères** pour un parent ou un grand-parent dont la vue a baissé. D'autres idées dans notre [Top 10 des belles Bibles à offrir](/top-10/bibles-a-offrir).
 
 Pour d'autres idées, parcourez notre [Top 10 des cadeaux chrétiens de Noël](/top-10/cadeaux-chretiens-de-noel) et nos [idées de cadeaux pour Noël](/cadeaux/noel).
 

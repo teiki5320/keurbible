@@ -46,7 +46,7 @@ Un enfant de 8 ans n'a pas les mêmes goûts qu'un préadolescent. Quelques rep�
 - **Un enfant qui aime lire** sera ravi d'un livre sur Jésus, les saints ou les grandes figures de la Bible.
 - **Un enfant créatif** aimera un carnet de prière à décorer, ou un coloriage biblique.
 - **Un enfant qui bouge beaucoup** préférera un bracelet dizainier, solide, plutôt qu'un chapelet fragile.
-- **Un enfant de la diaspora africaine** sera peut-être touché par une croix éthiopienne ou une image de la Vierge aux traits africains, qui lui ressemble.
+- **Un enfant de la diaspora africaine** sera peut-être touché par une [croix éthiopienne](/croix-et-crucifix/croix-ethiopiennes-et-coptes) ou une image de la Vierge aux traits africains, qui lui ressemble.
 
 Choisissez des objets solides : à cet âge, un chapelet se casse vite s'il est trop délicat.
 
@@ -54,7 +54,7 @@ Choisissez des objets solides : à cet âge, un chapelet se casse vite s'il est 
 
 - **Renseignez-vous** auprès des parents pour éviter les doublons : il est fréquent de recevoir plusieurs chapelets le même jour.
 - **Faites graver** le prénom et la date de la première communion : l'objet devient un souvenir unique.
-- **Ajoutez un mot écrit à la main**, pour dire à l'enfant ce que ce jour représente pour vous.
+- **Ajoutez un mot écrit à la main**, pour dire à l'enfant ce que ce jour représente pour vous. Vous pouvez y recopier un verset, comme « Sentez et voyez combien l'Éternel est bon » ([Psaume 34 (33)](/psaumes/psaume-34)), qui accompagne souvent le moment de la communion.
 - **Pensez à la suite** : un cadeau qui servira encore à la [confirmation](/cadeaux/confirmation) ou à la profession de foi est un bon choix.
 
 Pour plus d'idées, parcourez nos [cadeaux de première communion](/cadeaux/premiere-communion) ou notre [Top 10 des cadeaux de première communion](/top-10/cadeaux-de-premiere-communion).

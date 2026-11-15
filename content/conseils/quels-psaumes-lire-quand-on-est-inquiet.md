@@ -54,4 +54,4 @@ Il n'est pas nécessaire de tout lire. Un Psaume, ou même quelques versets, suf
 
 Les Psaumes ne font pas disparaître les problèmes, mais ils aident à ne pas les porter seul. Si l'inquiétude dure, vous empêche de dormir ou de vivre, parlez-en aussi autour de vous : à un proche, à un prêtre ou un pasteur, à un médecin. Prier et se faire aider vont très bien ensemble.
 
-Pour découvrir les autres Psaumes du site, ouvrez notre page [Psaumes](/psaumes). Et pour avoir un verset sous les yeux chaque jour, parcourez nos [versets muraux](/art-chretien/versets-muraux).
+Et quand l'épreuve est passée, remerciez avec le [Psaume 34 (33)](/psaumes/psaume-34) : « Sentez et voyez combien l'Éternel est bon ! » Pour découvrir les autres Psaumes du site, ouvrez notre page [Psaumes](/psaumes). Et pour avoir un verset sous les yeux chaque jour, parcourez nos [versets muraux](/art-chretien/versets-muraux).

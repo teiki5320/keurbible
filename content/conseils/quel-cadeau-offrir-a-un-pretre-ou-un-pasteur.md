@@ -35,7 +35,7 @@ Un prêtre ou un pasteur passe beaucoup de temps à lire, à préparer ses homé
 
 - **Une Bible d'étude**, avec notes et cartes, pour préparer ses prédications. Vérifiez d'abord quelle traduction il utilise. Voyez nos [formats de Bibles](/bibles/formats-et-gros-caracteres).
 - **Un carnet de notes de prédication**, pour préparer ses textes ou garder la trace de ses lectures. Voyez nos [carnets de prière](/chapelets-et-priere/carnets-de-priere).
-- **Un étui de Bible en cuir**, pratique pour les visites à domicile, à l'hôpital ou en voyage. Voyez nos [étuis et couvertures](/bibles/etuis-et-couvertures).
+- **Un étui de Bible en cuir**, pratique pour les visites à domicile, à l'hôpital ou en voyage. Voyez nos [étuis et housses de Bible](/bibles/etuis-et-couvertures).
 - **Un livre de foi ou de méditations**, choisi dans sa tradition, qui nourrira sa propre prière.
 
 ## Des idées pour sa prière et sa maison

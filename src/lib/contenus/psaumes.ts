@@ -141,9 +141,9 @@ export const PSAUMES: Psaume[] = [
     texte:
       "Sentez et voyez combien l'Éternel est bon ! Heureux l'homme qui cherche en lui son refuge !",
     pour: "Pour goûter la bonté de Dieu",
-    titre: "Psaume 34 (33) : Sentez et voyez combien l'Éternel est bon",
+    titre: "Sentez et voyez combien l'Éternel est bon : Psaume 34 (33)",
     description:
-      "Le Psaume 34 (33), « Sentez et voyez combien l'Éternel est bon » : le texte Louis Segond de ce Psaume de reconnaissance.",
+      "« Sentez et voyez combien l'Éternel est bon » : le verset 9 du Psaume 34 (33) en Louis Segond, un Psaume de reconnaissance souvent lu à la communion.",
     presentation:
       "Le Psaume 34 est le chant d'un homme qui a crié vers Dieu dans la détresse et qui a été exaucé. Il invite les autres à faire la même expérience : goûter, sentir et voir que Dieu est bon. En hébreu, ses versets suivent l'ordre de l'alphabet. Dans la liturgie catholique, il accompagne souvent le moment de la communion. On le lit pour remercier après une épreuve traversée ou pour encourager quelqu'un qui cherche Dieu.",
     quand: ["une première communion", "une épreuve traversée", "un temps de reconnaissance"],
@@ -156,9 +156,9 @@ export const PSAUMES: Psaume[] = [
     versets: "5",
     texte: "Recommande ton sort à l'Éternel, mets en lui ta confiance, et il agira.",
     pour: "Pour remettre ses projets",
-    titre: "Psaume 37 (36) : Recommande ton sort à l'Éternel",
+    titre: "Recommande ton sort à l'Éternel : Psaume 37 (36)",
     description:
-      "Le Psaume 37 (36), « Recommande ton sort à l'Éternel » : le texte Louis Segond de ce Psaume de patience et de confiance.",
+      "« Recommande ton sort à l'Éternel » : le verset 5 du Psaume 37 (36) en Louis Segond, un Psaume de patience et de confiance pour remettre ses projets.",
     presentation:
       "Le Psaume 37 est un Psaume de sagesse, attribué à David, écrit comme les conseils d'un ancien. Il répond à une question de toujours : pourquoi ceux qui font le mal semblent-ils parfois réussir ? Sa réponse tient en quelques mots : ne t'irrite pas, fais confiance, patiente. Jésus reprend l'un de ses versets dans les Béatitudes : les débonnaires hériteront la terre. On le lit avant une décision, un projet, un examen ou une recherche d'emploi.",
     quand: ["un projet important", "un examen", "une recherche d'emploi"],

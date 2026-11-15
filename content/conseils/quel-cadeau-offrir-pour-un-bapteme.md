@@ -24,7 +24,7 @@ Dans tous les cas, c'est un jour où l'on confie une vie à Dieu. Jésus disait 
 Pour un bébé ou un jeune enfant, quelques idées sûres :
 
 - **Une Bible pour enfants**, illustrée, qu'il découvrira en grandissant. Voyez nos [Bibles pour enfants](/bibles/bibles-pour-enfants).
-- **Une croix à accrocher** dans sa chambre, en bois ou en céramique, avec son prénom ou la date du baptême.
+- **Une croix à accrocher** dans sa chambre, en bois ou en céramique, avec son prénom ou la date du baptême. Nos idées de croix murale sont dans le [Top 10 des croix murales](/top-10/croix-murales).
 - **Un verset mural** ou un cadre, à garder toute sa vie. Nos [versets muraux](/art-chretien/versets-muraux) conviennent à toutes les traditions.
 - **Une veilleuse ou un ange** pour la chambre, doux et rassurant.
 - **Une boîte à souvenirs** pour garder le cierge, le faire-part, les photos et les mots des invités.

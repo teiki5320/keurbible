@@ -16,7 +16,7 @@ Avant de choisir, posez-vous trois questions simples.
 - **Comment prie-t-elle ?** Les catholiques aiment souvent la crèche, le chapelet ou les statues. Les orthodoxes prient devant les icônes. Dans les Églises protestantes et évangéliques, on préfère en général la Bible, les versets et les croix sans corps.
 - **Où vit-elle ?** Un petit appartement n'accueillera pas une grande crèche. Une personne qui voyage beaucoup appréciera un objet léger.
 
-En cas de doute, un objet qui convient à tous les chrétiens est un choix sûr : une Bible, un verset à accrocher, une croix simple ou un livre sur Noël.
+En cas de doute, un objet qui convient à tous les chrétiens est un choix sûr : une [belle Bible à offrir](/top-10/bibles-a-offrir), un verset à accrocher, une croix simple ou un livre sur Noël.
 
 ## Pour toute la famille : une crèche
 

@@ -27,7 +27,7 @@ Chaque région et chaque époque a son style. Le métal est le plus courant, mai
 
 ## Trois formes : de procession, de main et de cou
 
-**La croix de procession** est la plus grande. Fixée au bout d'un long bâton, elle est portée par les prêtres lors des processions et des grandes fêtes. On l'orne parfois de tissus de couleur. C'est souvent elle que l'on reproduit en croix murale, pour accrocher au salon.
+**La croix de procession** est la plus grande. Fixée au bout d'un long bâton, elle est portée par les prêtres lors des processions et des grandes fêtes. On l'orne parfois de tissus de couleur. C'est souvent elle que l'on reproduit en [croix éthiopienne murale](/croix-et-crucifix/croix-ethiopiennes-et-coptes), pour accrocher au salon.
 
 **La croix de main** est plus petite et munie d'une poignée. Le prêtre la tient pour bénir les fidèles, qui viennent l'embrasser. Les prêtres et les moines la gardent avec eux.
 

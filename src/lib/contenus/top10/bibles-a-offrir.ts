@@ -3,9 +3,9 @@ import type { Top10 } from "../../top10/types";
 export const top: Top10 = {
   slug: "bibles-a-offrir",
   tab: "Bibles à offrir",
-  title: "Top 10 des Bibles à offrir à un adulte",
+  title: "Top 10 des belles Bibles à offrir à un adulte",
   description:
-    "TOB, Segond 21, Louis Segond 1910, Bible de Jérusalem, gros caractères, étuis : notre classement des plus belles Bibles à offrir à un adulte.",
+    "Belle Bible à offrir à un adulte : TOB, Segond 21, Louis Segond 1910, Bible de Jérusalem, gros caractères, étuis… notre classement des plus belles.",
   intro:
     "Nous avons classé ces Bibles et ces étuis selon le plaisir qu'ils feront à un adulte, en tenant compte de son Église et de sa façon de lire. En tête, la Bible TOB, traduction œcuménique, parce qu'elle convient à presque tous les chrétiens quand on ne connaît pas bien leurs habitudes. C'est notre classement, pas un palmarès officiel.",
   items: [

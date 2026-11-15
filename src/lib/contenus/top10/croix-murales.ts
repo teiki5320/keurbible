@@ -3,9 +3,9 @@ import type { Top10 } from "../../top10/types";
 export const top: Top10 = {
   slug: "croix-murales",
   tab: "Croix murales",
-  title: "Top 10 des croix murales",
+  title: "Top 10 des croix murales pour la maison",
   description:
-    "Croix en bois d'olivier, croix éthiopiennes, crucifix, croix coptes : notre classement des plus belles croix à accrocher dans la maison.",
+    "Croix murale en bois d'olivier, croix éthiopienne, crucifix, croix copte : notre classement des plus belles croix murales à accrocher dans la maison.",
   intro:
     "Nous avons classé ces croix et crucifix selon leur beauté au mur, la qualité de leur matière et le sens qu'ils portent pour une famille chrétienne. En tête, la croix murale en bois d'olivier, parce qu'elle convient à toutes les Églises et à tous les intérieurs. C'est notre classement, pas un palmarès officiel.",
   items: [
