@@ -14,7 +14,7 @@ Mis à jour le 16 novembre 2026, d'après le code du dépôt. Aucun secret ici :
 ## Parcours
 
 - 🌐 **Web** : 🐙 GitHub — main [ok] → ⚙️ GitHub Actions — lint, types, tests, build [ok] → ☁️ Cloudflare Pages — projet keurbible [ok] → 🌍 keurbible.com — en ligne, réponse 200, www redirigé [ok]
-- 📝 **Contenu** : ✍️ Articles Conseils — 13 publiés, 20 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — 116 pages indexées, 20 non (rapport du 9/11) [ok]
+- 📝 **Contenu** : ✍️ Articles Conseils — 13 publiés, 20 programmés jusqu'au 30/12 [ok] → ⚙️ GitHub Actions — publie lundi, mercredi, vendredi [ok] → 📡 IndexNow et Bing — sitemap envoyé, site vérifié [ok] → 🔍 Google — 121 pages du sitemap indexées, 1 non (rapport du 13/11) [ok]
 - 📰 **Veille actus** : 📡 Tâche de veille — 12 h et 19 h, 15 flux RSS [ok] → 🐙 Dépôt veille — actus/keurbible.json, 1er passage le 29/10 à 19 h [ok] → 🌍 keurbible.com — 44 actus sur l'accueil et /actus (16/11) [ok]
 - 🛒 **Affiliation** : 🛍️ Cartes objets — bouton « Voir sur Amazon » [ok] → 🛒 Amazon Partenaires (affiliation) — tag keurbible-21 [ok] → 🔗 Liens directs — 55 ASIN sur 178 objets (55 sur 90 en Top 10) [à faire]
 - 📰 **Publicité** : 📰 AdSense (publicité web) — site ajouté, 2 blocs créés [ok] → ✅ Validation du site — « En préparation » (vérifié le 15/11) [pas encore] → 💶 Revenus — aucun [pas encore]
