@@ -83,27 +83,39 @@ export const OCCASIONS: Occasion[] = [
   {
     slug: "profession-de-foi",
     nom: "Profession de foi",
-    titre: "Cadeau de profession de foi : nos idées",
+    titre: "Cadeau de profession de foi : idées et conseils",
     description:
-      "Idées de cadeaux de profession de foi pour un jeune de 11 à 13 ans : Bible, croix, pendentif, livre de foi, selon qui offre.",
+      "Quel cadeau de profession de foi offrir à un jeune de 11 à 13 ans ? Bible, croix, médaille, bracelet, livre de foi : nos idées selon qui offre.",
     intro:
-      "La profession de foi est une fête surtout catholique, très ancrée en France et dans les pays francophones. Vers 12 ans, à la fin du catéchisme, le jeune redit lui-même, devant la communauté, la foi dans laquelle il a été baptisé, souvent vêtu d'une aube blanche. Ce n'est pas un sacrement, mais une étape importante, vécue en paroisse ou en aumônerie. Le jeune entre dans l'adolescence : le cadeau peut être plus personnel, un objet qu'il portera ou qu'il gardera dans sa chambre.",
+      "La profession de foi est une fête surtout catholique, très ancrée en France et dans les pays francophones. Vers 12 ans, à la fin du catéchisme, le jeune redit lui-même, devant la communauté, la foi dans laquelle il a été baptisé, souvent vêtu d'une aube blanche. Ce n'est pas un sacrement, mais une étape importante, vécue en paroisse ou en aumônerie, le plus souvent au printemps, avec un repas de famille. Le jeune entre dans l'adolescence : le cadeau peut être plus personnel, un objet qu'il portera ou qu'il gardera dans sa chambre.",
     deQui: [
       {
         qui: "Le parrain ou la marraine",
-        idee: "Un pendentif croix ou une médaille, à porter tous les jours comme un signe discret de sa foi.",
+        idee: "Un pendentif croix ou une médaille, à porter tous les jours comme un signe discret de sa foi. Une carte écrite à la main peut rappeler que vous l'accompagnez depuis son baptême.",
       },
       {
         qui: "Les parents",
-        idee: "Une Bible pour adolescent ou pour adulte, qui remplace la Bible pour enfants et l'accompagnera longtemps.",
+        idee: "Une Bible complète pour adolescent ou pour adulte, qui remplace la Bible pour enfants et l'accompagnera longtemps. Une couverture brodée à son prénom la rend vraiment à lui.",
       },
       {
         qui: "Les grands-parents",
-        idee: "Un bel objet pour sa chambre, comme une croix à poser ou un verset mural choisi avec soin.",
+        idee: "Un bel objet pour sa chambre, comme une croix à poser, une statue de la Vierge ou un verset mural choisi avec soin, qui gardera sa place quand il grandira.",
+      },
+      {
+        qui: "Les oncles et tantes",
+        idee: "Un bracelet avec une petite croix ou une bague dizainier : des objets simples que les jeunes portent volontiers, et qui aident à prier une dizaine en chemin.",
+      },
+      {
+        qui: "Les frères, sœurs et cousins",
+        idee: "Un cadeau complice, comme un carnet de prière guidé, ou une carte avec un verset qui lui ressemble, recopié de votre main.",
       },
       {
         qui: "Les amis et la famille éloignée",
-        idee: "Un livre de foi écrit pour les jeunes ou un carnet de prière à remplir à son rythme.",
+        idee: "Un livre de foi écrit pour les jeunes, un livre sur les saints d'Afrique ou un carnet de prière à remplir à son rythme.",
+      },
+      {
+        qui: "Un cadeau à plusieurs",
+        idee: "La famille peut se regrouper pour un objet qui durera toute une vie, comme une belle Bible ou une croix murale en bois d'olivier, avec la date du jour notée à l'intérieur ou au dos.",
       },
     ],
     faq: [
@@ -126,21 +138,33 @@ export const OCCASIONS: Occasion[] = [
     nom: "Confirmation",
     titre: "Cadeau de confirmation : idées pour un jeune ou un adulte",
     description:
-      "Idées de cadeaux de confirmation pour un jeune ou un adulte : Bible, croix, livre de foi, carnet de prière, selon le parrain ou la famille.",
+      "Quel cadeau de confirmation offrir à un jeune ou à un adulte ? Bible, croix, chapelet, livre de foi, carnet de prière : nos idées selon qui offre.",
     intro:
-      "La confirmation marque un engagement plus personnel dans la foi reçue au baptême. Chez les catholiques, c'est un sacrement, donné par l'évêque, souvent à l'adolescence mais aussi à l'âge adulte. Plusieurs Églises protestantes, comme les Églises luthériennes et réformées, célèbrent aussi une confirmation, à la fin du catéchisme. Chez les orthodoxes, ce sacrement, appelé chrismation, est donné en même temps que le baptême. Le cadeau accompagne un choix réfléchi : il peut aider à prier, à lire la Bible ou à approfondir sa foi.",
+      "La confirmation marque un engagement plus personnel dans la foi reçue au baptême. Chez les catholiques, c'est un sacrement, donné par l'évêque, souvent à l'adolescence mais aussi à l'âge adulte : le confirmand reçoit l'onction du saint chrême, entouré de son parrain ou de sa marraine. Plusieurs Églises protestantes, comme les Églises luthériennes et réformées, célèbrent aussi une confirmation, à la fin du catéchisme. Chez les orthodoxes, ce sacrement, appelé chrismation, est donné en même temps que le baptême. Le cadeau accompagne un choix réfléchi : il peut aider à prier, à lire la Bible ou à approfondir sa foi.",
     deQui: [
       {
         qui: "Le parrain ou la marraine de confirmation",
-        idee: "Un objet qui rappelle cet engagement, comme une croix à porter ou une belle Bible annotée de quelques mots personnels.",
+        idee: "Un objet qui rappelle cet engagement, comme une croix à porter ou une belle Bible annotée de quelques mots personnels sur la page de garde.",
       },
       {
         qui: "Les parents",
-        idee: "Un livre de foi qui ouvre de nouvelles questions, ou une Bible d'étude pour aller plus loin.",
+        idee: "Un livre de foi qui ouvre de nouvelles questions, ou une Bible d'étude avec notes et cartes pour aller plus loin dans la lecture.",
+      },
+      {
+        qui: "Les grands-parents",
+        idee: "Un objet de foi soigné, qui trouvera sa place dans sa future maison : une icône du Christ, une croix de Lalibela ou un crucifix en bois d'olivier.",
       },
       {
         qui: "Les amis",
-        idee: "Un carnet de prière ou un bracelet dizainier, simples et faciles à garder sur soi.",
+        idee: "Un carnet de prière, un dizainier de poche ou un bracelet dizainier, simples et faciles à garder sur soi.",
+      },
+      {
+        qui: "Pour un adulte confirmé",
+        idee: "Un cadeau sobre et utile : une Bible à marges larges pour noter ses réflexions, un livre des Psaumes pour prier chaque jour ou une croix à poser chez soi.",
+      },
+      {
+        qui: "Un cadeau à plusieurs",
+        idee: "Les proches peuvent offrir ensemble un objet plus durable, comme une statue du saint dont le confirmand porte le prénom ou une belle Bible reliée.",
       },
     ],
     faq: [

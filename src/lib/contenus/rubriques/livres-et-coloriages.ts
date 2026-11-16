@@ -362,7 +362,7 @@ export const objets: Objet[] = [
       "Un guide qui présente les livres de la Bible, leur époque et leurs grands thèmes, avec des conseils pour commencer la lecture. Il évite de se décourager devant un texte long et ancien. Un bon compagnon pour ceux qui reçoivent leur première Bible d'adulte.",
     traditions: "toutes",
     afro: false,
-    occasions: ["confirmation", "fete-des-peres"],
+    occasions: ["confirmation", "profession-de-foi", "fete-des-peres"],
     recherche: "guide pour lire la Bible",
     livre: true,
     amazonAsin: null,

@@ -97,7 +97,7 @@ export const objets: Objet[] = [
       "La Segond 21 reprend la Segond dans un français d'aujourd'hui, plus simple à lire, tout en restant fidèle au texte. C'est un très bon choix pour un lecteur protestant ou évangélique qui trouve la version de 1910 difficile, ou pour une première Bible d'adulte.",
     traditions: ["protestante", "evangelique"],
     afro: false,
-    occasions: ["confirmation", "mariage", "noel"],
+    occasions: ["confirmation", "profession-de-foi", "mariage", "noel"],
     recherche: "bible segond 21",
     livre: true,
     amazonAsin: null,
