@@ -1,5 +1,5 @@
 ---
-title: Qu'est-ce que la croix éthiopienne ?
+title: Croix éthiopienne : signification et symboles ?
 description: Croix de procession, de main ou de cou, Aksoum, Lalibela : d'où vient la croix éthiopienne, comment la reconnaître et comment l'accueillir chez soi.
 date: 2026-12-07
 theme: afrique
@@ -32,6 +32,10 @@ Chaque région et chaque époque a son style. Le métal est le plus courant, mai
 **La croix de main** est plus petite et munie d'une poignée. Le prêtre la tient pour bénir les fidèles, qui viennent l'embrasser. Les prêtres et les moines la gardent avec eux.
 
 **La croix de cou** est la plus répandue. Beaucoup de chrétiens d'Éthiopie en portent une, en métal ou en bois. Elle est traditionnellement liée au matäb, un cordon, souvent bleu, que l'on noue au cou de l'enfant le jour de son baptême et qui dit qu'il est chrétien. Aujourd'hui, ces petites croix sont aussi portées en pendentif par des chrétiens du monde entier.
+
+## Que signifient ses motifs ?
+
+Aucun texte officiel ne donne un sens unique à chaque motif, et les explications varient selon les régions et les artisans : méfiez-vous des sites qui en donnent une seule. Ce que l'on peut dire avec certitude, c'est que la croix éthiopienne ne porte pas le corps du Christ, qu'elle est le signe du christianisme éthiopien depuis le royaume d'Aksoum, et que ses entrelacs sont une marque d'art propre à cette Église. On y voit souvent le symbole d'une vie sans fin, mais c'est une lecture, pas une règle.
 
 ## Lalibela, la « croix de Lalibela »
 

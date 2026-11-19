@@ -59,3 +59,5 @@ En rentrant, gardez un petit moment avant de passer à table ou d'ouvrir les cad
 - **Demander à chacun** ce qu'il a préféré : un chant, une bougie, un moment.
 
 Les jours suivants, un livre de l'histoire de Noël ou une Bible illustrée permet de relire le récit tranquillement. Voyez nos [histoires bibliques pour enfants](/livres-et-coloriages/histoires-bibliques-pour-enfants), nos [coloriages et activités](/livres-et-coloriages/coloriages-et-activites) et notre [Top 10 des Bibles pour enfants](/top-10/bibles-pour-enfants). Pour préparer la crèche, relisez [Comment installer une crèche de Noël à la maison ?](/conseils/comment-installer-une-creche-de-noel).
+
+Pour faire chanter toute la famille, découvrez [musique chrétienne africaine : par où commencer ?](/conseils/musique-chretienne-africaine-par-ou-commencer).

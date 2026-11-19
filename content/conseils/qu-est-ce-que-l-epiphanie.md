@@ -53,3 +53,5 @@ En France, l'Épiphanie est inséparable de la **galette des rois**. On « tire 
 Profitez-en pour faire arriver les mages à la crèche, s'ils voyageaient dans la maison depuis Noël, et pour lire ensemble Matthieu 2. Une étoile accrochée au-dessus de l'étable complète la scène. S'il vous manque des personnages, voyez nos [santons et personnages](/creches-et-noel/santons-et-personnages).
 
 Après l'Épiphanie, beaucoup de familles rangent la crèche. D'autres la gardent encore un peu, surtout si une partie de la famille fête Noël le 7 janvier.
+
+Timkat est la grande fête de l'Église orthodoxe éthiopienne : voir [Église éthiopienne : que faut-il savoir sur elle ?](/conseils/eglise-ethiopienne-histoire-objets).

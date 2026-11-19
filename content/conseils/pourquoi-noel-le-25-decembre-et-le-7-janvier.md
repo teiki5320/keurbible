@@ -51,3 +51,5 @@ Dans beaucoup de familles de la diaspora, les deux dates se croisent : un parent
 - **Pour offrir**, pensez à un cadeau qui convient à toutes les traditions : une crèche, une icône de la Nativité, une croix. Voyez nos [cadeaux de Noël](/cadeaux/noel).
 
 Pour bien préparer la fête, quelle que soit votre date, relisez aussi [Comment vivre le temps de l'Avent en famille ?](/conseils/comment-vivre-l-avent-en-famille).
+
+Pour en savoir plus sur l'Église qui fête Genna le 7 janvier, lisez [Église éthiopienne : que faut-il savoir sur elle ?](/conseils/eglise-ethiopienne-histoire-objets).
