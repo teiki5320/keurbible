@@ -22,7 +22,7 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PageProps<"/actus/[slug]">): Promise<Metadata> {
   const article = getArticleActu((await params).slug);
-  if (!article) return {};
+  if (!article) return { robots: { index: false } };
   // Les réseaux sociaux n'affichent pas les images SVG (cartes générées) : image de partage du site dans ce cas.
   const photo = !article.image.url.endsWith(".svg");
   return pageMetadata({
@@ -33,6 +33,8 @@ export async function generateMetadata({ params }: PageProps<"/actus/[slug]">): 
     publishedTime: article.publie_le,
     image: photo ? article.image.url : null,
     imageAlt: article.image.alt,
+    // Actus réécrites d'autres médias : hors de Google depuis le 19/11/2026 (la page reste ouverte aux visiteurs).
+    noindex: true,
   });
 }
 

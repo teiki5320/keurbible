@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BlocActus } from "@/components/actus/BlocActus";
 import { ConseilGrid } from "@/components/conseils/ConseilCard";
 import { CarteLien, GrilleLiens } from "@/components/layout/CarteLien";
 import { Section } from "@/components/layout/Section";
@@ -168,8 +167,6 @@ export default function HomePage() {
         </Section>
       )}
 
-      {/* 9. Actus (lues en direct depuis la veille ; bloc absent s'il n'y en a pas) */}
-      <BlocActus className="container-page mt-16" surtitre="En ce moment" titre="Les actus" limite={4} lien={{ href: "/actus", label: "Toutes les actus" }} />
     </>
   );
 }

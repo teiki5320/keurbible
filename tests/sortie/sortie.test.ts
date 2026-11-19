@@ -157,6 +157,25 @@ describe("Liens Amazon des pages construites", () => {
     assert.deepEqual(erreurs.slice(0, 10), []);
   });
 
+  it("actus : page et articles en noindex, follow, absents du sitemap, de l'accueil et du flux RSS (depuis le 19/11/2026)", () => {
+    const plan = readFileSync(join(out, "sitemap.xml"), "utf8");
+    assert.doesNotMatch(plan, /\/actus/, "aucune adresse /actus dans le sitemap");
+    assert.doesNotMatch(readFileSync(join(out, "feed.xml"), "utf8"), /\/actus\//, "aucune actu dans le flux RSS");
+    const fautes = fautives(({ file, html }) => {
+      if (!file.startsWith("actus") || file === "actus/aucun-article.html") return null;
+      return /<meta name="robots" content="noindex, follow/.test(html) ? null : "robots noindex, follow absent";
+    });
+    assert.deepEqual(fautes.slice(0, 10), []);
+    const accueil = readFileSync(join(out, "index.html"), "utf8");
+    assert.doesNotMatch(accueil, /href="\/actus\//, "accueil : plus de lien vers un article d'actu (le menu garde /actus)");
+  });
+
+  it("aucun lien vers les autres sites de la maison dans le menu ni le bas de page", () => {
+    const autres = /href="https?:\/\/(?:www\.)?(?:keurbook|keurcook|keurdeco|keurfoot|keurkado|keurdesir|solelis|kultiled|toakeur)\./;
+    const erreurs = fautives(({ html }) => (autres.test(html) ? "lien vers un autre site du groupe" : null));
+    assert.deepEqual(erreurs.slice(0, 10), []);
+  });
+
   it("aucun lien Amazon sur l'accueil ni dans les actus", () => {
     const erreurs = fautives(({ file, html }) => ((file === "index.html" || file.startsWith("actus")) && liens(html).length ? "lien Amazon" : null));
     assert.deepEqual(erreurs.slice(0, 10), []);

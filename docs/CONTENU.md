@@ -19,10 +19,12 @@ Document de référence (contenu et structure), validé par Jean le 29 octobre 2
 5. **Top 10** — `/top-10` (ouvre le premier onglet) et `/top-10/<slug>` : 10 sujets.
 6. **Psaumes** — `/psaumes` et `/psaumes/<slug>` : 12 Psaumes, texte Louis Segond 1910 et double numérotation « Psaume 23 (22) ».
 7. **Conseils** — `/conseils` et `/conseils/<slug>` : trois articles par semaine (lundi, mercredi, vendredi).
-8. **Actus** — `/actus` : culture chrétienne en Afrique et dans la diaspora (fêtes et pèlerinages, gospel, art sacré et patrimoine, livres et films), sans politique ni scandale ; lues en direct depuis la veille (`actus/keurbible.json`).
+8. **Actus** — `/actus` : culture chrétienne en Afrique et dans la diaspora (fêtes et pèlerinages, gospel, art sacré et patrimoine, livres et films), sans politique ni scandale ; lues en direct depuis la veille (`actus/keurbible.json`) ; depuis le 19 novembre 2026, page et articles en `noindex, follow`, hors du plan du site et du flux RSS, et plus de bloc d'actus sur l'accueil (la page reste accessible par le menu).
 9. **Ma liste d'envies** — `/ma-liste` : dans le navigateur, sans compte, partageable par WhatsApp ou par lien (non indexée).
 10. **Notre démarche** — `/notre-demarche`.
 11. **Pages légales** — `/mentions-legales`, `/confidentialite`, `/conditions` (mention Partenaires Amazon). Pied de page « Un site TOA KEUR ».
+
+Depuis le 19 novembre 2026, ni le menu ni le bas de page ne renvoient vers les autres sites de la maison (menu « Les sites Keur » et lien toakeur.com retirés).
 
 Menu : Cadeaux · Art afro · Top 10 · Psaumes · Conseils · Actus · Ma liste d'envies ; bande des 7 rubriques sous l'en-tête (grand écran).
 

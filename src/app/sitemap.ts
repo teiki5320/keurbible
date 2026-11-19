@@ -5,7 +5,6 @@ import { siteConfig } from "@/lib/config";
 import { TOP10_UPDATED } from "@/lib/contenus";
 import { getConseils } from "@/lib/data/conseils";
 import { getMaintenance } from "@/lib/data/settings";
-import { getArticlesActus } from "@/lib/data/veille-articles";
 import { currentHashes, readLedger } from "@/lib/lastmod";
 
 export const dynamic = "force-static";
@@ -67,10 +66,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...psaumes.map((x) => page(x.path, x.d, 0.6)),
     page("/conseils", latest(articles.map((x) => x.d)), 0.7, "weekly"),
     ...articles.map((x) => page(x.path, x.d, 0.6)),
-    // Actus : lues en direct depuis la veille (2 fois par jour), la page change tous les jours.
-    { url: `${base}/actus`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.6 },
-    // Articles complets des actus, construits 2 fois par jour (la page de secours /actus/article n'y est pas).
-    ...getArticlesActus().map((a) => ({ url: `${base}/actus/${a.slug}`, lastModified: new Date(a.redige_le), changeFrequency: "monthly" as const, priority: 0.5 })),
+    // Actus (/actus et /actus/<slug>) : volontairement absentes du plan du site, pages en noindex depuis le 19/11/2026
+    // (actus réécrites d'autres médias, vues par Google comme du contenu repris).
     page("/notre-demarche", LANCEMENT, 0.4, "yearly"),
     ...["/conditions", "/mentions-legales", "/confidentialite"].map((path) => page(path, LANCEMENT, 0.3, "yearly")),
   ];

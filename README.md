@@ -23,14 +23,14 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Tous l
 
 | Page | Adresse |
 | --- | --- |
-| Accueil (accroche, carrousel des 12 Psaumes, coups de cœur (n° 1 des Top 10), rubriques, art afro, occasions, Top 10, conseils, actus ; aucun lien Amazon) | `/` |
+| Accueil (accroche, carrousel des 12 Psaumes, coups de cœur (n° 1 des Top 10), rubriques, art afro, occasions, Top 10, conseils ; aucun lien Amazon ; le bloc d'actus a été retiré de l'accueil le 19 novembre 2026) | `/` |
 | 7 rubriques et 31 sous-rubriques (objets, filtre « Pour quelle tradition ? ») | `/<rubrique>`, `/<rubrique>/<sous-rubrique>` |
 | Cadeaux par occasion (10 occasions) | `/cadeaux`, `/cadeaux/<occasion>` |
 | Art chrétien afro (page phare) | `/afro` |
 | Top 10 (10 onglets ; `/top-10` ouvre le premier) | `/top-10`, `/top-10/<slug>` |
 | Psaumes (12, Louis Segond 1910, numérotation « 23 (22) ») | `/psaumes`, `/psaumes/<slug>` |
 | Conseils (lundi, mercredi et vendredi) | `/conseils`, `/conseils/<slug>` |
-| Actus (lues en direct depuis la veille) | `/actus`, `/actus/<adresse>`, `/actus/article?id=<id>` |
+| Actus (lues en direct depuis la veille ; depuis le 19 novembre 2026 : `noindex, follow`, hors du plan du site et du flux RSS, toujours ouvertes aux visiteurs par le menu) | `/actus`, `/actus/<adresse>`, `/actus/article?id=<id>` |
 | Ma liste d'envies (dans le navigateur, sans compte, partageable ; non indexée) | `/ma-liste` |
 | Notre démarche, pages légales | `/notre-demarche`, `/mentions-legales`, `/confidentialite`, `/conditions` |
 

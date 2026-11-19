@@ -8,7 +8,6 @@ import { ListeCount } from "../liste/ListeCount";
 import { Embleme } from "./Embleme";
 import { EmailLink } from "./EmailLink";
 import { NAV, NAV_RUBRIQUES } from "./nav";
-import { SitesKeur } from "./SitesKeur";
 
 /** En-tête : liens en ligne et bande des rubriques sur grand écran, bouton « Menu » plein écran sur mobile. */
 export function Header() {
@@ -44,7 +43,6 @@ export function Header() {
             ))}
           </nav>
           <div className="ml-auto hidden items-center gap-6 lg:flex">
-            <SitesKeur />
             <Link href="/ma-liste" className="inline-flex items-center text-[15px] font-semibold hover:text-accent">
               Ma liste d&apos;envies
               <ListeCount />
@@ -85,7 +83,6 @@ export function Header() {
             <span>Ma liste d&apos;envies</span>
             <ListeCount />
           </Link>
-          <SitesKeur className="mt-6" />
           <nav aria-label="Rubriques" className="mt-6 grid grid-cols-2 gap-x-4 gap-y-3 text-[15px]">
             {NAV_RUBRIQUES.map((n) => (
               <Link key={n.href} href={n.href} prefetch={false} onClick={close} className="hover:text-accent">
