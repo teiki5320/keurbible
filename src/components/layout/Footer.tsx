@@ -44,9 +44,6 @@ export function Footer() {
       </div>
       <div className="container-page space-y-2 border-t border-line py-5 text-[12px] leading-relaxed text-faint">
         <p>{AMAZON_DISCLOSURE}</p>
-        <p>
-          Un site <span className="font-semibold text-muted">TOA KEUR</span>
-        </p>
       </div>
     </footer>
   );

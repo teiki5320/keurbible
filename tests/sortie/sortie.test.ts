@@ -192,3 +192,13 @@ describe("En-têtes Cloudflare (out/_headers)", () => {
     }
   });
 });
+
+describe("Aucune trace de TOA KEUR (retirée le 19/11/2026)", () => {
+  it("l'accueil ne cite pas TOA KEUR : ni texte du bas de page, ni données structurées", () => {
+    const html = readFileSync(join(out, "index.html"), "utf8");
+    assert.doesNotMatch(html.replace(/mailto:[^"]*|[a-z]+@toakeur\.com/gi, ""), /toa ?keur/i);
+    for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      assert.doesNotMatch(m[1], /toa ?keur|parentOrganization/i, "données structurées : plus de maison mère");
+    }
+  });
+});
