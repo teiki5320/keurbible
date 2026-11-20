@@ -157,13 +157,11 @@ describe("Liens Amazon des pages construites", () => {
     assert.deepEqual(erreurs.slice(0, 10), []);
   });
 
-  it("actus : page et articles en noindex, follow, absents du sitemap, de l'accueil et du flux RSS (depuis le 19/11/2026)", () => {
-    const plan = readFileSync(join(out, "sitemap.xml"), "utf8");
-    assert.doesNotMatch(plan, /\/actus/, "aucune adresse /actus dans le sitemap");
+  it("actus : page et articles de nouveau indexables (noindex retiré le 20/11/2026), absents de l'accueil et du flux RSS", () => {
     assert.doesNotMatch(readFileSync(join(out, "feed.xml"), "utf8"), /\/actus\//, "aucune actu dans le flux RSS");
     const fautes = fautives(({ file, html }) => {
-      if (!file.startsWith("actus") || file === "actus/aucun-article.html") return null;
-      return /<meta name="robots" content="noindex, follow/.test(html) ? null : "robots noindex, follow absent";
+      if (!file.startsWith("actus") || file === "actus/aucun-article.html" || file === "actus/article.html") return null;
+      return /<meta name="robots" content="[^"]*noindex/.test(html) ? "robots noindex présent" : null;
     });
     assert.deepEqual(fautes.slice(0, 10), []);
     const accueil = readFileSync(join(out, "index.html"), "utf8");

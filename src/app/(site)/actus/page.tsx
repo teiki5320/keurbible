@@ -8,7 +8,6 @@ export const metadata: Metadata = pageMetadata({
   title: "Actus de la culture chrétienne en Afrique",
   description: "Fêtes et pèlerinages, gospel, art sacré, livres et films : la culture chrétienne en Afrique et dans la diaspora, résumée chaque jour avec ses sources.",
   path: "/actus",
-  noindex: true,
 });
 
 /** Page « Actus » : les 20 dernières actus de la culture chrétienne en Afrique, lues en direct depuis la veille. */

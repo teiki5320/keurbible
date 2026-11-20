@@ -33,8 +33,6 @@ export async function generateMetadata({ params }: PageProps<"/actus/[slug]">): 
     publishedTime: article.publie_le,
     image: photo ? article.image.url : null,
     imageAlt: article.image.alt,
-    // Actus réécrites d'autres médias : hors de Google depuis le 19/11/2026 (la page reste ouverte aux visiteurs).
-    noindex: true,
   });
 }
 
