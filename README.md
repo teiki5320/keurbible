@@ -30,7 +30,7 @@ Le site est **100 % statique** : pas de serveur, pas de base de données. Tous l
 | Top 10 (10 onglets ; `/top-10` ouvre le premier) | `/top-10`, `/top-10/<slug>` |
 | Psaumes (12, Louis Segond 1910, numérotation « 23 (22) ») | `/psaumes`, `/psaumes/<slug>` |
 | Conseils (lundi, mercredi et vendredi) | `/conseils`, `/conseils/<slug>` |
-| Actus (lues en direct depuis la veille ; depuis le 19 novembre 2026 : `noindex, follow`, hors du plan du site et du flux RSS, toujours ouvertes aux visiteurs par le menu) | `/actus`, `/actus/<adresse>`, `/actus/article?id=<id>` |
+| Actus (lues en direct depuis la veille ; hors du flux RSS ; en `noindex` du 19 au 20 novembre 2026 puis de nouveau indexables et dans le plan du site depuis le 20 novembre 2026, ouvertes aux visiteurs par le menu) | `/actus`, `/actus/<adresse>`, `/actus/article?id=<id>` |
 | Ma liste d'envies (dans le navigateur, sans compte, partageable ; non indexée) | `/ma-liste` |
 | Notre démarche, pages légales | `/notre-demarche`, `/mentions-legales`, `/confidentialite`, `/conditions` |
 

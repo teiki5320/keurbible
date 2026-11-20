@@ -159,6 +159,7 @@ describe("Liens Amazon des pages construites", () => {
 
   it("actus : page et articles de nouveau indexables (noindex retiré le 20/11/2026), absents de l'accueil et du flux RSS", () => {
     assert.doesNotMatch(readFileSync(join(out, "feed.xml"), "utf8"), /\/actus\//, "aucune actu dans le flux RSS");
+    assert.match(readFileSync(join(out, "sitemap.xml"), "utf8"), /<loc>[^<]*\/actus<\/loc>/, "la page /actus est dans le plan du site");
     const fautes = fautives(({ file, html }) => {
       if (!file.startsWith("actus") || file === "actus/aucun-article.html" || file === "actus/article.html") return null;
       return /<meta name="robots" content="[^"]*noindex/.test(html) ? "robots noindex présent" : null;
